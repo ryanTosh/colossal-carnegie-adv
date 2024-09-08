@@ -6,9 +6,8 @@ interface RoomDir {
 }
 
 export interface Room {
-    id: string;
     short: string;
-    long: string;
+    printout: string;
 
     dirs: { [dir in Dir]?: RoomDir };
 }

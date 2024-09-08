@@ -1,6 +1,8 @@
-import { CCA } from "./cca";
+import { Player } from "./player";
 
-const cca = new CCA();
+import prog from "../../colossal-carnegie-adv.ciff.json";
+
+const player = new Player(prog);
 
 const history = document.getElementById("history") as HTMLDivElement;
 const inputCont = document.getElementById("input-cont") as HTMLSpanElement;
@@ -12,6 +14,8 @@ const cursor = document.getElementById("cursor") as HTMLDivElement;
 const input2 = document.getElementById("input-2") as HTMLSpanElement;
 
 const input = document.getElementById("input") as HTMLInputElement;
+
+history.textContent = player.initialPrintout();
 
 input.focus();
 
@@ -97,7 +101,7 @@ input.addEventListener("input", () => {
 
 input.addEventListener("keydown", (event) => {
     if (event.code == "Enter") {
-        const output = cca.runUserInput(input.value);
+        const output = player.runUserInput(input.value);
         history.textContent += "\n\n>" + input.value + (output ? "\n" + output : "");
 
         input.value = "";

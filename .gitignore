@@ -1,4 +1,2 @@
-node_modules/
-package-lock.json
-vite.config.ts
-dist/
+player/node_modules/
+player/package-lock.json
