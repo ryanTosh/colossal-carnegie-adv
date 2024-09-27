@@ -1,5 +1,5 @@
-import { Prog } from "./common/prog";
-import { Dir, Room } from "./common/room";
+import { Prog } from "../../ciff-types/prog";
+import { Dir, Room } from "../../ciff-types/room";
 
 export class Player {
     private prog: Prog;
@@ -27,56 +27,127 @@ export class Player {
 
         switch (words[0]) {
             case "north":
-            case "n":
+            case "n": {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'north'?";
                 }
 
                 return this.tryMove("north");
+            }
             case "east":
-            case "e":
+            case "e": {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'east'?";
                 }
                 
                 return this.tryMove("east");
+            }
             case "south":
-            case "s":
+            case "s": {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'south'?";
                 }
                 
                 return this.tryMove("south");
+            }
             case "west":
-            case "w":
+            case "w": {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'west'?";
                 }
                 
                 return this.tryMove("west");
+            }
             case "up":
-            case "ascend":
+            case "u":
+            case "ascend": {
                 if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1]))) {
                     return "I don't know how to do that. Did you want to say 'up'?";
                 }
                 
                 return this.tryMove("up");
+            }
             case "down":
-            case "descend":
+            case "d":
+            case "descend": {
                 if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1]))) {
                     return "I don't know how to do that. Did you want to say 'down'?";
                 }
                 
                 return this.tryMove("down");
+            }
             case "inventory":
             case "inv":
             case "i":
             case "carrying":
             case "holding":
-            case "items":
-                return this.inv.length == 0 ? "You're not holding anything." : "You're holding the following items:" + this.inv.map(id => "- " + this.prog.items[id].short).join("");
-            default:
+            case "items": {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'inventory' ('inv'/'i' for short)?";
+                }
+
+                return this.inv.length == 0 ? "You're not holding anything." : "You're holding the following items:\n" + this.inv.map(id => "- " + this.prog.items[id].short).join("\n");
+            }
+            case "take":
+            case "get":
+            case "grab":
+            case "hold":
+            case "collect":
+            case "fetch": {
+                const item = words.slice(1).join(" ");
+                
+                if (item == "") {
+                    return "What should I " + words[0] + "?";
+                }
+
+                for (let i = 0; i < this.room.items.length; i++) {
+                    const itemId = this.room.items[i];
+                    const roomItem = this.prog.items[itemId]!;
+
+                    if (roomItem.nouns.includes(item)) {
+                        this.inv.push(itemId);
+                        this.room.items.splice(i, 1);
+
+                        return "";
+                    }
+                }
+
+                return "I can't find any '" + item + "'.";
+            }
+            // case "look at":
+            case "inspect":
+            case "examine": {
+                const item = words.slice(1).join(" ");
+                    
+                if (item == "") {
+                    return "What should I " + words[0] + "?";
+                }
+
+                for (let i = 0; i < this.room.items.length; i++) {
+                    const itemId = this.room.items[i];
+                    const roomItem = this.prog.items[itemId]!;
+
+                    if (roomItem.nouns.includes(item)) {
+                        this.inv.push(itemId);
+                        this.room.items.splice(i, 1);
+
+                        return "";
+                    }
+                }
+
+                return "I can't find any '" + item + "'.";
+            }
+            case "look":
+            case "l": {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'look' ('l' for short)?";
+                }
+
+                return this.roomPrintout(this.room);
+            }
+            default: {
                 return "I don't know how to '" + words[0] + "'.";
+            }
         }
     }
 

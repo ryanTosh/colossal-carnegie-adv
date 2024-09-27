@@ -10,4 +10,6 @@ export interface Room {
     printout: string;
 
     dirs: { [dir in Dir]?: RoomDir };
+
+    items: string[];
 }

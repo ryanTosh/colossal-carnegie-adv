@@ -1,4 +1,4 @@
-import { Prog } from "./common/prog";
+import { Prog } from "../../ciff-types/prog";
 
 export function validateProg(prog: Prog) {
     for (const roomId in prog.rooms) {
@@ -10,6 +10,9 @@ export function validateProg(prog: Prog) {
                     console.warn("MISSING_ROOM " + roomDir.goto + " (" + roomId + "." + dir + ")");
                 }
             }
+
+            // check room items
+            // look for unreachable rooms
         }
     }
 }

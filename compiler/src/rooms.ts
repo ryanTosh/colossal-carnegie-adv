@@ -1,4 +1,4 @@
-import { Room } from "./common/room.js";
+import { Room } from "../../ciff-types/room.js";
 
 export function parseRooms(roomsSrc: string): { [id: string]: Room } {
     const rooms: { [id: string]: Room } = {};
@@ -18,7 +18,9 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
             short,
             printout,
 
-            dirs: {}
+            dirs: {},
+
+            items: []
         };
 
         for (let propRow of rows.slice(2)) {
@@ -60,7 +62,11 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
 
                     break;
                 case "item":
-                    // TODO
+                    if (words.length != 2) {
+                        throw "Invalid 'item' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    rooms[id].items.push(words[1]);
 
                     break;
                 default:

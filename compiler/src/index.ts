@@ -1,8 +1,9 @@
 import { promises as fs } from "fs";
 
 import { parseRooms } from "./rooms.js";
-import { Prog } from "./common/prog.js";
+import { Prog } from "../../ciff-types/prog.js";
 import { validateProg } from "./validate.js";
+import { parseItems } from "./items.js";
 
 if (process.argv.length < 3) {
     console.error("ciff-compile: missing prog operand");
@@ -18,11 +19,17 @@ const roomsSrc = await fs.readFile(progDir + "/rooms", "utf-8");
 
 const rooms = parseRooms(roomsSrc);
 
+const itemsSrc = await fs.readFile(progDir + "/items", "utf-8");
+
+const items = parseItems(itemsSrc);
+
 const prog: Prog = {
     initialPrintout,
 
     rooms,
-    startingRoom: roomsSrc.split("\n")[0].split(" ")[0]
+    startingRoom: roomsSrc.split("\n")[0].split(" ")[0],
+
+    items
 };
 
 validateProg(prog);

@@ -1,7 +1,7 @@
 cd "$(dirname "$0")" &&
-cd ciff-compile &&
+cd compiler &&
 npm run build &&
 cd .. &&
-node ciff-compile/dist/index.js colossal-carnegie-adv/ &&
-cd ciff-player &&
+node compiler/build/index.js colossal-carnegie-adv &&
+cd player &&
 npm run dev
