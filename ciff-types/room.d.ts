@@ -5,11 +5,16 @@ interface RoomDir {
     say?: string;
 }
 
+interface RoomItem {
+    itemId: string;
+    briefing?: string;
+}
+
 export interface Room {
     short: string;
     printout: string;
 
     dirs: { [dir in Dir]?: RoomDir };
 
-    items: string[];
+    items: RoomItem[];
 }

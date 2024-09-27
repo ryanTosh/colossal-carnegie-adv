@@ -14,14 +14,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
             throw "Duplicate room ID '" + id + "'";
         }
 
-        rooms[id] = {
-            short,
-            printout,
-
-            dirs: {},
-
-            items: []
-        };
+        const dirs: Room['dirs'] = {};
+        const items: Room['items'] = [];
 
         for (let propRow of rows.slice(2)) {
             propRow = propRow.replace(/\s+/g, " ").trim();
@@ -44,8 +38,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                 case "south":
                 case "west":
                 case "up":
-                case "down":
-                    if (words[0] in rooms[id].dirs) {
+                case "down": {
+                    if (words[0] in dirs) {
                         throw "Duplicate dir '" + words[0] + "' in room '" + id + "'";
                     }
 
@@ -55,24 +49,54 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                         throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
                     }
 
-                    rooms[id].dirs[words[0]] = {
+                    dirs[words[0]] = {
                         goto: parsed[1] ?? null,
                         say: parsed[2] ?? undefined
                     };
 
                     break;
-                case "item":
+                }
+                case "item": {
                     if (words.length != 2) {
                         throw "Invalid 'item' prop format in room '" + id + "': " + propRow;
                     }
 
-                    rooms[id].items.push(words[1]);
+                    items.push({
+                        itemId: words[1]
+                    });
 
                     break;
-                default:
+                }
+                case "itembrief": {
+                    if (words.length < 2) {
+                        throw "Missing item ID in itembrief prop in room '" + id + "'";
+                    }
+
+                    const itemId = words[1];
+                    const item = items.find(i => i.itemId == itemId);
+
+                    if (item == null) {
+                        throw "No item with ID '" + itemId + "' to insert 'itembrief' onto in room '" + id + "'";
+                    }
+
+                    item.briefing = words.slice(2).join(" ");
+
+                    break;
+                }
+                default: {
                     throw "Unknown prop '" + words[0] + "'";
+                }
             }
         }
+
+        rooms[id] = {
+            short,
+            printout,
+
+            dirs,
+
+            items
+        };
     }
 
     return rooms;

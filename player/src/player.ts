@@ -19,15 +19,16 @@ export class Player {
     }
 
     public runUserInput(input: string): string {
-        const words = input.toLowerCase().replace(/\s+/g, " ").trim().split(" ");
+        const words = input.replace(/\s+/g, " ").trim().split(" ");
 
         if (words.length == 0 || words[0] == "") {
             return "Huh??";
         }
 
-        switch (words[0]) {
+        switch (words[0].toLowerCase()) {
             case "north":
-            case "n": {
+            case "n":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'north'?";
                 }
@@ -35,7 +36,8 @@ export class Player {
                 return this.tryMove("north");
             }
             case "east":
-            case "e": {
+            case "e":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'east'?";
                 }
@@ -43,7 +45,8 @@ export class Player {
                 return this.tryMove("east");
             }
             case "south":
-            case "s": {
+            case "s":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'south'?";
                 }
@@ -51,7 +54,8 @@ export class Player {
                 return this.tryMove("south");
             }
             case "west":
-            case "w": {
+            case "w":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'west'?";
                 }
@@ -60,8 +64,9 @@ export class Player {
             }
             case "up":
             case "u":
-            case "ascend": {
-                if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1]))) {
+            case "ascend":
+            {
+                if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1].toLowerCase()))) {
                     return "I don't know how to do that. Did you want to say 'up'?";
                 }
                 
@@ -69,8 +74,9 @@ export class Player {
             }
             case "down":
             case "d":
-            case "descend": {
-                if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1]))) {
+            case "descend":
+            {
+                if (words.length > 1 && !(words.length == 2 && ["stairs", "ramp", "elevator", "hill"].includes(words[1].toLowerCase()))) {
                     return "I don't know how to do that. Did you want to say 'down'?";
                 }
                 
@@ -81,7 +87,8 @@ export class Player {
             case "i":
             case "carrying":
             case "holding":
-            case "items": {
+            case "items":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'inventory' ('inv'/'i' for short)?";
                 }
@@ -93,71 +100,106 @@ export class Player {
             case "grab":
             case "hold":
             case "collect":
-            case "fetch": {
-                const item = words.slice(1).join(" ");
-                
-                if (item == "") {
-                    return "What should I " + words[0] + "?";
-                }
-
-                for (let i = 0; i < this.room.items.length; i++) {
-                    const itemId = this.room.items[i];
-                    const roomItem = this.prog.items[itemId]!;
-
-                    if (roomItem.nouns.includes(item)) {
-                        this.inv.push(itemId);
-                        this.room.items.splice(i, 1);
-
-                        return "";
-                    }
-                }
-
-                return "I can't find any '" + item + "'.";
+            case "fetch":
+            {
+                return this.tryPickUp(words.slice(1), words[0]);
             }
             // case "look at":
             case "inspect":
-            case "examine": {
-                const item = words.slice(1).join(" ");
+            case "examine":
+            {
+                const noun = words.slice(1).join(" ");
                     
-                if (item == "") {
-                    return "What should I " + words[0] + "?";
+                if (noun == "") {
+                    return "What should I " + words[0].toLowerCase() + "?";
                 }
 
-                for (let i = 0; i < this.room.items.length; i++) {
-                    const itemId = this.room.items[i];
-                    const roomItem = this.prog.items[itemId]!;
+                for (const itemId of this.inv) {
+                    const item = this.prog.items[itemId];
 
-                    if (roomItem.nouns.includes(item)) {
-                        this.inv.push(itemId);
-                        this.room.items.splice(i, 1);
-
-                        return "";
+                    if (item.nouns.includes(noun)) {
+                        return item.inspect;
                     }
                 }
 
-                return "I can't find any '" + item + "'.";
+                return "I can't find any '" + noun + "'.";
             }
             case "look":
-            case "l": {
+            case "l":
+            {
                 if (words.length > 1) {
                     return "I don't know how to do that. Did you want to say 'look' ('l' for short)?";
                 }
 
                 return this.roomPrintout(this.room);
             }
-            default: {
+            case "read":
+            {
+                const noun = words.slice(1).join(" ");
+                
+                if (noun == "") {
+                    return "What should I " + words[0].toLowerCase() + "?";
+                }
+
+                for (const itemId of this.inv) {
+                    const item = this.prog.items[itemId];
+
+                    if (item.nouns.includes(noun)) {
+                        if (item.actions.read !== undefined) {
+                            return item.actions.read;
+                        } else {
+                            return "You can't read the " + item.short;
+                        }
+                    }
+                }
+
+                return "I can't find any '" + noun + "'.";
+            }
+            case "pick":
+            {
+                if (words[1] == "up") {
+                    return this.tryPickUp(words.slice(2), words.slice(0, 2).join(" "));
+                } else {
+                    return "I don't know how to 'pick'. Did you want to say 'pick up' ('get' for short)?";
+                }
+            }
+            // move/move to/go/go to
+            default:
+            {
                 return "I don't know how to '" + words[0] + "'.";
             }
         }
     }
 
+    private tryPickUp(nounPhrase: string[], commandWord: string): string {
+        const noun = nounPhrase.join(" ");
+                
+        if (noun == "") {
+            return "What should I " + commandWord.toLowerCase() + "?";
+        }
+
+        for (let i = 0; i < this.room.items.length; i++) {
+            const itemId = this.room.items[i].itemId;
+            const item = this.prog.items[itemId];
+
+            if (item.nouns.includes(noun)) {
+                this.inv.push(itemId);
+                this.room.items.splice(i, 1);
+
+                return "";
+            }
+        }
+
+        return "I can't find any '" + noun + "'.";
+    }
+
     private tryMove(dir: Dir): string {
-        if (dir in this.room.dirs) {
-            if (this.room.dirs[dir]!.goto === null) {
-                return this.room.dirs[dir]!.say ?? "You cannot go " + dir + ".";
+        if (this.room.dirs[dir] !== undefined) {
+            if (this.room.dirs[dir].goto === null) {
+                return this.room.dirs[dir].say ?? "You cannot go " + dir + ".";
             } else {
-                const gotoRoom = this.prog.rooms[this.room.dirs[dir]!.goto]!;
-                const say = ("say" in this.room.dirs[dir]! ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
+                const gotoRoom = this.prog.rooms[this.room.dirs[dir].goto]!;
+                const say = ("say" in this.room.dirs[dir] ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
 
                 this.room = gotoRoom;
 
@@ -169,6 +211,6 @@ export class Player {
     }
 
     private roomPrintout(room: Room) {
-        return room.short + "\n" + room.printout;
+        return room.short + "\n" + room.printout + room.items.filter((item) => item.briefing !== undefined).map((item) => "\n" + item.briefing).join("");
     }
 }

@@ -4,4 +4,4 @@ npm run build &&
 cd .. &&
 node compiler/build/index.js colossal-carnegie-adv &&
 cd player &&
-npm run dev
+npm run build

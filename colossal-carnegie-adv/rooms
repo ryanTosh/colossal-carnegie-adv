@@ -4,7 +4,8 @@ west outsidehh
 north doherty1west
 south baker
 east cfalawn
-item pamphlet NOTE "No CMU should be without one!" NOTE A pamphlet is lying on the ground.
+item pamphlet
+itembrief pamphlet A bundle of papers is lying on the ground.
 
 outsidehh Outside Hamerschlag Hall
 You stand facing west, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.

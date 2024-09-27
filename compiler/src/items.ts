@@ -15,12 +15,45 @@ export function parseItems(itemsSrc: string): { [id: string]: Item } {
         if (id in items) {
             throw "Duplicate item ID '" + id + "'";
         }
+
+        const actions: Item['actions'] = {};
+
+        for (let propRow of rows.slice(3)) {
+            propRow = propRow.replace(/\s+/g, " ").trim();
+
+            const noteIndex = propRow.indexOf("NOTE");
+
+            if (noteIndex != -1) {
+                console.warn(propRow.slice(noteIndex));
+
+                propRow = propRow.slice(0, noteIndex).trim();
+            }
+
+            if (propRow == "") continue;
+
+            const words = propRow.split(" ");
+
+            switch (words[0]) {
+                case "read":
+                    if ("read" in actions) {
+                        actions.read += "\n" + words.slice(1).join(" ");
+                    } else {
+                        actions.read = words.slice(1).join(" ");
+                    }
+
+                    break;
+                default:
+                    throw "Unknown prop '" + words[0] + "'";
+            }
+        }
         
         items[id] = {
             short,
             inspect,
 
-            nouns
+            nouns,
+
+            actions
         };
     }
 

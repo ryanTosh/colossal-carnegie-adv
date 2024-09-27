@@ -3,4 +3,8 @@ export interface Item {
     inspect: string;
 
     nouns: string[];
+
+    actions: {
+        read?: string;
+    };
 }
