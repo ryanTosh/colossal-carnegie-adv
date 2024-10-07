@@ -1,4 +1,4 @@
-import { Room } from "../../ciff-types/room.js";
+import type { Dir, Room } from "../../ciff-types/room.d.ts";
 
 export function parseRooms(roomsSrc: string): { [id: string]: Room } {
     const rooms: { [id: string]: Room } = {};
@@ -15,7 +15,10 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
         }
 
         const dirs: Room['dirs'] = {};
+        let facing: Dir | undefined = undefined;
+
         const items: Room['items'] = [];
+        const itemBriefings: Room['itemBriefings'] = {};
 
         for (let propRow of rows.slice(2)) {
             propRow = propRow.replace(/\s+/g, " ").trim();
@@ -38,7 +41,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                 case "south":
                 case "west":
                 case "up":
-                case "down": {
+                case "down":
+                {
                     if (words[0] in dirs) {
                         throw "Duplicate dir '" + words[0] + "' in room '" + id + "'";
                     }
@@ -56,34 +60,79 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
 
                     break;
                 }
-                case "item": {
+                case "facing":
+                {
+                    if (words.length != 2) {
+                        throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (!["north", "east", "south", "west"].includes(words[1] as Dir)) {
+                        throw "Invalid direction '" + words[1] + "' in facing prop in room '" + id + "'";
+                    }
+
+                    facing = words[1] as Dir;
+
+                    break;
+                }
+                case "item":
+                {
                     if (words.length != 2) {
                         throw "Invalid 'item' prop format in room '" + id + "': " + propRow;
                     }
 
                     items.push({
-                        itemId: words[1]
+                        itemId: words[1],
+                        dropped: false
                     });
 
                     break;
                 }
-                case "itembrief": {
+                case "itembrief":
+                {
                     if (words.length < 2) {
                         throw "Missing item ID in itembrief prop in room '" + id + "'";
                     }
 
                     const itemId = words[1];
-                    const item = items.find(i => i.itemId == itemId);
 
-                    if (item == null) {
-                        throw "No item with ID '" + itemId + "' to insert 'itembrief' onto in room '" + id + "'";
+                    if (itemId in itemBriefings) {
+                        if ("undropped" in itemBriefings[itemId]) {
+                            itemBriefings[itemId].undropped += "\n" + words.slice(2).join(" ");
+                        } else {
+                            itemBriefings[itemId].undropped = words.slice(2).join(" ");
+                        }
+                    } else {
+                        itemBriefings[itemId] = {
+                            undropped: words.slice(2).join(" ")
+                        };
                     }
-
-                    item.briefing = words.slice(2).join(" ");
 
                     break;
                 }
-                default: {
+                case "droppeditembrief":
+                {
+                    if (words.length < 2) {
+                        throw "Missing item ID in itembrief prop in room '" + id + "'";
+                    }
+
+                    const itemId = words[1];
+
+                    if (itemId in itemBriefings) {
+                        if ("dropped" in itemBriefings[itemId]) {
+                            itemBriefings[itemId].dropped += "\n" + words.slice(2).join(" ");
+                        } else {
+                            itemBriefings[itemId].dropped = words.slice(2).join(" ");
+                        }
+                    } else {
+                        itemBriefings[itemId] = {
+                            dropped: words.slice(2).join(" ")
+                        };
+                    }
+
+                    break;
+                }
+                default:
+                {
                     throw "Unknown prop '" + words[0] + "'";
                 }
             }
@@ -94,8 +143,10 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
             printout,
 
             dirs,
+            facing,
 
-            items
+            items,
+            itemBriefings
         };
     }
 

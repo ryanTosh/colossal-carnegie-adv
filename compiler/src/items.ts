@@ -1,4 +1,4 @@
-import { Item } from "../../ciff-types/item";
+import type { Item } from "../../ciff-types/item";
 
 export function parseItems(itemsSrc: string): { [id: string]: Item } {
     const items: { [id: string]: Item } = {};

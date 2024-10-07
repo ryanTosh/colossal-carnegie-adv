@@ -5,7 +5,8 @@ north doherty1west
 south baker
 east cfalawn
 item pamphlet
-itembrief pamphlet A bundle of papers is lying on the ground.
+itembrief pamphlet A pamphlet is lying on the ground.
+facing west
 
 outsidehh Outside Hamerschlag Hall
 You stand facing west, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
@@ -13,6 +14,7 @@ west hamerschlag
 south porter
 north laprima
 east mall
+facing west
 
 doherty1west Doherty Hall
 You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead upward.

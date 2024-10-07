@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 
 import { parseRooms } from "./rooms.js";
-import { Prog } from "../../ciff-types/prog.js";
+import type { Prog } from "../../ciff-types/prog.js";
 import { validateProg } from "./validate.js";
 import { parseItems } from "./items.js";
 
