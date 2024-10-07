@@ -85,6 +85,15 @@ export class Player {
                     }
                 }
 
+                for (const roomItme of this.room.items) {
+                    const itemId = roomItme.itemId;
+                    const item = this.prog.items[itemId];
+
+                    if (item.nouns.includes(noun)) {
+                        return item.inspect;
+                    }
+                }
+
                 return "I can't find any '" + noun + "'.";
             }
             case "look":
@@ -126,6 +135,21 @@ export class Player {
                     const item = this.prog.items[itemId];
 
                     if (item.nouns.includes(noun)) {
+                        if (item.actions.read !== undefined) {
+                            return item.actions.read;
+                        } else {
+                            return "You can't read the " + item.short;
+                        }
+                    }
+                }
+
+                for (const roomItme of this.room.items) {
+                    const itemId = roomItme.itemId;
+                    const item = this.prog.items[itemId];
+
+                    if (item.nouns.includes(noun)) {
+                        // TODO: first picking up, ...
+
                         if (item.actions.read !== undefined) {
                             return item.actions.read;
                         } else {

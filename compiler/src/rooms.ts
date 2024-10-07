@@ -55,7 +55,7 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
 
                     dirs[words[0]] = {
                         goto: parsed[1] ?? null,
-                        say: parsed[2] ?? undefined
+                        say: parsed[2] ? JSON.parse(parsed[2]) : undefined
                     };
 
                     break;

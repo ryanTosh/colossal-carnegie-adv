@@ -17,9 +17,10 @@ east mall
 facing west
 
 doherty1west Doherty Hall
-You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead upward.
+You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead up and down.
 south mall
 up doherty2west
+down dohertyawest
 
 doherty2west Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both directions. There's a pair of double doors to the west, a lecture hall to your south, and a long corridor to your east.
@@ -110,12 +111,12 @@ You stand on the sidewalk along Forbes Avenue. Morewood Avenue is to your north,
 north morewoodsouth
 south thecut
 east forbesbeeler
-west forbescyert
+west forbestepperquad
 
-forbescyert Forbes Ave
-You stand on the sidewalk along Forbes Avenue. The Tepper Quad is to your north, and Cyert Hall is to your south.
+forbestepperquad Forbes Ave
+You stand on the sidewalk along Forbes Avenue. The Tepper Quad is to your north, and a path winds to the south.
 north tepperquad
-south cyert
+south westquad
 east forbescut
 west forbestepper
 
@@ -130,19 +131,25 @@ morewoodsouth Morewood Ave
 You stand on the sidewalk along Morewood Avenue, which runs north-south. Morewood E-Tower and Morewood Gardens are to your west, and the Greek Quad is to your east.
 west morewoodgardens
 east greekquad
-north morewoodmid
+north morewoodstever
 south forbescut
 
-morewoodmid Morewood Ave
-You stand on the sidewalk along Morewood Avenue, which runs north-south. Stever House and Mudge House are to your west. You see a busy street to the north.
-west stevermudge
+morewoodstever Morewood Ave
+You stand on the sidewalk along Morewood Avenue, which runs north-south. Stever House is to your west.
+west steveralley
+north morewoodmudge
+south morewoodsouth
+
+morewoodmudge Morewood Ave
+You stand on the sidewalk along Morewood Avenue, which runs north-south. Mudge House is to your west. You see a busy street to the north.
+west mudge
 north morewoodfifth
-south morewoodmid
+south morewoodstever
 
 morewoodfifth Morewood Ave & Fifth Ave
 You stand at the intersection of Morewood Avenue and Fifth Avenue. You see campus in the distance to the south, and a few residence halls to your west.
 north morewoodnorth
-south morewoodmid
+south morewoodmudge
 west fiftheast
 east "Construction blocks your path."
 
@@ -199,3 +206,31 @@ down NOTE unknown
 fifthclyde
 NOTE unfinished
 north northclyde
+
+steveralley Stever Alley
+You're in an alley on the southern side of Stever House. A door to your north is propped open, and the alley runs east-west.
+north steverbasement
+west morewoodparking
+east morewoodstever
+
+steverbasement Stever Basement
+You're in a cluttered basement, with pipes running along the ceiling. There are many doors on the wall to the east.
+west steverelevator
+east kage
+south steveralley
+north "Your path is blocked by boxes of clutter."
+NOTE up: use elevator?
+
+kage Kage
+You find yourself in the Kage, a concrete-walled storage room full of wood and rusty tools. You notice a grate on the wall to the south.
+item crowbar
+west steverbasement
+south "You cannot find a way to open the grate." NOTE screwdriver?
+NOTE south ciacage
+NOTE helpful note when trying to open grate with screwdriver
+
+ciacage CIA Cage
+You're in another concrete room, with a strong smell of spray paint. You feel you shouldn't be here.
+item sharpies
+north kage
+west steverbasement
