@@ -58,11 +58,11 @@ north thefence
 south outsidehunt
 
 outsidehunt Outside Hunt Library
-In front of you, just to your south, stands Hunt Library, with its strange facade. A sidewalk to your east runs alongside the College of Fine Arts, and the CFA Lawn is to your north.
+In front of you, just to your south, stands Hunt Library, with its facade of glass and steel. A sidewalk to your east runs alongside the College of Fine Arts, and the CFA Lawn is to your north.
 south hunt1
 east hunttopeace
-north baker
-west cfalawn
+north cfalawn
+west baker
 
 thefence The Fence
 You behold the Fence, which is painted with three mysterious letters: "KGB". Lawns sprawl out in all directions, except west, where Doherty Hall stands.
@@ -234,3 +234,13 @@ You're in another concrete room, with a strong smell of spray paint. You feel yo
 item sharpies
 north kage
 west steverbasement
+
+baker Baker Hall
+You're on the first floor of Baker Hall. A long corridor slopes downward, toward Porter Hall. To your south is the Dietrich Success Center.
+east outsidehunt
+west bakertrapdoors
+north mall
+south dietrichadvisory
+
+dietrichadvisory Dietrich Success Center
+NOTE TODO

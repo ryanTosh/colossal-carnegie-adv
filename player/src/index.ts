@@ -106,6 +106,8 @@ input.addEventListener("keydown", (event) => {
 
         input.value = "";
         updatePromptInput();
+
+        window.scrollTo(0, document.body.scrollHeight);
     }
 });
 
