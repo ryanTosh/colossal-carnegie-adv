@@ -8,8 +8,8 @@ item pamphlet
 itembrief pamphlet A pamphlet is lying on the ground.
 facing west
 
-outsidehh Outside Hamerschlag Hall
-You stand facing west, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
+outsidehh West Mall
+You stand facing west at the base of a grassy hill, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
 west hamerschlag
 south porter
 north laprima
@@ -30,25 +30,23 @@ east doherty2bridge
 up doherty3west
 down doherty1west
 
-outsidelaprima Outside La Prima
+outsidelaprima La Prima Patio
 You're outside an imposing brutalist structure, in an outdoor spot on the Mall overlooking Baker-Porter to your south. You see the counter of La Prima through glass doors to your north.
 south outsidehh
 north laprima
 
 laprima La Prima
-You're in a busy coffee shop. You see elevators to your north, and the Mall to your south through some doors.
+You're in a coffee shop, which would ordinarily be bustling with people. The counter is to the west. You see elevators to your north, and the Mall to your south through a pair of glass doors.
 north wean5lobby
 south outsidelaprima
 west laprimacounter
 
 laprimacounter La Prima Counter
-You stand up against the counter to La Prima, as people force their way past you to pick up cups of coffee.
-north "You try to push your way through, but the crowds are too thick."
-east "You try to find a gap in the crowds, but the way back is blocked."
+You stand up against the counter to La Prima. A large parcel on a wooden pallet blocks your path to the north.
+north "You try to push your way through, but the box is too large."
+east laprima
 south outsidelaprima
-
-laprimacounteratnite La Prima Counter
-You climb over the counter.
+west "You try to climb over the counter, but are blocked by strategically placed coffee-brewing devices."
 
 cfalawn CFA Lawn
 You're in the middle of a field, with sparse trees around its edges. You see the Mall to your west, punctuated by the tower of Hamerschlag Hall, and opposite the College of Fine Arts to your east. The Fence and the Cut are to your north, and Hunt Library is to your south.
@@ -236,11 +234,34 @@ north kage
 west steverbasement
 
 baker Baker Hall
-You're on the first floor of Baker Hall. A long corridor slopes downward, toward Porter Hall. To your south is the Dietrich Success Center.
+You're on the first floor of Baker Hall. A long corridor slopes downward to the west, toward Porter Hall. To your south is the Dietrich Success Center.
 east outsidehunt
 west bakertrapdoors
 north mall
 south dietrichadvisory
 
 dietrichadvisory Dietrich Success Center
-NOTE TODO
+You find yourself in a welcoming office. {item dscoffee: "Nobody's around, but a cup of coffee on a desk is still steaming."}
+item dscoffee
+NOTE some sort of item for advancement
+north baker
+
+bakertrapdoors Baker Hall Corridor
+You're midway through the sloping main hall of Baker. Porter Hall is to your west. You notice heavy iron trapdoors in the floor.
+north mall
+east baker
+west porter1
+door down bakersteamtnl
+doorkeyitem down crowbar
+
+porter1 Porter Hall
+You're on the first floor of Porter Hall. A stairway leads up and down.
+up porter2
+down porter
+
+porter Porter Hall
+You're on floor A of Porter Hall. A stairway leads up, and the mall is to your north.
+north outsidehh
+up porter1
+east "Your path is blocked by a strange door." NOTE add key
+west ansysa

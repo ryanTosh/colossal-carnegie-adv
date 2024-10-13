@@ -1,8 +1,17 @@
 export type Dir = "north" | "east" | "south" | "west" | "up" | "down";
 
 interface RoomDir {
-    goto: string | null;
+    goto?: string;
     say?: string;
+
+    isDoor: boolean;
+    isOpen?: boolean;
+    keyItem?: string | null;
+    sayIfClosed?: string;
+    sayOnOpen?: string;
+    sayOnNoItem?: string;
+    sayOnWrongItem?: string;
+    sayOnClose?: string;
 }
 
 interface RoomItem {

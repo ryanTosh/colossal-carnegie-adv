@@ -55,8 +55,64 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
 
                     dirs[words[0]] = {
                         goto: parsed[1] ?? null,
-                        say: parsed[2] ? JSON.parse(parsed[2]) : undefined
+                        say: parsed[2] ? parsed[3].replace(/""/g, "\"") : undefined,
+
+                        isDoor: false
                     };
+
+                    break;
+                }
+                case "door":
+                {
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down)(?: (\w+))?(?: ("(?:[^"\n]|"")*"))?$/);
+
+                    if (parsed == null) {
+                        throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (words[1] in dirs) {
+                        throw "Duplicate dir '" + words[0] + "' for door in room '" + id + "'";
+                    }
+
+                    dirs[parsed[1] as Dir] = {
+                        goto: parsed[2] ?? null,
+                        say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
+
+                        isDoor: true,
+                        keyItem: null
+                    };
+
+                    break;
+                }
+                case "doorkeyitem":
+                {
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down) (\w+)$/);
+
+                    if (parsed == null) {
+                        throw "Invalid 'doorkeyitem' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (!(parsed[1] in dirs) || !dirs[parsed[1] as Dir]!.isDoor) {
+                        throw "No known door in dir '" + parsed[1] + "' in room '" + id + "'";
+                    }
+
+                    dirs[parsed[1] as Dir]!.keyItem = parsed[2];
+
+                    break;
+                }
+                case "doorsay":
+                {
+                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnClose) (north|east|south|west|up|down) ("(?:[^"\n]|"")*")$/);
+
+                    if (parsed == null) {
+                        throw "Invalid 'doorprop' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (!(parsed[2] in dirs) || !dirs[parsed[2] as Dir]!.isDoor) {
+                        throw "No known door in dir '" + parsed[2] + "' in room '" + id + "'";
+                    }
+
+                    dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].replace(/""/g, "\"");
 
                     break;
                 }
