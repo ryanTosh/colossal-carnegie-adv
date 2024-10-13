@@ -10,11 +10,12 @@ facing west
 
 outsidehh West Mall
 You stand facing west at the base of a grassy hill, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
-west hamerschlag
 south porter
 north laprima
 east mall
 facing west
+door west hamerschlag
+doorsay IfClosed west "The door to Hamerschlag Hall seems to be locked."
 
 doherty1west Doherty Hall
 You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead up and down.
