@@ -54,8 +54,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                     }
 
                     dirs[words[0]] = {
-                        goto: parsed[1] ?? null,
-                        say: parsed[2] ? parsed[3].replace(/""/g, "\"") : undefined,
+                        goto: parsed[1],
+                        say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
 
                         isDoor: false
                     };
@@ -105,7 +105,7 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                     const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnClose) (north|east|south|west|up|down) ("(?:[^"\n]|"")*")$/);
 
                     if (parsed == null) {
-                        throw "Invalid 'doorprop' prop format in room '" + id + "': " + propRow;
+                        throw "Invalid 'doorsay' prop format in room '" + id + "': " + propRow;
                     }
 
                     if (!(parsed[2] in dirs) || !dirs[parsed[2] as Dir]!.isDoor) {

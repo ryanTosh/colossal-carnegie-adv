@@ -325,7 +325,7 @@ export class Player {
 
     private tryMove(dir: Dir): string {
         if (this.room.dirs[dir] !== undefined) {
-            if (this.room.dirs[dir].goto === null) {
+            if (this.room.dirs[dir].goto === undefined) {
                 return this.room.dirs[dir].say ?? "You cannot go " + dir + ".";
             } else {
                 const gotoRoom = this.prog.rooms[this.room.dirs[dir].goto]!;
