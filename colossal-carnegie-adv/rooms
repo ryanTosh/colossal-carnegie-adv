@@ -241,8 +241,9 @@ north mall
 south dietrichadvisory
 
 dietrichadvisory Dietrich Success Center
-You find yourself in a welcoming office. {item dscoffee: "Nobody's around, but a cup of coffee on a desk is still steaming."}
+You find yourself in a welcoming office.
 item dscoffee
+itembrief dscoffee Nobody's around, but a cup of coffee on a desk is still steaming.
 NOTE some sort of item for advancement
 north baker
 
