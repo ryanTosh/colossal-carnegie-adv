@@ -328,6 +328,10 @@ export class Player {
             if (this.room.dirs[dir].goto === undefined) {
                 return this.room.dirs[dir].say ?? "You cannot go " + dir + ".";
             } else {
+                if (this.room.dirs[dir].isDoor && !this.room.dirs[dir].isOpen) {
+                    return this.room.dirs[dir].sayIfClosed ?? "The door " + dir + " is closed.";
+                }
+                
                 const gotoRoom = this.prog.rooms[this.room.dirs[dir].goto]!;
                 const say = ("say" in this.room.dirs[dir] ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
 

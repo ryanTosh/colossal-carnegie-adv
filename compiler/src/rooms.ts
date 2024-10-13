@@ -112,7 +112,7 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                         throw "No known door in dir '" + parsed[2] + "' in room '" + id + "'";
                     }
 
-                    dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].replace(/""/g, "\"");
+                    dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].slice(1, -1).replace(/""/g, "\"");
 
                     break;
                 }
