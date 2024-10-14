@@ -74,15 +74,14 @@ doherty1 Doherty Hall
 You're inside Doherty Hall. A door to your east leads outside, and the hall continues west.
 east thefence
 west doherty1stairs
-south doherty1stairs
+south dohertywarmstairs1
 north doherty1cheme
 
 doherty1stairs Doherty Hall
-You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of double doors with square windows. There's an elevator to your west. A door to the north seems to open into a larger space.
-west dohertyb2elevator NOTE need to implement elevators
+You're inside Doherty Hall. A staircase is next to you, going both directions. A door to the north seems to open into a larger space.
 north doherty1
 up doherty2
-down dohertyadoors
+down dohertyastairs
 
 doherty2 Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both directions. There's a long corridor to your west, and a lecture hall to your south.
@@ -386,3 +385,24 @@ You're in a strange space with concrete walls and windows on two sides. A door t
 west wean5300
 east dohertyawest
 south outsidelaprima
+
+dohertyastairs Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and another leads down to pair of red double doors with tall, narrow windows. A door to your north seems to go outside, and a hallway continues west.
+west dohertyawest
+north mall
+up doherty1stairs
+down dohertybchemehall
+NOTE add fairfax vending machine!
+
+dohertyawest Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your north, and a hallway continues east.
+north dohertyaphysics
+west liminalground
+east dohertyastairs
+up doherty1west
+down dohertybarthall
+
+doherty2bridge Doherty Hall
+You're inside Doherty Hall. Windows to your north overlook Gates and Purnell, and ones to your south overlook the mall and Baker. The corridor you're in runs east-west.
+east doherty2
+west doherty2west
