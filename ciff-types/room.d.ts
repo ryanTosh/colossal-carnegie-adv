@@ -4,6 +4,8 @@ interface RoomDir {
     goto?: string;
     say?: string;
 
+    nouns: string[];
+
     isDoor: boolean;
     isOpen?: boolean;
     keyItem?: string | null;
@@ -11,6 +13,7 @@ interface RoomDir {
     sayOnOpen?: string;
     sayOnNoItem?: string;
     sayOnWrongItem?: string;
+    sayOnAlreadyOpen?: string;
     sayOnClose?: string;
 }
 

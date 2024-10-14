@@ -57,6 +57,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                         goto: parsed[1],
                         say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
 
+                        nouns: [words[0]],
+
                         isDoor: false
                     };
 
@@ -77,6 +79,8 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                     dirs[parsed[1] as Dir] = {
                         goto: parsed[2] ?? null,
                         say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
+
+                        nouns: ["door", parsed[1]],
 
                         isDoor: true,
                         keyItem: null
@@ -102,7 +106,7 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                 }
                 case "doorsay":
                 {
-                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnClose) (north|east|south|west|up|down) ("(?:[^"\n]|"")*")$/);
+                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnAlreadyOpen|OnClose) (north|east|south|west|up|down) ("(?:[^"\n]|"")*")$/);
 
                     if (parsed == null) {
                         throw "Invalid 'doorsay' prop format in room '" + id + "': " + propRow;
@@ -113,6 +117,16 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
                     }
 
                     dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].slice(1, -1).replace(/""/g, "\"");
+
+                    break;
+                }
+                case "dirnouns":
+                {
+                    if (!(words[1] in dirs)) {
+                        throw "No known roomdir in direction '" + words[1] + "' in dirnouns prop in room '" + id + "'";
+                    }
+
+                    dirs[words[1] as Dir]!.nouns = words.slice(2).join(" ").split(",").map(n => n.trim());
 
                     break;
                 }

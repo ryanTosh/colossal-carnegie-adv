@@ -119,7 +119,7 @@ export class Player {
                             if (readableItem === null) {
                                 readableItem = item;
                             } else {
-                                return "What should I " + words[0].toLowerCase() + "?";
+                                return "What do you want to " + words[0].toLowerCase() + "?";
                             }
                         }
                     }
@@ -189,6 +189,40 @@ export class Player {
 
                         return "Dropped " + noun + ".";
                     }
+                }
+
+                return "I can't find any '" + noun + "'.";
+            }
+            case "open":
+            {
+                const noun = words.slice(1).join(" ");
+
+                let targetDir;
+
+                for (const dir in this.room.dirs) {
+                    const roomDir = this.room.dirs[dir as Dir]!;
+
+                    if (roomDir.nouns.includes(noun) || noun == "") {
+                        if (targetDir !== undefined) {
+                            return "Which " + noun + " do you want to open?";
+                        }
+
+                        targetDir = roomDir;
+                    }
+                }
+
+                if (targetDir !== undefined) {
+                    if (targetDir.isOpen) {
+                        return targetDir.sayOnAlreadyOpen ?? "It's already open.";
+                    }
+
+                    if (targetDir.keyItem !== undefined && !this.inv.includes(targetDir.keyItem!)) {
+                        return targetDir.sayOnNoItem ?? "You don't have the right item to open it.";
+                    }
+
+                    targetDir.isOpen = true;
+
+                    return targetDir.sayOnOpen ?? "You open it.";
                 }
 
                 return "I can't find any '" + noun + "'.";
@@ -331,7 +365,7 @@ export class Player {
                 if (this.room.dirs[dir].isDoor && !this.room.dirs[dir].isOpen) {
                     return this.room.dirs[dir].sayIfClosed ?? "The door " + dir + " is closed.";
                 }
-                
+
                 const gotoRoom = this.prog.rooms[this.room.dirs[dir].goto]!;
                 const say = ("say" in this.room.dirs[dir] ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
 
