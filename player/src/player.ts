@@ -227,7 +227,6 @@ export class Player {
 
                 return "I can't find any '" + noun + "'.";
             }
-            // move/move to/go/go to
             default:
             {
                 return "I don't know how to '" + words[0] + "'.";
