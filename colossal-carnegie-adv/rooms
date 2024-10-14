@@ -25,7 +25,7 @@ down dohertyawest
 
 doherty2west Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both directions. There's a pair of double doors to the west, a lecture hall to your south, and a long corridor to your east.
-west liminallower
+west liminal7
 south dh2315
 east doherty2bridge
 up doherty3west
@@ -38,7 +38,7 @@ north laprima
 
 laprima La Prima
 You're in a coffee shop, which would ordinarily be bustling with people. The counter is to the west. You see elevators to your north, and the Mall to your south through a pair of glass doors.
-north wean5lobby
+north wean5south
 south outsidelaprima
 west laprimacounter
 
@@ -267,3 +267,122 @@ north outsidehh
 up porter1
 east "Your path is blocked by a strange door." NOTE add key
 west ansysa
+
+wean5south Wean 5 Lobby South
+La Prima is to your south, and hallways go in various directions.
+north wean5north
+south laprima
+east wean5400
+west wean5100
+up wean6south
+down wean4south
+
+wean5north Wean 5 Lobby North
+Stairs go up and down. A wall is covered in posters, including one advertising "KGBuggy" in the "Kage", a mysterious location under Stever House. Hallways go in various directions.
+south laprima
+west wean5200
+east wean5300
+
+wean5100 Wean 5100 Corridor
+You're in a corridor west of the lobby. A short hallway cuts through to the 5200 corridor to your north.
+north wean5200
+south wean5stair100
+east wean5south
+west scottfromwean5 NOTE fix name
+
+wean5200 Wean 5200 Corridor
+You're in a corridor west of the lobby, which joins with the 5100 hallway further to your west. To your north and south are the Windows and Mac clusters.
+north windowscluster
+south maccluster
+east wean5north
+west wean5100
+
+wean5300 Wean 5300 Corridor
+You're in an uninteresting corridor east of the lobby. A sign points to Doherty A to your east. A bulletin board to your south displays skibidi pride flags.
+west wean5north
+east liminalground
+north wean5staira2
+item wean5bulletinboard
+item skibidimsmflag
+item skibidilesbianflag
+item skibiditransflag
+item skibidiagenderflag
+item estrogencookiesad
+
+wean5400 Wean 5400 Corridor
+You're in a corridor east of the lobby, which oversees Sorrels Library to the south. A sign points to Doherty A to your east.
+west wean5south
+east liminalground
+south "Surely you can find a way to Sorrels that doesn't involve falling such a distance."
+north wean5403
+
+wean5403 Wean 5403
+You're in a room with doors to the south. "KGB Trivia Night" is written on the blackboard, and a strange humming noise is present.
+item sippysips
+item nummynums
+south wean5400
+
+wean4north Wean 4 Lobby North
+Stairs go up and down. A bridge to your north crosses to Newell-Simon Hall, and hallways go in various directions.
+west wean4200
+east wean4300
+south wean4south
+north nshoverlook
+up wean5north
+down wean3north
+
+wean4south Wean 4 Lobby South
+Hallways go in various directions, including one partiuclarly ominous corridor to your south. Sorrels Library is to your east.
+south murderhallway
+north wean4north
+east sorrels
+west wean4west
+
+wean4west Wean 4 Lobby West
+The 4100 corridor is to your west, and Scott Hall is to your south.
+west wean4100
+south scottfromwean4lobby
+east wean4south
+north wean4north
+
+wean4100 Wean 4100 Corridor
+You're in an uninteresting corridor west of the lobby. A pair of doors to Scott Hall is further west, and a hallway to your north cuts through to the 4200 corridor.
+north wean4200
+south wean4stairs100
+east wean4west
+west scottfromwean4
+
+wean4200 Wean 4200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 4100 hallway further to your west.
+west wean4100
+east wean4north
+
+wean4300 Wean 4300 Corridor
+You're in an uninteresting corridor east of the lobby.
+north wean4stairsa2
+west wean4north
+east dohertybmallsidewest
+
+liminal6 Liminal Space
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number six, and stairs lead upward.
+west wean6300
+up liminal7
+
+liminal7 Liminal Space
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number seven, and a door to your east with the number 2. Stairs lead up and down.
+west wean7300
+east doherty2west
+up liminal8
+down liminal6
+
+liminal8 Liminal Space
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number eight, and a door to your east with the number 3. Stairs continue down.
+west wean8300
+east doherty3west
+down liminal7
+
+liminalground Liminal Space
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number five, and a door to your east with the letter A. A door to your south seems to lead outside.
+west wean5300
+east dohertyawest
+south outsidelaprima
