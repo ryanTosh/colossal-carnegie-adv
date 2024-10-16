@@ -68,7 +68,7 @@ You behold the Fence, which is painted with three mysterious letters: "KGB". Law
 west doherty1
 north thecut
 south cfalawn
-east tenniscourts
+east cfaparkinglot
 
 doherty1 Doherty Hall
 You're inside Doherty Hall. A door to your east leads outside, and the hall continues west.
@@ -406,3 +406,30 @@ doherty2bridge Doherty Hall
 You're inside Doherty Hall. Windows to your north overlook Gates and Purnell, and ones to your south overlook the mall and Baker. The corridor you're in runs east-west.
 east doherty2
 west doherty2west
+
+cfaparkinglot CFA Parking Lot
+You're in a large flat space, with the CFA building to your north. You see greenery to the west, and a road continues off to the east.
+north cfabuilding
+east thefence
+west mmsttechst
+
+mmsttechst Margaret Morrison Street & Tech Street
+You're at the intersection of two streets. The CFA parking lot is to your west, Margaret Morrison Carnegie Hall is to your north, and Posner Hall is to the south. Further east is the intersection between Margaret Morrison and Skibo.
+west cfaparkinglot
+east outsidehighmark
+north mmrotunda
+south posner
+
+outsidehighmark Margaret Morrison Street
+You stand on the sidewalk along Margaret Morrison Street. To your north is the Donner Ditch, and to your south is the Highmark Center.
+north donnerditch
+south highmark
+west mmsttechst
+east mmstskibo
+
+mmrotunda Outside Margaret Morrison Carnegie Hall
+You're inside a circle, made up by the walls of MMCH and a semicircle of white columns and zebra-striped arches. Above your head is a sexist quote. The door to the building is to your north.
+north mmch1
+south mmsttechst
+east outsidehighmark
+west cfaparkinglot
