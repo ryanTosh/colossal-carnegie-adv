@@ -293,7 +293,7 @@ east wean5300
 wean5100 Wean 5100 Corridor
 You're in a corridor west of the lobby. A short hallway cuts through to the 5200 corridor to your north.
 north wean5200
-south wean5stair100
+south wean5stairs100
 east wean5south
 west scottfromwean5 NOTE fix name
 
@@ -308,7 +308,7 @@ wean5300 Wean 5300 Corridor
 You're in an uninteresting corridor east of the lobby. A sign points to Doherty A to your east. A bulletin board to your south displays skibidi pride flags.
 west wean5north
 east liminalground
-north wean5staira2
+north wean5stairsa2
 item wean5bulletinboard
 item skibidimsmflag
 item skibidilesbianflag
@@ -454,3 +454,82 @@ north wean1vestibule
 south westquad "You climb the concrete staircase."
 east dohertyjungle
 west hhloadingdock "You wander further down Hamerschlag Drive, crossing underneath Scott Hall."
+
+wean1stairsa2 Wean 1 Stairwell A2
+A door with a large 1 is to your south. You can go up.
+south wean1300
+up wean15stairsa2
+
+wean15stairsa2 Wean 1.5 Stairwell A2
+A door to the loading dock is to your north. You can go up or down.
+north schlagdriveloadingdock
+up wean2stairsa2
+down wean1stairsa2
+
+wean2stairsa2 Wean 2 Stairwell A2
+A door with a large 2 is to your south. You can go up or down.
+south wean2300
+up wean3stairsa2
+down wean15stairsa2
+
+wean3stairsa2 Wean 3 Stairwell A2
+A door with a large 3 is to your south. You can go up or down.
+south wean3300
+up wean4stairsa2
+down wean2stairsa2
+
+wean4stairsa2 Wean 4 Stairwell A2
+A door with a large 4 is to your south. You can go up or down.
+south wean4300
+up wean5stairsa2
+down wean3stairsa2
+
+wean5stairsa2 Wean 5 Stairwell A2
+A door with a large 5 is to your south. You can go up or down.
+south wean5300
+up wean6stairsa2
+down wean4stairsa2
+
+wean6stairsa2 Wean 6 Stairwell A2
+A door with a large 6 is to your south. You can go up or down.
+south wean6300
+up wean7stairsa2
+down wean5stairsa2
+
+wean7stairsa2 Wean 7 Stairwell A2
+A door with a large 7 is to your south. You can go up or down.
+south wean7300
+up wean8stairsa2
+down wean6stairsa2
+
+wean8stairsa2 Wean 8 Stairwell A2
+A door with a large 8 is to your south. You can go up or down.
+south wean8300
+up wean9stairsa2
+down wean7stairsa2
+
+wean9stairsa2 Wean 9 Stairwell A2
+A door with a large 9 is to your south. You notice the stairwell has changed dimensions slightly, the roof is sloped, and graffiti written in pencil and permanent marker covers the walls. You can go down.
+south "The door is locked."
+down wean8stairsa2
+
+NOTE confirm that all doors in A2 have numbers written on them, confirm lettering of stairwells
+
+murderhallway Murder Hallway (Wean 4600 Corridor)
+You're in a corridor south of the lobby, deep under the mall. You get a foreboding feeling from the concrete-brick walls.  A sign points north toward an "area of refuge", a push-door to a staircase is to your west, and a fork splits off to the east.
+north murderhallwayterminus
+east murderhallway4700
+west wean4stairsc1
+south wean4south
+
+murderhallwayterminus Murder Hallway (Wean 4600 Corridor)
+You're further down in a corridor deep under the mall. A push-door to a staircase is to your west.
+south murderhallway
+west wean4stairsc2
+
+murderhallway4700 Murder Hallway (Wean 4700 Corridor)
+You're in a loop just off of the main murder hallway. The corridor runs north-south.
+north murderhallwayterminus
+south murderhallway
+west murderhallway
+east "You push against an office door, but it's securely locked."
