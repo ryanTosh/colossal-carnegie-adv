@@ -66,7 +66,7 @@ west baker
 thefence The Fence
 You behold the Fence, which is painted with three mysterious letters: "KGB". Lawns sprawl out in all directions, except west, where Doherty Hall stands.
 west doherty1
-north thecut
+north thecutsouth
 south cfalawn
 east cfaparkinglot
 
@@ -90,18 +90,26 @@ down doherty1stairs
 west doherty2bridge
 south dh2210
 
-thecut The Cut
-You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is the University Center.
+thecutsouth The Cut South
+Sidewalks criss-cross the lawn you're standing on. The Fence is to your south, and the Cut continues to the north.
+north thecutnorth
+south thefence
+east tenniscourts
+west dohertyjungle "You make your way down a staircase, which descends into a dense forest."
+
+thecutnorth The Cut North
+You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is a sidewalk outside the University Center.
 north walkingtothesky
 south thefence
 west purnell
-east ucfromthecut
+east ucsidewalk
 
 walkingtothesky Walking to the Sky
-You're on the north end of the Cut. You admire a tall steel pole rising into the sky, with statues walking up it, and after a second you realize the other admirers are statues as well. You wonder what Medusean beast was responsible for this.
+You're on the north end of the Cut. You admire a tall steel pole rising into the sky, with statues walking up it, and after a second you realize the other admirers are statues as well. You wonder what Medusean beast was responsible for this. The University Center is to your east, and Forbes Avenue is just to your north.
 north forbescut
-south thecut
+south thecutnorth
 west warner
+east ucfromthecut
 up "You too try to walk up the pole, but find it far too slippery." NOTE magnet boots
 
 forbescut Forbes Ave
@@ -433,3 +441,16 @@ north mmch1
 south mmsttechst
 east outsidehighmark
 west cfaparkinglot
+
+dohertyjungle Wilderness
+You stand in a small grove of unmaintained forest. A sidewalk wanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
+east thecutsouth "You climb a wooden staircase, and find yourself in an open space."
+west schlagdriveloadingdock
+south dohertyccheme
+
+schlagdriveloadingdock Hamerschlag Drive Loading Dock
+Wean Hall and Doherty Hall tower over you to your north, where you spot an unlocked door into Wean Hall. To your south, a concrete staircase leads upward, between Newell-Simon and Gates.
+north wean1vestibule
+south westquad "You climb the concrete staircase."
+east dohertyjungle
+west hhloadingdock "You wander further down Hamerschlag Drive, crossing underneath Scott Hall."
