@@ -365,31 +365,31 @@ west wean4100
 east wean4north
 
 wean4300 Wean 4300 Corridor
-You're in an uninteresting corridor east of the lobby.
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of doors leads to Doherty Hall.
 north wean4stairsa2
 west wean4north
 east dohertybmallsidewest
 
 liminal6 Liminal Space
-You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number six, and stairs lead upward.
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 6, and stairs lead upward.
 west wean6300
 up liminal7
 
 liminal7 Liminal Space
-You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number seven, and a door to your east with the number 2. Stairs lead up and down.
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 7, and a door to your east with the number 2. Stairs lead up and down.
 west wean7300
 east doherty2west
 up liminal8
 down liminal6
 
 liminal8 Liminal Space
-You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number eight, and a door to your east with the number 3. Stairs continue down.
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 8, and a door to your east with the number 3. Stairs continue down.
 west wean8300
 east doherty3west
 down liminal7
 
 liminalground Liminal Space
-You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number five, and a door to your east with the letter A. A door to your south seems to lead outside.
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 5, and a door to your east with the letter A. A door to your south seems to lead outside.
 west wean5300
 east dohertyawest
 south outsidelaprima
@@ -515,20 +515,53 @@ down wean8stairsa2
 NOTE confirm that all doors in A2 have numbers written on them, confirm lettering of stairwells
 
 murderhallway Murder Hallway (Wean 4600 Corridor)
-You're in a corridor south of the lobby, deep under the mall. You get a foreboding feeling from the concrete-brick walls.  A sign points north toward an "area of refuge", a push-door to a staircase is to your west, and a fork splits off to the east.
-north murderhallwayterminus
+You're in a corridor south of the lobby, deep under the mall. You get a foreboding feeling from the concrete-brick walls.  A sign points south toward an "area of refuge", a push-door to a staircase is to your west, and a fork splits off to the east.
+south murderhallwayterminus
 east murderhallway4700
 west wean4stairsc1
-south wean4south
+north wean4south
 
 murderhallwayterminus Murder Hallway (Wean 4600 Corridor)
 You're further down in a corridor deep under the mall. A push-door to a staircase is to your west.
-south murderhallway
+north murderhallway
 west wean4stairsc2
 
 murderhallway4700 Murder Hallway (Wean 4700 Corridor)
 You're in a loop just off of the main murder hallway. The corridor runs north-south.
-north murderhallwayterminus
-south murderhallway
+south murderhallwayterminus
+north murderhallway
 west murderhallway
 east "You push against an office door, but it's securely locked."
+
+wean1300 Wean 1300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean1north
+north wean1stairsa2
+
+wean2300 Wean 2300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean2north
+north wean2stairsa2
+
+wean3300 Wean 3300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean3north
+north wean3stairsa2
+
+wean6300 Wean 6300 Corridor
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of doors leads to Doherty Hall.
+west wean6north
+east liminal6
+north wean6stairsa2
+
+wean7300 Wean 7300 Corridor
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of doors leads to Doherty Hall.
+west wean7north
+east liminal7
+north wean7stairsa2
+
+wean8300 Wean 8300 Corridor
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of doors leads to Doherty Hall.
+west wean8north
+east liminal8
+north wean8stairsa2
