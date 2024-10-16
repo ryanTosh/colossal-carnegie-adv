@@ -512,7 +512,6 @@ wean9stairsa2 Wean 9 Stairwell A2
 A door with a large 9 is to your south. You notice the stairwell has changed dimensions slightly, the roof is sloped, and graffiti written in pencil and permanent marker covers the walls. You can go down.
 south "The door is locked."
 down wean8stairsa2
-
 NOTE confirm that all doors in A2 have numbers written on them, confirm lettering of stairwells
 
 murderhallway Murder Hallway (Wean 4600 Corridor)
