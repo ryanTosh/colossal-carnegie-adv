@@ -100,7 +100,7 @@ west dohertyjungle "You make your way down a staircase, which descends into a de
 thecutnorth The Cut North
 You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is a sidewalk outside the University Center.
 north walkingtothesky
-south thefence
+south thecutsouth
 west purnell
 east ucsidewalk
 
@@ -115,7 +115,7 @@ up "You too try to walk up the pole, but find it far too slippery." NOTE magnet 
 forbescut Forbes Ave
 You stand on the sidewalk along Forbes Avenue. Morewood Avenue is to your north, and the Cut is to your south.
 north morewoodsouth
-south thecut
+south walkingtothesky
 east forbesbeeler
 west forbestepperquad
 
@@ -124,13 +124,13 @@ You stand on the sidewalk along Forbes Avenue. The Tepper Quad is to your north,
 north tepperquad
 south westquad
 east forbescut
-west forbestepper
+west forbescoulter
 
-forbestepper Forbes Ave
-You stand on the sidewalk along Forbes Avenue. The Tepper School of Business is to your north, and Hamburg Hall is to your south. You see more of campus to the east.
+forbescoulter Forbes Ave
+You stand on the sidewalk along Forbes Avenue. The welcome center is to your north, and Hamburg Hall is to your south. You see more of campus to the east.
 north coulterwc
 south hamburg
-east forbescyert
+east forbestepperquad
 west forbesoverneville
 
 morewoodsouth Morewood Ave
@@ -161,15 +161,21 @@ east "Construction blocks your path."
 
 morewoodnorth Morewood Ave
 You stand on the sidewalk along Morewood Avenue, on a hill which descends to the north. A busy street is to the south.
-north ellsworth
+north morewoodellsworth
 west ellsworth
 south morewoodfifth
 
-ellsworth Ellsworth Ave
-You decide to turn west onto Ellsworth Avenue.
-west clyde
+morewoodellsworth Morewood Ave & Ellsworth Ave
+You stand at the intersection of Morewood Avenue and Ellsworth Avenue, a quiet suburban street running to the west. You see a busy street up a hill to your south.
+east "Construction blocks your path."
+west ellsworth
 south morewoodnorth
+
+ellsworth Ellsworth Ave
+You stand on the sidewalk on a quiet suburban street, which runs east-west. Clyde Street branches off to your south.
+west nevilleellsworth
 east morewoodnorth
+south clyde
 
 clyde West of Clyde House
 You find yourself outside Clyde House, a small brick building overshadowed by Cathedral Mansions.
@@ -208,10 +214,6 @@ east behindclyde NOTE window
 west clydelaundry
 up NOTE unknown
 down NOTE unknown
-
-fifthclyde
-NOTE unfinished
-north northclyde
 
 steveralley Stever Alley
 You're in an alley on the southern side of Stever House. A door to your north is propped open, and the alley runs east-west.
@@ -286,9 +288,11 @@ down wean4south
 
 wean5north Wean 5 Lobby North
 Stairs go up and down. A wall is covered in posters, including one advertising "KGBuggy" in the "Kage", a mysterious location under Stever House. Hallways go in various directions.
-south laprima
+south wean5south
 west wean5200
 east wean5300
+up wean6north
+down wean4north
 
 wean5100 Wean 5100 Corridor
 You're in a corridor west of the lobby. A short hallway cuts through to the 5200 corridor to your north.
@@ -344,6 +348,8 @@ south murderhallway
 north wean4north
 east sorrels
 west wean4west
+up wean5south
+down wean3south
 
 wean4west Wean 4 Lobby West
 The 4100 corridor is to your west, and Scott Hall is to your south.
@@ -416,10 +422,10 @@ east doherty2
 west doherty2west
 
 cfaparkinglot CFA Parking Lot
-You're in a large flat space, with the CFA building to your north. You see greenery to the west, and a road continues off to the east.
-north cfabuilding
-east thefence
-west mmsttechst
+You're in a large flat space, with the CFA building to your south. You see greenery to the west, and a road continues off to the east.
+south cfabuilding
+west thefence
+east mmsttechst
 
 mmsttechst Margaret Morrison Street & Tech Street
 You're at the intersection of two streets. The CFA parking lot is to your west, Margaret Morrison Carnegie Hall is to your north, and Posner Hall is to the south. Further east is the intersection between Margaret Morrison and Skibo.
@@ -565,3 +571,37 @@ You're in an uninteresting corridor east of the lobby. Further to your east, a p
 west wean8north
 east liminal8
 north wean8stairsa2
+
+nevilleellsworth Neville St & Ellsworth Ave
+You're at the intersection of Neville Street and Ellsworth Avenue. Ellsworth is to your east, and west campus is far downhill to your south, past Fifth Avenue.
+east ellsworth
+north "The sidewalk is damaged to the north."
+south fifthneville
+
+fifthneville Fifth Ave & Neville St
+You're at the intersection of Fifth Avenue and Neville Street. Rez on Fifth is to your east, and west campus is far downhill to your south.
+east rezonfifth
+north nevilleellsworth
+south northneville
+
+fiftheast Fifth Ave
+You stand on the sidewalk along Fifth Avenue, a busy street which runs east-west.
+east morewoodfifth
+west fifthclyde
+south morewoodparking "You cut through the parking lot of the WQED building."
+
+fifthclyde Fifth & Clyde
+You're standing in the shadow of the Fifth & Clyde residence hall. Fifth Avenue runs east-west, and Clyde House is to your north.
+north northclyde
+east fiftheast
+west rezonfifth
+
+rezonfifth Residence on Fifth
+You're standing outside Rez on Fifth, a blocky brick building. Fifth Avenue runs east-west.
+east fifthclyde
+west fifthneville
+
+northneville Neville St
+You stand on the sidewalk along Neville Street, which descends sharply downhill to the south. You see railroad tracks and the tower of Hamerschlag Hall in that direction.
+south nevillegarage
+north fifthneville

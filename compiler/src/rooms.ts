@@ -55,7 +55,7 @@ export function parseRooms(roomsSrc: string): { [id: string]: Room } {
 
                     dirs[words[0]] = {
                         goto: parsed[1],
-                        say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
+                        say: parsed[2] ? parsed[2].slice(1, -1).replace(/""/g, "\"") : undefined,
 
                         nouns: [words[0]],
 
