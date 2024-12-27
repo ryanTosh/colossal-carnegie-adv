@@ -1,16 +1,17 @@
 import type { Dir, Room } from "../../ciff-types/room.d.ts";
 
-export function parseRooms(roomsSrc: string): { [id: string]: Room } {
+export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<string>): { [id: string]: Room } {
+    const nsString = namespace.map(n => n + ".").join("");
     const rooms: { [id: string]: Room } = {};
 
     for (const roomSrc of roomsSrc.replace(/\r/g, "").split("\n\n")) {
         const rows = roomSrc.split("\n");
 
-        const id = rows[0].split(" ")[0];
+        const id = nsString + rows[0].split(" ")[0];
         const short = rows[0].split(" ").slice(1).join(" ");
         const printout = rows[1];
 
-        if (id in rooms) {
+        if (id in rooms || usedIds.has(id)) {
             throw "Duplicate room ID '" + id + "'";
         }
 

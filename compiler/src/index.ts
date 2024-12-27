@@ -4,6 +4,8 @@ import { parseRooms } from "./rooms.js";
 import type { Prog } from "../../ciff-types/prog.js";
 import { validateProg } from "./validate.js";
 import { parseItems } from "./items.js";
+import { Room } from "../../ciff-types/room.js";
+import { Item } from "../../ciff-types/item.js";
 
 if (process.argv.length < 3) {
     console.error("ciff-compile: missing prog operand");
@@ -13,21 +15,53 @@ if (process.argv.length < 3) {
 
 const progDir = process.argv[2];
 
-const initialPrintout = (await fs.readFile(progDir + "/initialPrintout", "utf-8")).replace(/\r/g, "").replace(/\n+$/g, "");
+const initialState = (await fs.readFile(progDir + "/initialState", "utf-8")).replace(/\r/g, "");
 
-const roomsSrc = await fs.readFile(progDir + "/rooms", "utf-8");
+async function parseRoomsTree(path: string, namespace: string[], usedIds: Set<string>): Promise<{ [id: string]: Room }> {
+    const stat = await fs.stat(path);
 
-const rooms = parseRooms(roomsSrc);
+    if (stat.isDirectory()) {
+        let rooms = {};
 
-const itemsSrc = await fs.readFile(progDir + "/items", "utf-8");
+        for (const file of await fs.readdir(path)) {
+            rooms = {...rooms, ...parseRoomsTree(path + "/" + file, [...namespace, file], usedIds)};
+        }
 
-const items = parseItems(itemsSrc);
+        return rooms;
+    } else {
+        const roomsSrc = await fs.readFile(path, "utf-8");
+
+        return parseRooms(roomsSrc, namespace, usedIds);
+    }
+}
+
+const rooms = await parseRoomsTree(progDir + "/rooms", [], new Set());
+
+async function parseItemsTree(path: string, namespace: string[], usedIds: Set<string>): Promise<{ [id: string]: Item }> {
+    const stat = await fs.stat(path);
+
+    if (stat.isDirectory()) {
+        let items = {};
+
+        for (const file of await fs.readdir(path)) {
+            items = {...items, ...parseItemsTree(path + "/" + file, [...namespace, file], usedIds)};
+        }
+
+        return items;
+    } else {
+        const itemsSrc = await fs.readFile(path, "utf-8");
+
+        return parseItems(itemsSrc, namespace, usedIds);
+    }
+}
+
+const items = await parseItemsTree(progDir + "/items", [], new Set());
 
 const prog: Prog = {
-    initialPrintout,
+    initialPrintout: initialState.split("\n\n").slice(1).join("\n\n"),
 
     rooms,
-    startingRoom: roomsSrc.split("\n")[0].split(" ")[0],
+    startingRoom: initialState.split("\n")[0],
 
     items
 };

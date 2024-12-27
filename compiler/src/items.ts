@@ -1,18 +1,19 @@
 import type { Item } from "../../ciff-types/item";
 
-export function parseItems(itemsSrc: string): { [id: string]: Item } {
+export function parseItems(itemsSrc: string, namespace: string[], usedIds: Set<string>): { [id: string]: Item } {
+    const nsString = namespace.map(n => n + ".").join("");
     const items: { [id: string]: Item } = {};
 
     for (const itemSrc of itemsSrc.replace(/\r/g, "").split("\n\n")) {
         const rows = itemSrc.split("\n");
 
-        const id = rows[0].split(" ")[0];
+        const id = nsString + rows[0].split(" ")[0];
         const short = rows[0].split(" ").slice(1).join(" ");
         const inspect = rows[1];
 
         const nouns = rows[2].split(",").map(n => n.trim());
 
-        if (id in items) {
+        if (id in items || usedIds.has(id)) {
             throw "Duplicate item ID '" + id + "'";
         }
 
