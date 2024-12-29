@@ -1,0 +1,34 @@
+3 Wean 3 Stairwell B
+A door with a large 3 is to your north. You can go up.
+north wean.3.400
+up wean.stairs.b.4
+
+4 Wean 4 Stairwell B
+A door with a large 4 is to your north. You can go up or down.
+north wean.4.400
+up wean.stairs.b.5
+down wean.stairs.b.3
+
+5 Wean 5 Stairwell B
+A door with a large 5 is to your north. You can go up or down. A door to your south seems to go outside.
+north wean.5.400
+up wean.stairs.b.6
+down wean.stairs.b.4
+south outsidelaprima
+
+6 Wean 6 Stairwell B
+A door with a large 6 is to your north. You can go up or down.
+north wean.6.400
+up wean.stairs.b.7
+down wean.stairs.b.5
+
+7 Wean 7 Stairwell B
+A door with a large 7 is to your north. You can go up or down.
+north wean.7.400
+up wean.stairs.b.8
+down wean.stairs.b.6
+
+8 Wean 8 Stairwell B
+A door with a large 8 is to your north. You can go down.
+north wean.8.400
+down wean.stairs.b.7

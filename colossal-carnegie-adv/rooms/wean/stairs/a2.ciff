@@ -1,0 +1,58 @@
+1 Wean 1 Stairwell A2
+A door with a large 1 is to your south. You can go up.
+south wean.1.300
+up wean.stairs.a2.1.5
+
+1.5 Wean 1.5 Stairwell A2
+A door to the loading dock is to your north. You can go up or down.
+north schlagdriveloadingdock
+up wean.stairs.a2.2
+down wean.stairs.a2.1
+
+2 Wean 2 Stairwell A2
+A door with a large 2 is to your south. You can go up or down.
+south wean.2.300
+up wean.stairs.a2.3
+down wean.stairs.a2.1.5
+
+3 Wean 3 Stairwell A2
+A door with a large 3 is to your south. You can go up or down.
+south wean.3.300
+up wean.stairs.a2.4
+down wean.stairs.a2.2
+
+4 Wean 4 Stairwell A2
+A door with a large 4 is to your south. You can go up or down.
+south wean.4.300
+up wean.stairs.a2.5
+down wean.stairs.a2.3
+
+5 Wean 5 Stairwell A2
+A door with a large 5 is to your south. You can go up or down.
+south wean.5.300
+up wean.stairs.a2.6
+down wean.stairs.a2.4
+
+6 Wean 6 Stairwell A2
+A door with a large 6 is to your south. You can go up or down.
+south wean.6.300
+up wean.stairs.a2.7
+down wean.stairs.a2.5
+
+7 Wean 7 Stairwell A2
+A door with a large 7 is to your south. You can go up or down.
+south wean.7.300
+up wean.stairs.a2.8
+down wean.stairs.a2.6
+
+8 Wean 8 Stairwell A2
+A door with a large 8 is to your south. You can go up or down.
+south wean.8.300
+up wean.stairs.a2.9
+down wean.stairs.a2.7
+
+9 Wean 9 Stairwell A2
+A door with a large 9 is to your south. You notice the stairwell has changed dimensions slightly, the roof is sloped, and graffiti written in pencil and permanent marker covers the walls. You can go down.
+south "The door is locked."
+down wean.stairs.a2.8
+NOTE confirm that all doors in A2 have numbers written on them, confirm lettering of stairwells

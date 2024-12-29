@@ -1,0 +1,68 @@
+north Wean 4 Lobby North
+Stairs go up and down. A bridge to your north crosses to Newell-Simon Hall, and hallways go in various directions.
+west "The door to the 4200 corridor is locked."
+east wean.4.300
+south wean.4.south
+north nshbridge
+up wean.5.north
+down wean.3.north
+
+south Wean 4 Lobby South
+Hallways go in various directions, including one partiuclarly ominous corridor to your south. Sorrels Library is to your east.
+south wean.4.murderhallway
+north wean.4.north
+east wean.4.sorrels
+west scottfromwean4lobby "You try the door to the 4100 corridor, and find it to be locked. You walk down a few steps to your south, and find yourself in Scott Hall, with corridors to your south and west."
+up wean.5.south
+down wean.3.south
+
+100 Wean 4100 Corridor
+You're in an uninteresting corridor west of the lobby, with freshly painted white walls and a disconcertingly high ceiling. A door to Scott Hall is further west, and a hallway to your north cuts through to the 4200 corridor.
+north wean.4.200
+south wean.stairs.d.4
+east wean.4.south
+west scottfromwean4
+
+200 Wean 4200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 4100 hallway further to your west.
+west wean.4.100
+east wean.4.north
+
+300 Wean 4300 Corridor
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of doors leads to Doherty Hall.
+north wean.stairs.a2.4
+west wean.4.north
+east wean.4.dhside
+
+400 Wean 4400 Corridor
+You're in a small section of corridor, which quickly dead-ends into Sorrels Library.
+west "Your path is blocked by a locked door to Sorrels Library."
+east wean.4.dhside
+south wean.stairs.b.4
+
+dhside Wean 4 Doherty-side Corridor
+You're in a short stretch of hallway, linking the 4300 and 4400 corridors, to your north and south respectively. To your east, a pair of double doors takes you in the direction of Doherty Hall.
+NOTE implement freight elevator
+north wean.4.300
+south wean.4.400
+east liminal.ramp
+
+murderhallway Murder Hallway (Wean 4600 Corridor)
+You're in a corridor south of the lobby, deep under the mall. You get a foreboding feeling from the concrete-brick walls. A sign points further south toward an "area of refuge", a push-door to a staircase is to your west, and a fork splits off to the east.
+south wean.4.murderhallwayterminus
+east wean.4.murderhallway700
+west wean.stairs.c1.4
+north wean.4.south
+
+murderhallwayterminus Murder Hallway (Wean 4600 Corridor)
+You're further down in a corridor south of the lobby, deep under the mall. A push-door to a staircase is to your west.
+north wean.4.murderhallway
+west wean.stairs.c2.4
+
+murderhallway700 Murder Hallway (Wean 4700 Corridor)
+You're in a loop just off of the main murder hallway. The corridor runs north-south.
+south wean.4.murderhallwayterminus
+north wean.4.murderhallway
+west wean.4.murderhallway
+east "You push against an office door, but it's securely locked."
+NOTE implement 4703

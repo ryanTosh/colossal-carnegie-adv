@@ -1,0 +1,78 @@
+north Wean 3 Lobby North
+Stairs go up and down. Hallways go in various directions.
+west wean.3.200
+east wean.3.300
+south wean.3.south
+up wean.4.north
+down wean.2.north
+
+south Wean 3 Lobby South
+Hallways go in various directions, including to your south.
+south wean.3.500
+north wean.3.north
+east wean.3.400
+west wean.3.100
+up wean.4.south
+down wean.2.south
+
+100 Wean 3100 Corridor
+You're in an uninteresting corridor west of the lobby, with strangely white walls. A hallway to your north cuts through to the 3200 corridor.
+north wean.3.200
+south wean.stairs.d.3
+east wean.3.south
+
+200 Wean 3200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 3100 hallway further to your west.
+west wean.3.100
+east wean.3.north
+
+300 Wean 3300 Corridor
+You're in an uninteresting corridor east of the lobby. Further to your east, a pair of glass doors leads to a balcony outside.
+north wean.stairs.a2.3
+west wean.3.north
+east wean.3.300east
+
+400 Wean 3400 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.3.south
+south wean.stairs.b.3
+
+300east Wean 3300 Corridor
+You're at the far east end of a hallway. A pair of glass doors to your east lead out to a balcony.
+NOTE implement freight elevator
+west wean.3.300
+east wean.3.balcony
+
+balcony Wooden Balcony
+You're on a wooden balcony outside Wean 3, which overlooks Hamerschlag Drive to your north, and a small, unkempt garden to your south. A pair of glass doors lead inside to your west.
+west wean.3.300east
+NOTE implement drop down from north or south side
+
+500 Wean 3500 Corridor
+You're in a short L-shaped corridor south of the lobby. Further south is the 3600 corridor, and to your east is the 3700 corridor.
+south wean.3.600
+east wean.3.700
+north wean.3.south
+
+600 Wean 3600 Corridor
+You're in the northern half of a corridor, deep under the mall. A pair of wooden swinging doors to your south continues further into the 3600 corridor, while a pair of double doors to your north go to the 3500 corridor. A push-door to a staircase is to your west.
+south wean.3.600terminus
+north wean.3.500
+west wean.stairs.c1.3
+NOTE add free stuff bin
+
+600terminus Wean 3600 Corridor
+You're in the southern half of a corridor, deep under the mall. A pair of wooden swinging doors is to your north.
+north wean.3.600
+west wean.3.spookycloset NOTE check for steam tunnel entrance, also see if anything is east
+
+700 Wean 3700 Corridor
+You're in a strange corridor. The 3500 corridor is to your west, and further east, it joins with the 3400 hallway.
+west wean.3.500
+east wean.3.400
+
+spookycloset Spooky Closet
+You're in a small, pitch black room. To your north is a cordoned-off restroom and a janitor's closet. The door to the east has a large sign indicating the hallway behind it is under video surveillance, and a push-door to a staircase is to your west.
+north spookyjanitor
+west wean.stairs.c2.3
+east "The door is locked."

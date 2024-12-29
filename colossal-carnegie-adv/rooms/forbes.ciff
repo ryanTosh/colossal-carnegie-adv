@@ -1,0 +1,20 @@
+cut Forbes Ave
+You stand on the sidewalk along Forbes Avenue. Morewood Avenue is to your north, and the Cut is to your south.
+north morewood.south
+south walkingtothesky
+east forbes.beeler
+west forbes.tepperquad
+
+tepperquad Forbes Ave
+You stand on the sidewalk along Forbes Avenue. The Tepper Quad is to your north, and a path winds to the south.
+north tepperquad
+south westquad
+east forbes.cut
+west forbes.coulter
+
+coulter Forbes Ave
+You stand on the sidewalk along Forbes Avenue. The welcome center is to your north, and Hamburg Hall is to your south. You see more of campus to the east.
+north coulterwc
+south hamburg
+east forbes.tepperquad
+west forbes.overneville

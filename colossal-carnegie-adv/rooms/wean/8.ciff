@@ -1,0 +1,49 @@
+north Wean 8 Lobby North
+Stairs go down. Hallways go in various directions.
+south wean.8.south
+west wean.8.200
+east wean.8.300
+down wean.7.north
+
+south Wean 8 Lobby South
+Hallways go in various directions.
+north wean.8.north
+east wean.8.400
+west wean.8.100
+down wean.7.south
+
+100 Wean 8100 Corridor
+You're in an uninteresting corridor west of the lobby. A short hallway cuts through to the 8200 corridor to your north.
+north wean.8.200
+south wean.stairs.d.8
+east wean.8.south
+
+200 Wean 8200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 8100 hallway further to your west.
+east wean.8.north
+west wean.8.100
+
+300 Wean 8300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.8.north
+east wean.8.dhside
+north wean.stairs.a2.8
+
+400 Wean 8400 Corridor
+You're in a corridor east of the lobby.
+west wean.8.south
+east wean.8.dhside
+south wean.stairs.b.8
+north wean.8.427
+
+427 Wean 8427
+You're in a small classroom, which doubles as the judges' room for Capture the Flag with Stuff. The door to the hallway is to your south.
+south wean.8.400
+item redpotion
+
+dhside Wean 8 Doherty-side Corridor
+You're in a short stretch of hallway, linking the 8300 and 8400 corridors, to your north and south respectively. To your east, a pair of double doors takes you in the direction of Doherty Hall.
+NOTE implement freight elevator
+north wean.8.300
+south wean.8.400
+east liminal.8

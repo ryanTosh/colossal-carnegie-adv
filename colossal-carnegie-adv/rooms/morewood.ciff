@@ -1,0 +1,37 @@
+south Morewood Ave
+You stand on the sidewalk along Morewood Avenue, which runs north-south. Morewood E-Tower and Morewood Gardens are to your west, and the Greek Quad is to your east.
+west morewoodgardens
+east greekquad
+north morewood.stever
+south forbescut
+
+stever Morewood Ave
+You stand on the sidewalk along Morewood Avenue, which runs north-south. Stever House is to your west.
+west steveralley
+north morewood.mudge
+south morewood.south
+
+mudge Morewood Ave
+You stand on the sidewalk along Morewood Avenue, which runs north-south. Mudge House is to your west. You see a busy street to the north.
+west mudge
+north morewood.fifth
+south morewood.stever
+
+fifth Morewood Ave & Fifth Ave
+You stand at the intersection of Morewood Avenue and Fifth Avenue. You see campus in the distance to the south, and a few residence halls to your west.
+north morewood.north
+south morewood.mudge
+west fiftheast
+east "Construction blocks your path."
+
+north Morewood Ave
+You stand on the sidewalk along Morewood Avenue, on a hill which descends to the north. A busy street is to the south.
+north morewood.ellsworth
+west ellsworth
+south morewoodfifth
+
+ellsworth Morewood Ave & Ellsworth Ave
+You stand at the intersection of Morewood Avenue and Ellsworth Avenue, a quiet suburban street running to the west. You see a busy street up a hill to your south.
+east "Construction blocks your path."
+west ellsworth
+south morewood.north

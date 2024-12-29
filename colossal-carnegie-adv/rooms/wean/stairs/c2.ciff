@@ -1,0 +1,10 @@
+3 Wean 3 Stairwell C2
+A door with a large 3 is to your east. You can go up.
+up wean.stairs.c2.4
+east wean.3.spookycloset
+
+4 Wean 4 Stairwell C2
+A door with a large 4 is to your east. You can go down.
+down wean.stairs.c2.3
+east wean.4.murderhallwayterminus
+west scottfromc2

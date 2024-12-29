@@ -1,0 +1,54 @@
+1 Doherty Hall
+You're inside Doherty Hall. A door to your east leads outside, and the hall continues west.
+east thefence
+west doherty.1.stairs
+south doherty.warmstairs.1
+north doherty.1.cheme
+
+1.stairs Doherty Hall
+You're inside Doherty Hall. A staircase is next to you, going both up and down. A door to the north seems to open into a larger space.
+north doherty1
+up doherty2
+down dohertyastairs
+
+1.west Doherty Hall
+You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead up and down.
+south mall
+up doherty.2.west
+down doherty.a.west
+
+2 Doherty Hall
+You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a long corridor to your west, and a lecture hall to your south.
+up doherty.3
+down doherty.1.stairs
+west doherty.2.bridge
+south doherty.2.2210
+
+2.bridge Doherty Hall
+You're inside Doherty Hall. Windows to your north overlook Gates and Purnell, and ones to your south overlook the mall and Baker. The corridor you're in runs east-west.
+east doherty.2
+west doherty.2.west
+
+2.west Doherty Hall
+You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a pair of double doors to the west, a lecture hall to your south, and a long corridor to your east.
+west liminal7
+south dh2315
+east doherty.2.bridge
+up doherty.3.west
+down doherty.1.west
+
+a.stairs Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and another leads down to pair of red double doors with tall, narrow windows. A door to your north seems to go outside, and a hallway continues west.
+west doherty.a.west
+north mall
+up doherty.1.stairs
+down doherty.b.chemehall
+NOTE add fairfax vending machine!
+
+a.west Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your north, and a hallway continues east.
+south doherty.a.physics
+west liminalground
+east doherty.a.stairs
+up doherty.1.west
+down doherty.b.arthall

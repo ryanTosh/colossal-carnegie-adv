@@ -1,0 +1,52 @@
+north Wean 7 Lobby North
+Stairs go up and down. Hallways go in various directions.
+south wean.7.south
+west wean.7.200
+east wean.7.300
+up wean.8.north
+down wean.6.north
+
+south Wean 7 Lobby South
+To your south, a pair of double doors take you to inside the turtle head. Hallways go in various directions.
+north wean.7.north
+east wean.7.400
+west wean.7.100
+up wean.8.south
+down wean.6.south
+south wean.7.insideturtle
+
+100 Wean 7100 Corridor
+You're in an uninteresting corridor west of the lobby. A short hallway cuts through to the 7200 corridor to your north.
+north wean.7.200
+south wean.stairs.d.7
+east wean.7.south
+
+200 Wean 7200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 7100 hallway further to your west.
+east wean.7.north
+west wean.7.100
+
+300 Wean 7300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.7.north
+east wean.7.dhside
+north wean.stairs.a2.7
+
+400 Wean 7400 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.7.south
+east wean.7.dhside
+south wean.stairs.b.7
+
+dhside Wean 7 Doherty-side Corridor
+You're in a short stretch of hallway, linking the 7300 and 7400 corridors, to your north and south respectively. To your east, a pair of double doors takes you in the direction of Doherty Hall.
+NOTE implement freight elevator
+north wean.7.300
+south wean.7.400
+east liminal.7
+
+insideturtle Inside the Turtle Head
+You find yourself in a wood-panelled lecture hall of great size. To your west is an emergency exit door, and the double doors back to Wean 7 are behind you to your norh.
+north wean.7.south
+west outsidelaprima "Outside the door, stairs take you down to the mall."
+facing south

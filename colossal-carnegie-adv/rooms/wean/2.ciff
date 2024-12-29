@@ -1,0 +1,26 @@
+north Wean 2 Lobby North
+Stairs go up and down. A door to your west is painted with "AUTHORIZED PERSONNEL ONLY", and has a large klaxon above it. A hallway runs to your east.
+south wean.2.south
+west "The door is securely locked." NOTE implement the rainbow room
+east wean.2.300
+up wean.3.north
+down wean.1.lobby
+
+south Wean 2 Lobby South
+An assortment of vending machines lines the wall to your south.
+NOTE implement the wean 2 vending machines
+north wean.2.north
+up wean.3.south
+down wean.1.lobby
+
+300 Wean 2300 Corridor
+You're in an uninteresting corridor east of the lobby. A door at the far end of the hallway stands ajar.
+west wean.2.north
+north wean.stairs.a2.2
+east wean.2.340
+
+340 Wean 2340 Landing
+You stand on a landing, looking over a large room packed with crates and ancient computer equipment. A door to your west is ajar, and stairs lead down.
+west wean.2.300
+down wean.1.340
+east wean.1.340

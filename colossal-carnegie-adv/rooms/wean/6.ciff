@@ -1,0 +1,63 @@
+north Wean 6 Lobby North
+Stairs go up and down. Hallways go in various directions.
+south wean.6.south
+west wean.6.200
+east wean.6.300
+up wean.7.north
+down wean.5.north
+
+south Wean 6 Lobby South
+If you were to walk to the south, you could look down at La Prima below you. Hallways go in various directions.
+north wean.6.north
+east wean.6.400
+west wean.6.100
+up wean.7.south
+down wean.5.south
+south wean.6.balcony
+
+100 Wean 6100 Corridor
+You're in an uninteresting corridor west of the lobby. A short hallway cuts through to the 6200 corridor to your north. To your west, the hallway opens into Scott Hall.
+north wean.6.200
+south wean.stairs.d.6
+east wean.6.south
+west scottfromwean6
+
+200 Wean 6200 Corridor
+You're in an uninteresting corridor west of the lobby, which joins with the 6100 hallway further to your west.
+east wean.6.north
+west wean.6.100
+
+300 Wean 6300 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.6.north
+east wean.6.dhside
+north wean.stairs.a2.6
+
+400 Wean 6400 Corridor
+You're in an uninteresting corridor east of the lobby.
+west wean.6.south
+east wean.6.dhside
+south wean.stairs.b.6
+
+dhside Wean 6 Doherty-side Corridor
+You're in a short stretch of hallway, linking the 6300 and 6400 corridors, to your north and south respectively. To your east, a pair of double doors takes you in the direction of Doherty Hall.
+NOTE implement freight elevator
+north wean.6.300
+south wean.6.400
+east liminal.6
+
+balcony Wean 6 Balcony
+You're standing in front of a parapet overlooking La Prima. On the other side, copies of a magazine are affixed to the concrete, hanging above the coffee shop. Behind you, hallways go in various directions.
+north wean.6.north
+east wean.6.400
+west wean.6.100
+up wean.6.parapet
+down "Surely you don't want La Prima so badly as to justify falling 20 feet for it."
+south "Surely you don't want La Prima so badly as to justify falling 20 feet for it."
+facing south
+
+parapet Balancing above La Prima
+You're standing on a parapet about 8 inches wide, balancing above La Prima to your south, and a safe hop down to Wean 6 to your north.
+north wean.6.balcony
+south laprima "You land on a table, sending coffee flying." NOTE add chance of dying
+down "You have two options, and you should probably specify which."

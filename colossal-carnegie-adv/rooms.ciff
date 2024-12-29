@@ -1,0 +1,265 @@
+mall The Mall
+You are standing in front of an open field, facing west toward Hamerschlag Hall. Doherty Hall stands to your north, and Baker Hall to your south.
+west westmall
+north doherty.1.west
+south baker
+east cfalawn
+item pamphlet
+itembrief pamphlet A pamphlet is lying on the ground.
+facing west
+
+westmall West Mall
+You stand facing west at the base of a grassy hill, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
+south porter
+north laprima
+east mall
+facing west
+door west hamerschlag.1.lobby
+doorsay IfClosed west "The door to Hamerschlag Hall seems to be locked."
+
+outsidelaprima La Prima Patio
+You're outside an imposing brutalist structure, in an outdoor spot on the Mall overlooking Baker-Porter to your south. You see the counter of La Prima through glass doors to your north.
+south outsidehh
+north laprima
+
+laprima La Prima
+You're in a coffee shop, which would ordinarily be bustling with people. The counter is to the west. You see elevators to your north, and the Mall to your south through a pair of glass doors.
+north wean.5.south
+south outsidelaprima
+west laprimacounter
+
+laprimacounter La Prima Counter
+You stand up against the counter to La Prima. A large parcel on a wooden pallet blocks your path to the north.
+north "You try to push your way through, but the box is too large."
+east laprima
+south outsidelaprima
+west "You try to climb over the counter, but are blocked by strategically placed coffee-brewing devices."
+
+cfalawn CFA Lawn
+You're in the middle of a field, with sparse trees around its edges. You see the Mall to your west, punctuated by the tower of Hamerschlag Hall, and opposite the College of Fine Arts to your east. The Fence and the Cut are to your north, and Hunt Library is to your south.
+west mall
+east cfabuilding
+north thefence
+south outsidehunt
+
+outsidehunt Outside Hunt Library
+In front of you, just to your south, stands Hunt Library, with its facade of glass and steel. A sidewalk to your east runs alongside the College of Fine Arts, and the CFA Lawn is to your north.
+south hunt1
+east hunttopeace
+north cfalawn
+west baker
+
+thefence The Fence
+You behold the Fence, which is painted with three mysterious letters: "KGB". Lawns sprawl out in all directions, except west, where Doherty Hall stands.
+west doherty1
+north thecutsouth
+south cfalawn
+east cfaparkinglot
+
+thecutsouth The Cut South
+Sidewalks criss-cross the lawn you're standing on. The Fence is to your south, and the Cut continues to the north.
+north thecutnorth
+south thefence
+east tenniscourts
+west dohertyjungle "You make your way down a staircase, which descends into a dense forest."
+
+thecutnorth The Cut North
+You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is a sidewalk outside the University Center.
+north walkingtothesky
+south thecutsouth
+west purnell
+east ucsidewalk
+
+walkingtothesky Walking to the Sky
+You're on the north end of the Cut. You admire a tall steel pole rising into the sky, with statues walking up it, and after a second you realize the other admirers are statues as well. You wonder what Medusean beast was responsible for this. The University Center is to your east, and Forbes Avenue is just to your north.
+north forbescut
+south thecutnorth
+west warner
+east ucfromthecut
+up "You too try to walk up the pole, but find it far too slippery." NOTE magnet boots
+
+ellsworth Ellsworth Ave
+You stand on the sidewalk on a quiet suburban street, which runs east-west. Clyde Street branches off to your south.
+west nevilleellsworth
+east morewoodnorth
+south clyde
+
+clyde West of Clyde House
+You find yourself outside Clyde House, a small brick building overshadowed by Cathedral Mansions.
+north northclyde
+south southclyde
+east "You try the front door, but it's locked."
+west fifthclyde
+
+northclyde North of Clyde House
+You are facing the north side of a brick house. There is no door here, although there is a strange window below ground level, visible in a deep gutter.
+north cathedralmansions
+south "You try walking south, and fall into the hole. The window is too cloudy to see through, so you clamber out."
+west clyde
+east behindclyde
+
+behindclyde Behind Clyde House
+You are behind Clyde House. A questionably constructed wooden ramp leads up to a back door, next to a bike rack. In one corner of the house there is a small window which is slightly ajar. The Fifth and Clyde residence hall is to your south.
+north northclyde
+south southclyde
+east clydekitchen NOTE make sure window is opened
+west cathedralmansions
+NOTE bike rack
+
+southclyde South of Clyde House
+You are facing the south side of a brick house. There is no door here, and the windows are out of reach.
+north "The windows are out of reach."
+south fifthclyde
+east fiftheast
+west behindclyde
+
+clydekitchen Clyde House Kitchen
+You are in the kitchen of Clyde House. A passage leads to the west and a doorway to a larger space is to your north, through which you can see a grand staircase. A dark chimney leads down and to the east is a small window which is open.
+NOTE handle closing window, food on table
+north clydecommons
+east behindclyde NOTE window
+west clydelaundry
+up NOTE unknown
+down NOTE unknown
+
+steveralley Stever Alley
+You're in an alley on the southern side of Stever House. A door to your north is propped open, and the alley runs east-west.
+north steverbasement
+west morewoodparking
+east morewoodstever
+
+steverbasement Stever Basement
+You're in a cluttered basement, with pipes running along the ceiling. There are many doors on the wall to the east.
+west steverelevator
+east kage
+south steveralley
+north "Your path is blocked by boxes of clutter."
+NOTE up: use elevator?
+
+kage Kage
+You find yourself in the Kage, a concrete-walled storage room full of wood and rusty tools. You notice a grate on the wall to the south.
+item crowbar
+west steverbasement
+south "You cannot find a way to open the grate." NOTE screwdriver?
+NOTE south ciacage
+NOTE helpful note when trying to open grate with screwdriver
+
+ciacage CIA Cage
+You're in another concrete room, with a strong smell of spray paint. You feel you shouldn't be here.
+item sharpies
+north kage
+west steverbasement
+
+baker Baker Hall
+You're on the first floor of Baker Hall. A long corridor slopes downward to the west, toward Porter Hall. To your south is the Dietrich Success Center.
+east outsidehunt
+west bakertrapdoors
+north mall
+south dietrichadvisory
+
+dietrichadvisory Dietrich Success Center
+You find yourself in a welcoming office.
+item dscoffee
+itembrief dscoffee Nobody's around, but a cup of coffee on a desk is still steaming.
+NOTE some sort of item for advancement
+north baker
+
+bakertrapdoors Baker Hall Corridor
+You're midway through the sloping main hall of Baker. Porter Hall is to your west. You notice heavy iron trapdoors in the floor.
+north mall
+east baker
+west porter1
+door down bakersteamtnl
+doorkeyitem down crowbar
+
+porter1 Porter Hall
+You're on the first floor of Porter Hall. A stairway leads up and down.
+up porter2
+down porter
+
+porter Porter Hall
+You're on floor A of Porter Hall. A stairway leads up, and the mall is to your north.
+north outsidehh
+up porter1
+east "Your path is blocked by a strange door." NOTE add key
+west ansysa
+
+cfaparkinglot CFA Parking Lot
+You're in a large flat space, with the CFA building to your south. You see greenery to the west, and a road continues off to the east.
+south cfabuilding
+west thefence
+east mmsttechst
+
+mmsttechst Margaret Morrison Street & Tech Street
+You're at the intersection of two streets. The CFA parking lot is to your west, Margaret Morrison Carnegie Hall is to your north, and Posner Hall is to the south. Further east is the intersection between Margaret Morrison and Skibo.
+west cfaparkinglot
+east outsidehighmark
+north mmrotunda
+south posner
+
+outsidehighmark Margaret Morrison Street
+You stand on the sidewalk along Margaret Morrison Street. To your north is the Donner Ditch, and to your south is the Highmark Center.
+north donnerditch
+south highmark
+west mmsttechst
+east mmstskibo
+
+mmrotunda Outside Margaret Morrison Carnegie Hall
+You're inside a circle, made up by the walls of MMCH and a semicircle of white columns and zebra-striped arches. Above your head is a sexist quote. The door to the building is to your north.
+north mmch1
+south mmsttechst
+east outsidehighmark
+west cfaparkinglot
+
+dohertyjungle Wilderness
+You stand in a small grove of unmaintained forest. A sidewalk wanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
+east thecutsouth "You climb a wooden staircase, and find yourself in an open space."
+west schlagdriveloadingdock
+south dohertyccheme
+
+schlagdriveloadingdock Hamerschlag Drive Loading Dock
+Wean Hall and Doherty Hall tower over you to your north, where you spot an unlocked door into Wean Hall. To your south, a concrete staircase leads upward, between Newell-Simon and Gates.
+north wean1vestibule
+south westquad "You climb the concrete staircase."
+east dohertyjungle
+west hhloadingdock "You wander further down Hamerschlag Drive, crossing underneath Scott Hall."
+
+nevilleellsworth Neville St & Ellsworth Ave
+You're at the intersection of Neville Street and Ellsworth Avenue. Ellsworth is to your east, and west campus is far downhill to your south, past Fifth Avenue.
+east ellsworth
+north "The sidewalk is damaged to the north."
+south fifthneville
+
+fifthneville Fifth Ave & Neville St
+You're at the intersection of Fifth Avenue and Neville Street. Rez on Fifth is to your east, and west campus is far downhill to your south.
+east rezonfifth
+north nevilleellsworth
+south northneville
+
+fiftheast Fifth Ave
+You stand on the sidewalk along Fifth Avenue, a busy street which runs east-west.
+east morewoodfifth
+west fifthclyde
+south morewoodparking "You cut through the parking lot of the WQED building."
+
+fifthclyde Fifth & Clyde
+You're standing in the shadow of the Fifth & Clyde residence hall. Fifth Avenue runs east-west, and Clyde House is to your north.
+north northclyde
+east fiftheast
+west rezonfifth
+
+rezonfifth Residence on Fifth
+You're standing outside Rez on Fifth, a blocky brick building. Fifth Avenue runs east-west.
+east fifthclyde
+west fifthneville
+
+northneville Neville St
+You stand on the sidewalk along Neville Street, which descends sharply downhill to the south. You see railroad tracks and the tower of Hamerschlag Hall in that direction.
+south nevillegarage
+north fifthneville
+
+nshbridge Newell-Simon Bridge
+You feel air whoosh past you as you look several stories to the loading dock below you. They need to fix the air vents. Newell-Simon Hall is to your north, and Wean Hall is to your south.
+north newellsimon
+south wean.4.north
+west wean.4.vents

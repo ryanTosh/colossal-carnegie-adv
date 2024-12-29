@@ -1,0 +1,39 @@
+3 Wean 3 Stairwell D
+A door with a large 3 is to your north. You can go up.
+north wean.3.100
+up wean.stairs.d.4
+
+4 Wean 4 Stairwell D
+A door with a large 4 is to your north. You can go up or down.
+north wean.4.100
+up wean.stairs.d.5
+down wean.stairs.d.3
+
+5 Wean 5 Stairwell D
+A door with a large 5 is to your north. You can go up or down.
+north wean.5.100
+up wean.stairs.d.6
+down wean.stairs.d.4
+
+6 Wean 6 Stairwell D
+A door with a large 6 is to your north. You can go up or down.
+north wean.6.100
+up wean.stairs.d.7
+down wean.stairs.d.5
+
+7 Wean 7 Stairwell D
+A door with a large 7 is to your north. You can go up or down.
+north wean.7.100
+up wean.stairs.d.8
+down wean.stairs.d.6
+
+8 Wean 8 Stairwell D
+A door with a large 8 is to your north. You can go up or down.
+north wean.8.100
+up wean.stairs.d.9
+down wean.stairs.d.7
+
+9 Wean 9 Stairwell D
+A door with a large 9 is to your north. You can go down.
+down wean.stairs.d.8
+NOTE change desc since no 9 is visible

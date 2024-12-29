@@ -1,0 +1,73 @@
+north Wean 5 Lobby North
+Stairs go up and down. A wall is covered in posters, including one advertising "KGBuggy" in the "Kage", a mysterious location under Stever House. Hallways go in various directions.
+south wean.5.south
+west wean.5.200
+east wean.5.300
+up wean.6.north
+down wean.4.north
+
+south Wean 5 Lobby South
+La Prima is to your south, and hallways go in various directions.
+north wean.5.north
+south laprima
+east wean.5.400
+west wean.5.100
+up wean.6.south
+down wean.4.south
+
+100 Wean 5100 Corridor
+You're in a corridor west of the lobby, with freshly painted white walls. A short hallway cuts through to the 5200 corridor to your north. To your west, a pair of double doors continues to Scott Hall.
+north wean.5.200
+south wean.stairs.d.5
+east wean.5.south
+west scottfromwean5 NOTE fix name
+
+200 Wean 5200 Corridor
+You're in a corridor west of the lobby, which joins with the 5100 hallway further to your west. To your north and south are the Windows and Linux clusters, respectively.
+north wean.5.windowscluster
+south wean.5.linuxcluster
+east wean.5.north
+west wean.5.100
+
+300 Wean 5300 Corridor
+You're in an uninteresting corridor east of the lobby. A sign points to Doherty A to your east. A bulletin board to your south displays skibidi pride flags.
+west wean.5.north
+east wean.5.dhside
+north wean.stairs.a2.5
+item wean5bulletinboard
+item skibidimsmflag
+item skibidilesbianflag
+item skibiditransflag
+item skibidiagenderflag
+item estrogencookiesad
+
+400 Wean 5400 Corridor
+You're in a corridor east of the lobby, which oversees Sorrels Library to the south. A sign points to Doherty A to your east.
+west wean.5.south
+east wean.5.dhside
+south "Surely you can find a way to Sorrels that doesn't involve falling such a distance."
+north wean.5.403
+
+dhside Wean 5 Doherty-side Corridor
+You're in a short stretch of hallway, linking the 5300 and 5400 corridors, to your north and south respectively. To your east, a pair of double doors takes you in the direction of Doherty Hall.
+NOTE implement freight elevator
+north wean.5.300
+south wean.5.400
+east liminal.ground
+
+403 Wean 5403
+You're in a room with doors to the south. "KGB Trivia Night" is written on the blackboard, and a strange humming noise is present.
+south wean.5.400
+NOTE add plainfin midshipman
+
+windowscluster Cluster
+You find yourself in Cluster, a room full of Windows computers, whiteboards, and green chairs. Doors to the hallway are to your south.
+south wean.5.200
+item gong
+itembrief gong In one corner of the room, looking out of place, is a large gong.
+
+linuxcluster Linux Cluster
+You find yourself in a warped mockery of Cluster, which is full of Linux computers, whiteboards, and green chairs. Doors to the hallway are to your north.
+north wean.5.200
+item stripedsocks
+itembrief stripedsocks In one corner of the room, as you would expect, is a pair of slightly worn striped socks.

@@ -1,0 +1,17 @@
+lobby Wean 1 Lobby
+A set of stairs leads upward. A hallway runs to your east, and a pair of doors lead outside to your north.
+north schlagdriveloadingdock
+east wean.1.300
+up wean.2.north
+
+300 Wean 1300
+You're in an uninteresting corridor east of the lobby.
+west wean.1.lobby
+north wean.stairs.a2.1
+
+340 Wean 2340
+You stand in a room with a high ceiling, filled to the brim with boxes, crates, and ancient computer equipment. There is a door to your north, and to your west, there is a door at the base of several steps down, and another at a landing at the top of a short flight of stairs.
+north schlagdriveloadingdock
+west wean.1.300
+down wean.1.300 "You walk down the steps and out the door."
+up wean.2.340
