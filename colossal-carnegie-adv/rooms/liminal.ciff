@@ -1,5 +1,6 @@
 6 Liminal Space
-You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 6, and stairs lead upward.
+You're in a strange space with concrete walls and windows on two sides. A door to your west is painted with the number 6, and a door to your east with the number 1. Stairs lead upward.
+east doherty.1.west
 west wean.6.dhside
 up liminal.7
 
@@ -25,8 +26,8 @@ south outsidelaprima
 ramp Liminal Space
 You're in a strange space with concrete walls. The floor slants down toward Doherty Hall to your east, and double doors to your west lead to Wean Hall. There are locked pairs of double doors to your north and south, with the one to your south labeled "DANGER: High Voltage".
 west wean.4.dhside
-east doherty.b.mallsidewest
+east doherty.b.mall_side_corridor.steam_tunnels
 north "The double doors are securely locked."
 south "The double doors are securely locked."
-down doherty.b.mallsidewest
+down doherty.b.mall_side_corridor.steam_tunnels
 up wean.4.dhside

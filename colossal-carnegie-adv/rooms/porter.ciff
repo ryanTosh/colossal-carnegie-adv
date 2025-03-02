@@ -1,0 +1,140 @@
+a Porter Hall
+You're on floor A of Porter Hall. A stairway leads up, the mall is to your north, ANSYS is to your west, and Frew Street is to your south.
+north westmall
+up porter.1
+east "Your path is blocked by a strange door." NOTE add key
+west ansys.a
+south frew
+down porter.b
+NOTE add A18 suite and cive
+
+b Porter Hall
+You're in a small vestibule on floor B of Porter Hall. A strangely short door with a "Hard Hats Required" sign stands just above the ground to your east, and a locked glass door to your west leads to an office suite. Stairs go up to Porter A.
+east "The strange door is locked."
+west "The glass door is locked."
+up porter.a
+
+1 Porter Hall
+You're on the first floor of Porter Hall. A stairway leads up and down. Baker Hall is to your east, the Civil and Environmental Engineering wing is to your west, and Frew Street is to your south.
+up porter.2
+down porter.a
+east baker.1.trapdoors
+west porter.cee.1
+north frew
+
+cee.1 Porter Hall Civil & Environmental Engineering
+You're in a short corridor on the first floor. The rest of Porter Hall is to your east, and a strange hallway turns around a corner to your north. Stairs lead down.
+down porter.cee.a
+north porter.cee.offices
+east porter.1
+
+cee.a Porter Hall Civil & Environmental Engineering
+You're in a corridor on floor A, decorated in a southwestern theme. A lab space is to your west, the rest of Porter Hall is to your east, and windows to your north show an enclosed section of roof. Stairs lead up.
+west porter.cee.lab.a
+east porter.a
+north "The window isn't open." NOTE implement
+up porter.cee.1
+
+cee.lab.a Porter Hall Civil & Environmental Engineering
+You're in a workshop with many windows. There is a door to your east, and stairs lead down.
+east porter.cee.a
+down porter.cee.lab.b
+
+cee.lab.b Porter Hall Civil & Environmental Engineering
+You're in a cluttered workshop. Stairs lead up, and there is a pair of double doors to your north. Another room is down a ramp to your west.
+up porter.cee.lab.a
+north porter.b.hallway
+west porter.cee.lab.b.exit
+down porter.cee.lab.b.exit
+
+cee.lab.b.exit Porter Hall Civil & Environmental Engineering
+You're in a cluttered workshop with several windows. There is a pair of doors to your north, through which sunlight shines. Another room is up a ramp to your east.
+up porter.cee.lab.b
+east porter.cee.lab.b
+north porter.cee.lab.b.patio
+
+cee.lab.b.patio Porter Hall Civil & Environmental Engineering Patio
+You're on a patio, with doors to your south leading into the Civil & Environmental Engineering wing of Porter Hall. To your north, stairs lead down to the Scaife Quad.
+south porter.cee.lab.b.exit
+down scaifequad
+north scaifequad
+
+b.hallway Porter B Hallway
+You're in a stretch of hallway on floor B of Porter Hall. A small kitchen is to your west, office cubicles to your east, and a pair of double doors to your south.
+west porter.b.kitchen
+east porter.b.cubicles
+south porter.cee.lab.b
+
+b.cubicles Porter B Office Space
+You find yourself amid dozens of cubicles and glass-walled offices. An emergency exit door is to your west, a staircase is to your north, a glass door is to your east, and a crossroads of several hallways is to your south. As you walk, you notice a small trapdoor set in the carpeted floor.
+west underscaifewalkway "You pass through two doors, and walk down a few steps."
+north porter.b.stairs.mid
+east porter.b
+south porter.b.crossroad
+door down porter.c
+doorkeyitem down squaretool
+doorsay IfClosed down "You see no handle on the closed trapdoor, but there is a small square hole which might accept a key."
+doorsay OnOpen down "The square wrench fits perfectly in the hole. You turn it counterclockwise, and the door pops open."
+
+b.crossroad Porter B Printer
+You're standing next to a printer. A hallway winds to your west, a few steps lead up to rooms to your south and east, and a large space with cubicles is to your north.
+west porter.b.hallway
+south "The door, labeled 'Server Room', is locked."
+east porter.b.lounge
+north porter.b.cubicles
+
+b.stairs.mid Porter B Stairs
+You're on the middle landing of a short stairwell, with a large office space to your south and an emergency exit door to your west.
+west underscaifewalkway "You pass through two doors, and walk down a few steps."
+north porter.b.cubicles
+up porter.b.stairs.high
+down porter.b.stairs.low
+
+b.stairs.high Porter B Stairs
+You're on the highest landing of a short stairwell, overlooking a large office space. A door to your east is securely locked.
+down porter.b.stairs.mid
+
+b.stairs.low Porter B Stairs
+You're on the lowest landing of a short stairwell, which connects to an uninteresting hallway.
+up porter.b.stairs.mid
+
+b.lounge Porter B Lounge
+You're in a cozy room with pipes running across the ceiling. There's a chessboard on the east side of the room, and doors to your north and south.
+north porter.b.crossroad
+south "The door to your south is locked."
+
+steam_tunnel.upper Baker-Porter Steam Tunnel
+You're in a long tunnel, surrounded by pipes and wires. You're at the top of a narrow set of stairs, which run down to your west. Directly ahead of you, floating above the stairs, is a door embedded in the wall.
+east baker.steam_tunnel.west
+west porter.steam_tunnel.lower
+down porter.steam_tunnel.lower
+facing west
+
+steam_tunnel.lower Baker-Porter Steam Tunnel
+You're in a short stretch of tunnel at the base of a set of stairs, which continue up to your east. Directly ahead to your west is an unusually short door.
+east porter.steam_tunnel.upper
+up porter.steam_tunnel.upper
+west porter.b
+facing west
+south porter.steam_tunnel.sidetunnel "You climb through the pipes, making your way into another section of tunnel."
+
+steam_tunnel.sidetunnel Baker-Porter Steam Tunnel: Side Tunnel
+You're in a stretch of tunnel running north-south, wider than the rest, with pipes going all directions.
+north porter.steam_tunnel.lower
+south porter.steam_tunnel.terminus
+
+steam_tunnel.terminus Baker-Porter Steam Tunnel: Side Tunnel
+You're in a long room at the southern end of a stretch of tunnel. A door to your west displays a large sign indicating that it is alarmed.
+north porter.steam_tunnel.sidetunnel
+west porter.steam_tunnel.storage
+
+steam_tunnel.storage Maintenance Room
+You're in a small room, divided in half by a chain-link fence. It seems to be used for storage. There are doors on the east and north walls.
+east "This door is locked."
+north porter.b.serverroom
+
+b.serverroom Server Room
+You're in a cluttered room, filled with the sound of computer fans. You're surrounded by servers of all shapes and sizes. There are doors to your north, south, and east.
+east porter.b.lounge
+north porter.b.crossroad
+south "This door is locked."

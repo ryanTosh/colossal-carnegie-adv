@@ -1,0 +1,84 @@
+1 Baker Hall
+You're on the first floor of Baker Hall. A long corridor slopes downward to the west, toward Porter Hall. To your south is the Dietrich Success Center. Stairs spiral up and down.
+east outsidehunt
+west baker.1.trapdoors
+north mall
+south baker.1.dietrich_advisory
+up baker.2
+down baker.a.landing
+
+1.dietrich_advisory Dietrich Success Center
+You find yourself in a welcoming office.
+item dscoffee
+itembrief dscoffee Nobody's around, but a cup of coffee on a desk is still steaming.
+NOTE some sort of item for advancement
+north baker.1
+
+1.trapdoors Baker Hall Corridor
+You're midway through the sloping main hall of Baker. Porter Hall is to your west. You notice heavy iron trapdoors in the floor.
+north mall
+east baker.1
+west porter.1
+door down baker.steam_tunnel.entry "You carefully climb down a rickety metal ladder, bracing yourself against a thick steam pipe with aging insulation."
+doorkeyitem down crowbar
+doorsay OnOpen down "Using the crowbar, you lift one of the trapdoors just enough to slip your hands under it. With all your might, you lift it open."
+
+steam_tunnel.entry Baker-Porter Steam Tunnel
+You find yourself in a small, claustrophobic space, with an open trapdoor above your head and a rusty metal ladder leading up to it. You're surrounded on three sides by brick walls, but see a gap to your south in the many steam pipes.
+up baker.1.trapdoors
+south baker.steam_tunnel.west "You carefully climb between the pipes, checking each to ensure they won't burn you."
+
+steam_tunnel.west Baker-Porter Steam Tunnel
+You're in a narrow tunnel running east-west, surrounded by pipes and wires.
+east baker.steam_tunnel.east
+west porter.steam_tunnel.upper
+north baker.steam_tunnel.entry
+
+steam_tunnel.east Baker-Porter Steam Tunnel
+You're on the east end of a long tunnel, surrounded by pipes and wires. In the center of the tunnel is an old fashioned film projector. A door to your east has "not alarmed" scribbled on it in permanent marker.
+east baker.a.landing
+west baker.steam_tunnel.west
+
+a.landing Baker A Landing
+You're on a small landing on the stairs down to Baker Hall A-level. The floor is red. Stairs continue up and down, and a short door is to your west.
+up baker.1
+down baker.a
+west "The door is locked."
+
+a Baker A
+You're in an open, airy space with skylights, below Baker 1. Two sets of doors to your east sit below lettering which reads "Giant Eagle Auditorium," and a short hallway runs west. A set of stairs lead upward.
+up baker.a.landing
+east baker.a.giant_eagle_auditorium
+west baker.a.hallway
+
+a.giant_eagle_auditorium Giant Eagle Auditorium
+You're in an enormous lecture hall. You see something of a vaguely political nature on the many screens in the room, but it is silent. The doors out are to your west.
+item giant_eagle_feather
+itembrief giant_eagle_feather On the ground, you spot something strange: a large brown feather, about the size of your forearm.
+west baker.a
+
+a.hallway Baker A Hallway
+You're in a short hallway running east-west, with an emergency exit to your west. A staircase slopes up alongside you.
+west frew
+east baker.a
+
+2 Baker 2
+You find yourself at the top of a winding brick staircase, on a landing with comfy furniture. Over a ledge to your east you can see the entrance to Baker Hall, and a hallway slopes down to your west. A large portrait of Andrew Carnegie hangs to your north, and the door to a cozy-looking room sits to your south.
+down baker.1
+west baker.2.corridor
+south baker.2.english_lounge
+
+2.english_lounge Cozy Room
+You're in a small room full of books and comfortable chairs. The door out is to your west.
+NOTE put something in the cozy room
+west baker.2
+
+2.corridor Baker 2 Corridor
+You're midway through the sloping hall of the Baker's second floor. Porter 2 is to your west. You notice small square trapdoors in the floor, which do not appear locked.
+west porter.2
+east baker.2
+door down baker.2.conduit "You lower yourself into the small square hole."
+doorsay OnOpen down "You lift one of the iron covers and slide it out of the way."
+
+2.conduit The Walls
+TODO

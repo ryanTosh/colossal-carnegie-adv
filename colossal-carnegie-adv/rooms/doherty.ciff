@@ -7,15 +7,16 @@ north doherty.1.cheme
 
 1.stairs Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both up and down. A door to the north seems to open into a larger space.
-north doherty1
-up doherty2
-down dohertyastairs
+north doherty.1
+up doherty.2
+down doherty.a.stairs
 
 1.west Doherty Hall
 You're inside Doherty Hall. You see grass and cloudy skies through a door to the south. Stairs lead up and down.
 south mall
 up doherty.2.west
 down doherty.a.west
+west liminal.6
 
 2 Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a long corridor to your west, and a lecture hall to your south.
@@ -31,7 +32,7 @@ west doherty.2.west
 
 2.west Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a pair of double doors to the west, a lecture hall to your south, and a long corridor to your east.
-west liminal7
+west liminal.7
 south dh2315
 east doherty.2.bridge
 up doherty.3.west
@@ -46,9 +47,62 @@ down doherty.b.chemehall
 NOTE add fairfax vending machine!
 
 a.west Doherty Hall
-You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your north, and a hallway continues east.
+You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your north, a pair of double doors stands to your west, and a long hallway continues east.
 south doherty.a.physics
-west liminalground
+west liminal.ground
 east doherty.a.stairs
 up doherty.1.west
-down doherty.b.arthall
+down doherty.b.art_hall
+
+b.art_hall Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and in the middle of the hallway to your north one descends down at a strange angle. A door to a studio is open to your east, the hallway continues north, and to your south, a dimly lit white corridor runs perpendicular to the one you stand in.
+up doherty.a.west
+down doherty.c.elevators
+north doherty.b.elevators
+east doherty.b.first_year_studio
+south doherty.b.mall_side_corridor.mural
+
+b.first_year_studio Doherty Hall Art Studio
+TODO
+
+b.mall_side_corridor.mural Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. A hallway branches off to the north. On the wall to your south is a beautiful mural, and a sign pointing to Wean Hall to your west, and Gilbert Hall ahead to the south.
+north doherty.b.art_hall
+west doherty.b.mall_side_corridor.steam_tunnels
+east doherty.b.mall_side_corridor.pipes
+
+b.mall_side_corridor.steam_tunnels Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. Wean Hall is just to your west. A door with a "Hard Hats Required" sign is to your south, and a rusty metal trapdoor occupies a corner of the corridor.
+south "The door is locked."
+west liminal.ramp
+down doherty.d_tunnel.west "You open the trapdoor and descend a rusty ladder."
+NOTE north? elevator?
+
+b.mall_side_corridor.pipes Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. To your south, a plinth behind a chain-link fence rises to about chest height, with some pipes atop it. It looks particularly climbable.
+NOTE north? elevator?
+west doherty.b.mall_side_corridor.mural
+east doherty.b.mall_side_corridor.chem_e
+south doherty.b.pipes "You climb up onto the plinth, then step up further onto the ceiling of a closet."
+
+b.pipes Doherty Pipes
+You're on top of the ceiling of some closets, surrounded by pipes and copious dust, which might contain asbestos. It's dark. Directly below you is a hole, through which you can see stairs. You can jump down to ground level to your east or west.
+west doherty.b.mall_side_corridor.pipes
+east doherty.b.mall_side_corridor.chem_e
+down doherty.b.226 "You drop down carefully."
+
+b.226 Doherty B226
+You find yourself in a small room. There is a door to your west, and stairs descend into what appears to be a steam tunnel.
+west doherty.b.mall_side_corridor.pipes
+up "There is a hole in the ceiling, but you have no way of climbing up to it."
+down doherty.d_tunnel.east
+
+d_tunnel.west Doherty Steam Tunnel
+You're at the base of a rusty ladder, in a disused steam tunnel which continues to the east, where you see stairs descending from the ceiling. Uninsulated pipes run along the walls, and water trickles along the floor. It's uncomfortably hot.
+up doherty.b.mall_side_corridor.steam_tunnels "You climb the ladder and use a red handle to open the trapdoor from the inside."
+east doherty.d_tunnel.east
+
+d_tunnel.east Doherty Steam Tunnel
+You're at the base of a set of stairs descending from the ceiling, in a disused steam tunnel which continues to the west. Uninsulated pipes run along the walls, and water trickles along the floor. It's uncomfortably hot.
+up doherty.b.226
+west doherty.d_tunnel.west

@@ -79,7 +79,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
 
                     dirs[parsed[1] as Dir] = {
                         goto: parsed[2] ?? null,
-                        say: parsed[3] ? parsed[3].replace(/""/g, "\"") : undefined,
+                        say: parsed[3] ? parsed[3].slice(1, -1).replace(/""/g, "\"") : undefined,
 
                         nouns: ["door", parsed[1]],
 
