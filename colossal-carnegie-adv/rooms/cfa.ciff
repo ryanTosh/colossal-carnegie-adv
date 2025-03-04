@@ -28,3 +28,19 @@ east peace_garden
 west peace_garden
 up peace_garden
 door_alias down south
+
+1.north_stairs CFA 1 North Wing
+You're on the first floor of the CFA building, with stairs going up and down, and a large open space to your south.
+up cfa.2.north_stairs
+down cfa.ground.north
+south cfa.1
+
+1.south_stairs CFA 1 South Wing
+You're on the first floor of the CFA building, with stairs going up and down, and a large open space to your north. A door to your south goes outside.
+up cfa.2.south_stairs
+down cfa.ground.south
+north cfa.1
+south cfa.1.peace_garden_stairs
+
+1 CFA 1 Grand Hall
+You're on the first floor of the CFA building, in a grand hallway lined with marble statues. It runs north-south, and the lobby is to your west.
