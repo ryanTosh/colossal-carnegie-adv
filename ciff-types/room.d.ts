@@ -1,4 +1,4 @@
-export type Dir = "north" | "east" | "south" | "west" | "up" | "down";
+export type Dir = "north" | "east" | "south" | "west" | "up" | "down" | "northeast" | "northwest" | "southeast" | "southwest";
 
 interface RoomDir {
     goto?: string;

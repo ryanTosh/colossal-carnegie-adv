@@ -41,8 +41,12 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 case "east":
                 case "south":
                 case "west":
-                case "up":
-                case "down":
+                case "northeast":
+                case "northwest":
+                case "southeast":
+                case "southwest":
+                    case "up":
+                    case "down":
                 {
                     if (words[0] in dirs) {
                         throw "Duplicate dir '" + words[0] + "' in room '" + id + "'";
@@ -67,7 +71,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 }
                 case "door":
                 {
-                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down)(?: ([\w.]+))?(?: ("(?:[^"\n]|"")*"))?$/);
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|northeast|northwest|southeast|southwest|up|down)(?: ([\w.]+))?(?: ("(?:[^"\n]|"")*"))?$/);
 
                     if (parsed == null) {
                         throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
@@ -91,7 +95,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 }
                 case "door_alias":
                 {
-                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down) (north|east|south|west|up|down)$/);
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|northeast|northwest|southeast|southwest|up|down) (north|east|south|west|northeast|northwest|southeast|southwest|up|down)$/);
 
                     if (parsed == null) {
                         throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
@@ -119,7 +123,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 }
                 case "doorkeyitem":
                 {
-                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down) ([\w.]+)$/);
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|northeast|northwest|southeast|southwest|up|down) ([\w.]+)$/);
 
                     if (parsed == null) {
                         throw "Invalid 'doorkeyitem' prop format in room '" + id + "': " + propRow;
@@ -135,7 +139,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 }
                 case "doorsay":
                 {
-                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnAlreadyOpen|OnClose) (north|east|south|west|up|down) ("(?:[^"\n]|"")*")$/);
+                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnAlreadyOpen|OnClose) (north|east|south|west|northeast|northwest|southeast|southwest|up|down) ("(?:[^"\n]|"")*")$/);
 
                     if (parsed == null) {
                         throw "Invalid 'doorsay' prop format in room '" + id + "': " + propRow;
