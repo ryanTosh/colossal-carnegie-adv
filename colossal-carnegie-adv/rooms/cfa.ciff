@@ -1,0 +1,30 @@
+ground.north CFA Ground Floor
+You're on the ground floor of CFA, to the north of the building. Stairs go up. A workshop is to your west, and a door to your north goes to the parking lot.
+north cfa_parking_lot
+south cfa.ground.trapdoor
+west cfa.ground.workshop
+east cfa.ground.posner_hallway
+up cfa.1.north_stairs
+
+ground.trapdoor CFA Ground Floor
+You're on the ground floor of CFA in a hallway running north-south, near some vending machines. A narrow staircase goes up, and behind it (to your west) you see a hallway leading to some lockers. You notice a trapdoor set into the floor.
+north cfa.ground.north
+south cfa.ground.south
+up cfa.1.lobby
+west cfa.ground.lockers
+door down steam_tunnel.under_cfa
+
+ground.south CFA Ground Floor
+You're on the ground floor of CFA, to the south of the building. Stairs go up. A door to your south goes outside.
+up cfa.1.south_stairs
+north cfa.ground.trapdoor
+south cfa.ground.under_stairs
+
+ground.under_stairs Under CFA Peace Garden Stairs
+You're to the south of the CFA building, with a door to the ground floor to your north. To your south is a bulletin board covered in posters. Stairs to your east and west go up a few feet to the peace garden.
+north cfa.ground.south
+door south steam_tunnel.cfa_pos_corner
+east peace_garden
+west peace_garden
+up peace_garden
+door_synonym down south

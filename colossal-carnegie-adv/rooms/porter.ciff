@@ -138,3 +138,8 @@ You're in a cluttered room, filled with the sound of computer fans. You're surro
 east porter.b.lounge
 north porter.b.crossroad
 south "This door is locked."
+
+2 Porter 2
+You're on the second floor of Porter Hall. A stairway leads down, and Baker Hall is to your east.
+down porter.1
+east baker.2.corridor
