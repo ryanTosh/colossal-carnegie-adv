@@ -7,6 +7,7 @@ interface RoomDir {
     nouns: string[];
 
     isDoor: boolean;
+    doorAliasOf?: Dir;
     isOpen?: boolean;
     keyItem?: string | null;
     sayIfClosed?: string;

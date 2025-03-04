@@ -27,4 +27,4 @@ door south steam_tunnel.cfa_pos_corner
 east peace_garden
 west peace_garden
 up peace_garden
-door_synonym down south
+door_alias down south

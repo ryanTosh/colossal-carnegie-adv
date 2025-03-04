@@ -89,6 +89,34 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
 
                     break;
                 }
+                case "door_alias":
+                {
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|up|down) (north|east|south|west|up|down)$/);
+
+                    if (parsed == null) {
+                        throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (words[1] in dirs) {
+                        throw "Duplicate dir '" + words[0] + "' for door alias in room '" + id + "'";
+                    }
+
+                    if (!(words[2] in dirs) || !dirs[words[2] as Dir]!.isDoor) {
+                        throw "Door alias to non-door in '" + words[0] + "' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    dirs[parsed[1] as Dir] = {
+                        goto: parsed[2] ?? null,
+                        say: parsed[3] ? parsed[3].slice(1, -1).replace(/""/g, "\"") : undefined,
+
+                        nouns: ["door", parsed[1]],
+
+                        isDoor: true,
+                        doorAliasOf: words[2] as Dir
+                    };
+
+                    break;
+                }
                 case "doorkeyitem":
                 {
                     const parsed = propRow.match(/^\w+ (north|east|south|west|up|down) ([\w.]+)$/);
