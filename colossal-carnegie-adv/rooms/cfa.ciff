@@ -18,9 +18,9 @@ ground.south CFA Ground Floor
 You're on the ground floor of CFA, to the south of the building. Stairs go up. A door to your south goes outside.
 up cfa.1.south_stairs
 north cfa.ground.trapdoor
-south cfa.ground.under_stairs
+south cfa.ground.under_peace_garden_stairs
 
-ground.under_stairs Under CFA Peace Garden Stairs
+ground.under_peace_garden_stairs Under CFA Peace Garden Stairs
 You're to the south of the CFA building, with a door to the ground floor to your north. To your south is a bulletin board covered in posters. Stairs to your east and west go up a few feet to the peace garden.
 north cfa.ground.south
 door south steam_tunnel.cfa_pos_corner
@@ -33,14 +33,26 @@ door_alias down south
 You're on the first floor of the CFA building, with stairs going up and down, and a large open space to your south.
 up cfa.2.north_stairs
 down cfa.ground.north
-south cfa.1
+south cfa.1.grand_hall
 
 1.south_stairs CFA 1 South Wing
 You're on the first floor of the CFA building, with stairs going up and down, and a large open space to your north. A door to your south goes outside.
 up cfa.2.south_stairs
 down cfa.ground.south
-north cfa.1
+north cfa.1.grand_hall
 south cfa.1.peace_garden_stairs
 
-1 CFA 1 Grand Hall
+1.grand_hall CFA 1 Grand Hall
 You're on the first floor of the CFA building, in a grand hallway lined with marble statues. It runs north-south, and the lobby is to your west.
+north cfa.1.north_stairs
+south cfa.1.south_stairs
+west cfa.1.lobby
+
+1.lobby CFA 1 Lobby
+You're on the first floor of the CFA building, in a lobby with an intricate floor pattern. Kresge Auditorium is to your north, the Alumni Concert Hall is to your south, the CFA Lawn outside is to your west, and up a couple of steps to your east is a tall hallway. A narrow flight of stairs in the corner descend down.
+north cfa.1.kresge
+south cfa.1.alumni_concert_hall
+west cfa_lawn
+east cfa.1.grand_hall
+up cfa.1.grand_hall
+down cfa.ground.trapdoor
