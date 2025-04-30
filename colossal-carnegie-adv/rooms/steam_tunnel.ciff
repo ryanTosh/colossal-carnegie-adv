@@ -1,0 +1,75 @@
+wean Steam Tunnel: West End
+You stand in a steam tunnel at the base of a narrow set of steps, which continue up to your east. A single door to your west has a painted warning indicating that it's alarmed.
+west wean.4.703
+east steam_tunnel.hot_nut
+up steam_tunnel.hot_nut
+
+hot_nut Steam Tunnel: Hot Nut
+You find yourself in the western end of a long steam tunnel, at the top of a narrow run of stairs. A pipe runs vertically just to the side, with an extremely hot nut sticking out.
+west steam_tunnel.wean
+down steam_tunnel.wean
+east steam_tunnel.doherty_intersection
+
+doherty_pipes Steam Tunnel: Doherty Pipes
+You find yourself on some pipes and steel conduits above the north end of a section of steam tunnel. Below you is a small room with a camera in the northeast corner. To your north, the pipes you're on run through the wall into Doherty Hall. You can safely climb down some pipes to the ground.
+down steam_tunnel.doherty
+north doherty.b.pipes.tunnel
+
+doherty Steam Tunnel: Doherty Branch
+You're in the north end of a section of steam tunnel, with doors to your north and west. A painted warning on the wall states that you continue into the tunnel at your own risk.
+north doherty.b.mall_side_corridor.steam_tunnels
+west wean.4.mole_office
+south steam_tunnel.doherty_intersection
+up steam_tunnel.doherty_pipes "You carefully climb some insulated pipes."
+
+doherty_intersection Steam Tunnel
+You find yourself at an intersection in the tunnel. The main tunnel runs east-west, but a branch splits off to your north.
+west steam_tunnel.hot_nut
+east steam_tunnel.mall_trapdoor
+north steam_tunnel.doherty
+
+mall_trapdoor Steam Tunnel
+You stand at the base of a ladder in the middle of a long steam tunnel. The walls are covered in graffiti and the pipes are rusty. Some fans blow air through the tunnel, which runs east-west.
+up mall "You climb the ladder and unlatch a trapdoor from the inside. Upon climbing out, you find yourself at the intersection of two sidewalks on the Mall."
+west steam_tunnel.doherty_intersection
+east steam_tunnel.cfa_intersection
+
+cfa_intersection Steam Tunnel
+You stand in the middle of a long steam tunnel running east-west. A ladder nearby goes up at a slight angle, near a branch which runs to your south. There is copious graffiti, and the pipes look suspicious.
+up steam_tunnel.party_room
+west steam_tunnel.mall_trapdoor
+east steam_tunnel.three_way_intersection
+south steam_tunnel.under_cfa
+
+steam_tunnel.party_room Party Room
+You find yourself in a large, unlit room. A ladder goes down, and stalactites hang from the ceiling. You imagine this would be a cozy place to live, and it seems someone may have once had the same idea.
+down steam_tunnel.cfa_intersection
+
+under_cfa Steam Tunnel: CFA Branch
+You're in a modernized section of steam tunnel running north-south. A ladder sits to the side of some steam pipes with clean white insulation, under a poorly fitted trapdoor.
+up cfa.ground.trapdoor
+north steam_tunnel.cfa_intersection
+south steam_tunnel.gsia "The tunnel turns to your left, running east."
+
+gsia Steam Tunnel: Posner Branch
+You're in a modernized section of steam tunnel running east-west.
+east posner.mechanical_room_south
+west steam_tunnel.under_cfa "The tunnel turns to your right, running north."
+
+three_way_intersection Steam Tunnel: Three Way Intersection
+You find yourself at a three way intersection. One branch runs west, one runs north, and one runs east with a slight deviation to the south. Nearby, a ladder goes up some distance to a trapdoor.
+up in_front_of_posner "You climb the ladder and unlatch a trapdoor from the inside. Upon climbing out, you find yourself in front of the Posner Center."
+west steam_tunnel.cfa_intersection
+north steam_tunnel.mm_branch
+east steam_tunnel.skibo_branch
+south steam_tunnel.skibo_branch
+
+mm_branch Steam Tunnel: Margaret Morrison Branch
+You're at the north end of a section of steam tunnel, with a door to your east. You see some large tanks and various equipment.
+south steam_tunnel.three_way_intersection
+east mm.b.tunnels
+
+skibo_branch Steam Tunnel: Highmark Branch
+You're in a twisty branch of a long steam tunnel, which seems to have been recently modernized. The pipes are in neat rows and covered in clean, undamaged insulation. The tunnel runs to your west, and a staircase made of steel grate goes up toward a door to your south.
+west steam_tunnel.three_way_intersection
+south highmark.1.mechanical_room "You climb the metal stairs, minding a domed camera just above them. You open the door and emerge into a noisy mechanical room."
