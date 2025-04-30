@@ -1,6 +1,6 @@
 mall The Mall
 You are standing in front of an open field, facing west toward Hamerschlag Hall. Doherty Hall stands to your north, and Baker Hall to your south.
-west westmall
+west west_mall
 north doherty.1.west
 south baker.1
 east cfalawn
@@ -8,7 +8,7 @@ item pamphlet
 itembrief pamphlet A pamphlet is lying on the ground.
 facing west
 
-westmall The Mall
+west_mall The Mall
 You stand facing west at the base of a grassy hill, looking up at Hamerschlag Hall. Porter Hall is to your south, and Wean Hall is to your north.
 south porter.a
 north outsidelaprima
@@ -18,7 +18,7 @@ west hamerschlag.1.lobby
 
 outsidelaprima La Prima Patio
 You're outside an imposing brutalist structure, in an outdoor spot on the Mall overlooking Baker-Porter to your south. You see the counter of La Prima through glass doors to your north.
-south westmall
+south west_mall
 north laprima
 
 laprima La Prima

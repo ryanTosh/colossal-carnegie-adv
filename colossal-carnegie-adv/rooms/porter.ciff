@@ -1,6 +1,6 @@
 a Porter Hall
 You're on floor A of Porter Hall. A stairway leads up, the mall is to your north, ANSYS is to your west, and Frew Street is to your south.
-north westmall
+north west_mall
 up porter.1
 east "Your path is blocked by a strange door." NOTE add key
 west ansys.a
