@@ -1,0 +1,22 @@
+d Hamerschlag Hall: Low south stairs, floor D
+You're in a very warm stairwell with dark red accents. A door to your west leads outside, a door to your north is locked, and a pair of double doors to your south is also locked. You can go down.
+west hamerschlag_drive.hamerschlag
+down hamerschlag.scaife_side_stairs.e
+
+e Hamerschlag Hall: Low south stairs, floor E
+You're in a very warm stairwell with dark red accents. A door to your west is hot to the touch, and another door with a cloudy window labeled "hard hats required" sits to your north. You can go up or down.
+west hamerschlag.e.steam_room
+north hamerschlag.e.southwest_grate
+up hamerschlag.scaife_side_stairs.d
+down hamerschlag.scaife_side_stairs.between_e_and_f
+
+between_e_and_f Hamerschlag Hall: Low south stairs, between floors E and F
+You're in a very warm stairwell with dark red accents, on a landing between two floors. A door to your south, labeled "hard hats required", isn't closed all the way.
+south hamerschlag.between_e_and_f.entrance
+up hamerschlag.scaife_side_stairs.e
+down hamerschlag.scaife_side_stairs.f
+
+f Hamerschlag Hall: Low south stairs, floor F
+You're in a very warm stairwell with dark red accents. A door to your north is open. You can go up.
+north hamerschlag.f.south_hallway
+up hamerschlag.scaife_side_stairs.between_e_and_f

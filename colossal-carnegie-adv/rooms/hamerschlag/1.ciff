@@ -1,3 +1,17 @@
 lobby Hamerschlag Hall: Floor 1 lobby
 You're at the junction of several corridors. One runs to your east to a grand doorway, and another runs north-south. A clock in an octagonal frame sits adjacent to a brass relief sculpture of Arthur A. Hamerschlag. Stairs go up and down.
 east west_mall
+north hamerschlag.1.north
+south hamerschlag.1.south
+up hamerschlag.2.lobby
+down hamerschlag.a.lobby
+
+north Hamerschlag Hall: Floor 1 north wing
+You're in a modern corridor, which runs south to a larger space. A door to your east seems to lead into a cramped vestibule.
+south hamerschlag.1.lobby
+east hamerschlag.fedbai.1
+
+south Hamerschlag Hall: Floor 1 south wing
+You're in a modern corridor, which runs north to a larger space. A stairwell is to your south.
+north hamerschlag.1.lobby
+south hamerschlag.south_stairs.1

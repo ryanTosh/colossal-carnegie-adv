@@ -1,0 +1,7 @@
+lobby Hamerschlag Hall: Floor C lobby
+You're in an open and airy corridor running north-south. To your west is TechSpark, to your north is Ruge Auditorium in Scott Hall, and to your south is a large pair of double doors leading to the Scaife Quad. A short run of stairs goes up to a section of floor B. A narrow of stairs behind a doorway continues down.
+west techspark
+north scott.ruge_auditorium
+south scaife_quad
+up hamerschlag.b.lobby
+down hamerschlag.d.lobby

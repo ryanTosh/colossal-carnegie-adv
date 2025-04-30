@@ -1,0 +1,25 @@
+lobby Hamerschlag Hall: Floor B lobby
+You're in a small corridor on floor B, overlooking floor C. Stairs go up and down. A corridor to your west goes to Roberts Engineering Hall. You can go north or south from here.
+up hamerschlag.a.lobby
+down hamerschlag.c.lobby
+west roberts.4.landing
+north hamerschlag.b.lobby_north
+south hamerschlag.b.lobby_south
+
+lobby_north Hamerschlag Hall: Floor B north lobby
+You're on the north end of a small corridor. A lecture hall is to your west, a locked glass door to an office space is to your north, and a stairwell is to your east.
+south hamerschlag.b.lobby
+west hamerschlag.b.103
+east hamerschlag.goofy_stairs.b
+
+lobby_south Hamerschlag Hall: Floor B south lobby
+You're on the south end of a small corridor. A lecture hall is to your west and a locked glass door to an office space is to your south.
+west hamerschlag.b.131
+
+103 Hamerschlag Hall: B103 lecture hall
+You're in a large lecture hall. You see some introductory chemistry on the blackboard. The exit is to your east.
+east hamerschlag.b.lobby_north
+
+103 Hamerschlag Hall: B131 lecture hall
+You're in a large lecture hall. You see some introductory biology on the blackboard. The exit is to your east.
+east hamerschlag.b.lobby_south

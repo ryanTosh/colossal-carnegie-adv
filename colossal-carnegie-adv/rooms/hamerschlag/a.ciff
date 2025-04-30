@@ -1,0 +1,10 @@
+lobby Hamerschlag Hall: Floor A lobby
+You're in a small north-south corridor which has stairs running up and down. There are doors to your north and south. The north one is unlocked.
+north hamerschlag.a.north
+up hamerschlag.1.lobby
+down hamerschlag.b.lobby
+
+north Hamerschlag Hall: Floor A north wing
+You're in a corridor lined by offices. A glass door leads to the lobby to your south, and a door to your north seems to lead to a stairwell.
+north hamerschlag.fedbai.a
+south hamerschlag.a.lobby

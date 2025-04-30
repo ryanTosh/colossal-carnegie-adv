@@ -1,0 +1,32 @@
+north Hamerschlag Hall: Floor E
+You find yourself in a cluttered area overlooking floor F. You're near an ancient elevator, and a door to your east leads to a dim stairwell. To your south, you can step up onto the steel roof of the labs below you, on top of which is a network of pipes and HVAC machinery.
+up hamerschlag.fedbai.d
+down hamerschlag.f.north
+east hamerschlag.fedbai.stairs.e
+south hamerschlag.e.metal_roof
+
+metal_roof Hamerschlag Hall: Floor E steel roof
+You're on a corrugated steel floor, which makes up the ceiling of the labs below. You have to duck under pipes. You can go north, south, or west from here.
+north hamerschlag.e.north
+west hamerschlag.e.west_grate "You descend a short ladder."
+south hamerschlag.e.south_grate "You duck under a pair of pipes."
+
+west_grate Hamerschlag Hall: Floor E west HVAC grate
+You're on a steel grate just below the rest of E level. A short ladder to your east goes up. Below you, you can see a corridor on F level. You're surrounded by HVAC.
+east hamerschlag.e.metal_roof
+up hamerschlag.e.metal_roof
+
+south_grate Hamerschlag Hall: Floor E south grate
+You're on a steel grate above F level. There's a door with a taped latch to your south, and under some pipes to your north you can crawl onto a steel roof. The grate continues west.
+south hamerschlag.e.fucked_up_little_room
+north hamerschlag.e.metal_roof "You duck under a pair of pipes."
+west hamerschlag.e.southwest_grate
+
+southwest_grate Hamerschlag Hall: Floor E southwest grate
+You're on a steel grate above F level. There's a door to a stairwell to your south, and the grate continues east. Extremely hot, sulfurous air is rushing out from a hole in the wall.
+south hamerschlag.scaife_side_stairs.e
+east hamerschlag.e.south_grate
+
+fucked_up_little_room Hamerschlag Hall: Floor E strange room
+You're in a small room with one wall which seems to have once gone somewhere interesting. Pipes are sticking out of it, and a large alarm bell is on the wall. The door is to your north.
+north hamerschlag.e.south_grate

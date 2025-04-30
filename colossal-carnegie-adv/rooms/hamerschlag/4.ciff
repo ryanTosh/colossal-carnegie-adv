@@ -1,0 +1,15 @@
+lobby Hamerschlag Hall: Floor 4 lobby
+You're in a tiny space with a low ceiling, and a narrow set of stairs descends down. There is a door to your east with a CMUPD sign on it, and a door to your west to the radio shack.
+east hamerschlag.4.cmupd_room
+west hamerschlag.4.radio_shack
+down hamerschlag.3.lobby
+
+cmupd_room Hamerschlag Hall: Floor 4 east room
+You're in a room which you feel you should not be in. Several signs from the University Police seem to agree. The exit is to your west. There are windows to your east with a view of the mall.
+NOTE implement east (also implement north/south on 3)
+west hamerschlag.4.lobby
+
+radio_shack Hamerschlag Hall: Floor 4 radio shack
+You're in a room full of gadgetry. There are doors to your east and west.
+east hamerschlag.4.lobby
+west hamerschlag.tower.4

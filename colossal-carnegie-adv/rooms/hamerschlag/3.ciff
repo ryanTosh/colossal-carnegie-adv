@@ -1,0 +1,17 @@
+lobby Hamerschlag Hall: Floor 3 lobby
+You're in a small space which has stairs running down, and another much narrower set of stairs going up. There are doors to your north and south.
+north hamerschlag.3.north_room
+south hamerschlag.3.south_room
+up hamerschlag.4.lobby
+down hamerschlag.2.lobby
+
+north_room Hamerschlag Hall: Floor 3 north room
+You're in a room with a nice view of campus through windows to your north. A door exits to your south, and the room continues around a corner to your west.
+west hamerschlag.3.south_room
+south hamerschlag.3.lobby
+
+south_room Hamerschlag Hall: Floor 3 south room
+You're in a room with a nice view of campus through windows to your south. A ladder goes up a few feet to a small door. A door exits to your north, and the room continues around a corner to your west.
+west hamerschlag.3.north_room
+north hamerschlag.3.lobby
+NOTE implement ladder! (up)

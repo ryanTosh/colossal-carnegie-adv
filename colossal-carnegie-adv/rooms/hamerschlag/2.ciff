@@ -1,0 +1,10 @@
+lobby Hamerschlag Hall: Floor 2 lobby
+You're in a small space which has stairs running up and down. A pair of glass double doors to your east is propped.
+east hamerschlag.2.east
+up hamerschlag.3.lobby
+down hamerschlag.1.lobby
+
+east Hamerschlag Hall: Floor 2 east wing
+You're in a large, airy office space. A pair of glass double doors to your west leads to the stairs. At the far east end of the offices, you see an exit sign to the north.
+west hamerschlag.2.lobby
+north hamerschlag.east_stairs.2

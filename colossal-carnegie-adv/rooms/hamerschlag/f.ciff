@@ -1,0 +1,46 @@
+north Hamerschlag Hall: Floor F north hallway
+You're in a small hallway with an ancient elevator. At the east end is a door to a stairwell. A pair of locked double doors sits to your north. You can go west.
+north "The double doors are locked."
+east hamerschlag.fedbai.stairs.f
+up hamerschlag.e.north
+west hamerschlag.f.north_labs
+
+hamerschlag.f.north_corner Hamerschlag Hall: Floor F north corner
+You're at the intersection of a small hallway to your east and a large corridor to your south. A lift sits at the base of a wall, above which is floor E.
+NOTE implement the lift
+east hamerschlag.f.north
+south hamerschlag.f.north_labs
+
+north_labs Hamerschlag Hall: Floor F north lab corridor
+You're in a large corridor running north-south. A lab seems to be under construction to your east.
+north hamerschlag.f.north_corner
+south hamerschlag.f.south_labs
+east hamerschlag.f.lab_under_construction
+
+hamerschlag.f.south_labs Hamerschlag Hall: Floor F south lab corridor
+You're in a large corridor running north-south. A pair of double doors to your west lead to Roberts 2, and a lab with an X-ray machine is to your east.
+north hamerschlag.f.north_labs
+south hamerschlag.f.south_corner
+east hamerschlag.f.xray_lab
+west roberts.2.hh_connection
+
+hamerschlag.f.south_corner Hamerschlag Hall: Floor F south corner
+You're at the intersection of a small hallway to your east and a large corridor to your north. A strangely warm locked door sits to your northwest.
+north hamerschlag.f.south_labs
+east hamerschlag.f.south_hallway
+
+hamerschlag.f.south_hallway Hamerschlag Hall: Floor F south hallway
+You're in a hallway with a grate overhead. A larger corridor is to your west, and a door to a stairwell sits to your south.
+west hamerschlag.f.south_corner
+south hamerschlag.scaife_side_stairs.f
+
+hamerschlag.f.lab_under_construction Hamerschlag Hall: Floor F laboratory
+You're in a lab which is under construction. There are steel wall frames and ladders dividing up the space, and a silvery trapdoor in the ground seems to not quite be closed. A corridor is to your west.
+west hamerschlag.f.north_labs
+door down hamerschlag.steam_tunnel.under_trapdoor
+
+hamerschlag.f.xray_lab Hamerschlag Hall: Floor F X-ray laboratory
+You're in an MSE lab with some sort of x-ray machine. There are exits to your south and west.
+south hamerschlag.f.south_hallway
+east hamerschlag.f.south_labs
+NOTE make x-ray machine do something
