@@ -2,7 +2,7 @@ import { Player } from "./player";
 
 import prog from "../../colossal-carnegie-adv.ciff.json";
 
-const player = new Player(prog);
+const player = new Player(prog as any);
 
 const history = document.getElementById("history") as HTMLDivElement;
 const inputCont = document.getElementById("input-cont") as HTMLSpanElement;
