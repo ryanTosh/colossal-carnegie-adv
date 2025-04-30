@@ -272,6 +272,42 @@ export class Player {
                 
                 return this.tryMove("west");
             }
+            case "northeast":
+            case "ne":
+            {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'northeast'?";
+                }
+                
+                return this.tryMove("northeast");
+            }
+            case "northwest":
+            case "nw":
+            {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'northwest'?";
+                }
+                
+                return this.tryMove("northwest");
+            }
+            case "southeast":
+            case "se":
+            {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'southeast'?";
+                }
+                
+                return this.tryMove("southeast");
+            }
+            case "southwest":
+            case "sw":
+            {
+                if (words.length > 1) {
+                    return "I don't know how to do that. Did you want to say 'southwest'?";
+                }
+                
+                return this.tryMove("southwest");
+            }
             case "up":
             case "u":
             case "ascend":
@@ -323,6 +359,10 @@ export class Player {
                     "east": "west",
                     "south": "north",
                     "west": "east",
+                    "northeast": "southwest",
+                    "northwest": "southeast",
+                    "southeast": "northwest",
+                    "southwest": "northeast",
                     "up": "down",
                     "down": "up"
                 }[this.facing] as Dir);
