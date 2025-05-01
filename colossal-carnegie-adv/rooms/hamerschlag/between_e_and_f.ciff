@@ -14,8 +14,13 @@ You're in the east branch of a hot room densely packed with pipes and steam equi
 west hamerschlag.between_e_and_f.entrance
 south "The double door is locked."
 north hamerschlag.f.south_hallway
+up hamerschlag.between_e_and_f.above_high_voltage
 
 high_voltage_room Hamerschlag Hall: High voltage room
 You're in a refreshingly cold room filled with high voltage switching equipment. Many things in this room could kill you. There are doors to your north and west.
 north hamerschlag.between_e_and_f.east
 west hamerschlag.between_e_and_f.south
+
+above_high_voltage Hamerschlag Hall: Above high voltage room
+You find yourself on top of a room, on a rough and dirty concrete surface. It is dark and you have to crawl. Nothing is up here, but there is a ladder down.
+down hamerschlag.between_e_and_f.east
