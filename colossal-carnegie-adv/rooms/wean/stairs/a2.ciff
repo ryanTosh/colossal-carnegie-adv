@@ -5,7 +5,7 @@ up wean.stairs.a2.1.5
 
 1.5 Wean 1.5 Stairwell A2
 A door to the loading dock is to your north. You can go up or down.
-north schlagdriveloadingdock
+north hamerschlag_drive.wean_loading_dock
 up wean.stairs.a2.2
 down wean.stairs.a2.1
 

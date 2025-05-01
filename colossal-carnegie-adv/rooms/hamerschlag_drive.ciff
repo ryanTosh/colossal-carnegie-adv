@@ -1,0 +1,20 @@
+north_fork Hamerschlag Drive: North fork
+... To your south, a concrete staircase leads upward, between Newell-Simon and Gates.
+south westquad "You climb the concrete staircase."
+NOTE unfinished!!!
+
+gates_loading_dock Hamerschlag Drive: Gates loading dock
+You're outside the loading dock for the Center Center. You can enter the Gates Garage to your north, cross the street to the Wean loading dock to your south, or follow Hamerschlag Drive along its north fork to your west. A path winds up a hill to your east, shaded by trees.
+north ghc.garage
+south hamerschlag_drive.wean_loading_dock
+west hamerschlag_drive.north_fork
+east doherty_wilderness
+
+wean_loading_dock Hamerschlag Drive: Wean loading dock
+Doherty Hall towers over you to your east, and the concrete walls of Wean Hall stand to your south. You spot a freight elevator (requiring keycard access). Across the street to your north is the Gates-Hillman Center, and the south fork of Hamerschlag Drive runs to your west.
+north hamerschlag_drive.gates_loading_dock
+west hamerschlag_drive.hamerschlag_loading_dock "You wander down Hamerschlag Drive, crossing underneath Scott Hall."
+
+hamerschlag_loading_dock Hamerschlag Drive: Hamerschlag loading dock
+...
+NOTE finish this
