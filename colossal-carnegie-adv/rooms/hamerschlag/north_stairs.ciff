@@ -23,10 +23,11 @@ down hamerschlag.north_stairs.e
 west hamerschlag.fedbai.d
 
 e Hamerschlag Hall: North stairs, floor E
-You're in a dimly lit stairwell with dark red accents. The stairs go up and down, and a door leads west.
+You're in a dimly lit stairwell with dark red accents. The stairs go up and down, and a door leads west. A green sign points to an exit down a dark corridor to your north.
 up hamerschlag.north_stairs.d
 down hamerschlag.north_stairs.f
 west hamerschlag.e.north
+north hamerschlag_drive.hamerschlag_loading_dock
 
 f Hamerschlag Hall: North stairs, floor F
 You're in a dimly lit stairwell with dark red accents. The stairs go down, and a door leads west.
