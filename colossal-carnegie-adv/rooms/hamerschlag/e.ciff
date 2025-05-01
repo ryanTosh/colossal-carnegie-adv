@@ -30,3 +30,7 @@ east hamerschlag.e.south_grate
 fucked_up_little_room Hamerschlag Hall: Floor E strange room
 You're in a small room with one wall which seems to have once gone somewhere interesting. Pipes are sticking out of it, and a large alarm bell is on the wall. The door is to your north.
 north hamerschlag.e.south_grate
+
+steam_room Hamerschlag Hall: Floor E steam room
+You find yourself standing on a steel grate in a small, extremely hot room with an unbearable stench of sulfur. You may have found a connection to hell itself. You are surrounded by steam pipes, some of which are terminated and labeled "scaife steam". A short ladder to your east goes up to the exit.
+east hamerschlag.scaife_side_stairs.e "You feel an overwhelming sense of relief."

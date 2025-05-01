@@ -5,7 +5,7 @@ down hamerschlag.scaife_side_stairs.e
 
 e Hamerschlag Hall: Scaife-side stairs, floor E
 You're in a very warm stairwell with dark red accents. A door to your west is hot to the touch, and another door with a cloudy window labeled "hard hats required" sits to your north. You can go up or down.
-west hamerschlag.e.steam_room
+west hamerschlag.e.steam_room "You climb down several rungs of a ladder into the room, which is intensely hot. You feel a deep sense of dread."
 north hamerschlag.e.southwest_grate
 up hamerschlag.scaife_side_stairs.d
 down hamerschlag.scaife_side_stairs.between_e_and_f
