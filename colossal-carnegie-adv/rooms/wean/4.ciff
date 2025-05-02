@@ -8,7 +8,7 @@ up wean.5.north
 down wean.3.north
 
 south Wean 4 Lobby South
-Hallways go in various directions, including one partiuclarly ominous corridor to your south. Sorrels Library is to your east.
+Hallways go in various directions, including one particularly ominous corridor to your south. Sorrels Library is to your east.
 south wean.4.murderhallway
 north wean.4.north
 east wean.4.sorrels
