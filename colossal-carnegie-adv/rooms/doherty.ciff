@@ -47,7 +47,7 @@ down doherty.b.chemehall
 NOTE add fairfax vending machine!
 
 a.west Doherty Hall
-You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your north, a pair of double doors stands to your west, and a long hallway continues east.
+You're inside Doherty Hall. A staircase leads upward, and another leads down to a small pair of red double doors with square windows. A strange set of stairs goes down a few feet to your south, a pair of double doors stands to your west, and a long hallway continues east.
 south doherty.a.physics
 west liminal.ground
 east doherty.a.stairs
