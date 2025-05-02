@@ -64,7 +64,7 @@ west dohertyjungle "You make your way down a staircase, which descends into a de
 
 thecut.north The Cut North
 You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is a sidewalk outside the University Center.
-north walkingtothesky
+north walking_to_the_sky
 south thecut.south
 west purnell
 east ucsidewalk
