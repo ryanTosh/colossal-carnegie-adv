@@ -1,0 +1,45 @@
+c Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor C, the lowest floor. There is a door to your east.
+up doherty.chem_e_stairs.b
+east doherty.c.cardboard_area
+
+b Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor B. There is a door to your east.
+up doherty.chem_e_stairs.a
+down doherty.chem_e_stairs.c
+east doherty.b.chem_e
+
+a Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor A. There is a door to your east.
+up doherty.chem_e_stairs.1
+down doherty.chem_e_stairs.b
+east doherty.a.chem_e
+
+1 Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor 1. There is a door to your east.
+up doherty.chem_e_stairs.2
+down doherty.chem_e_stairs.a
+east doherty.1.chem_e
+
+2 Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor 2. There is a door to your east.
+up doherty.chem_e_stairs.3
+down doherty.chem_e_stairs.1
+east doherty.2.chem_e
+
+3 Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor 3. There is a door to your east.
+up doherty.chem_e_stairs.4
+down doherty.chem_e_stairs.2
+east doherty.3.chem_e
+
+4 Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor 4. There is a door to your east.
+up doherty.chem_e_stairs.roof
+down doherty.chem_e_stairs.3
+east doherty.4.chem_e
+
+roof Doherty Hall
+You're in Doherty Hall. You're in a stairwell with black stairs and windows. You're on the highest landing, which has a small roof door to your north.
+down doherty.chem_e_stairs.4
+north "The roof door is locked."

@@ -1,0 +1,55 @@
+art_hall Doherty Hall
+You're inside Doherty Hall. A staircase leads upward, and in the middle of the hallway to your north one descends down at a strange angle. A door to a studio is open to your east, the hallway continues north, and to your south, a dimly lit white corridor runs perpendicular to the one you stand in.
+up doherty.a.west
+down doherty.c.elevators
+north doherty.b.elevators
+east doherty.b.first_year_studio
+south doherty.b.mall_side_corridor.mural
+
+first_year_studio Doherty Hall Art Studio
+TODO
+
+mall_side_corridor.mural Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. A hallway branches off to the north. On the wall to your south is a beautiful mural, and a sign pointing to Wean Hall to your west, and Gilbert Hall ahead to the south.
+north doherty.b.art_hall
+west doherty.b.mall_side_corridor.steam_tunnels
+east doherty.b.mall_side_corridor.pipes
+
+mall_side_corridor.steam_tunnels Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. Wean Hall is just to your west. A door with a "Hard Hats Required" sign is to your south, and a rusty metal trapdoor occupies a corner of the corridor.
+south "The door is locked."
+west liminal.ramp
+east doherty.b.mall_side_corridor.mural
+down doherty.d_tunnel.west "You open the trapdoor and descend a rusty ladder."
+NOTE north? elevator?
+
+mall_side_corridor.pipes Doherty Hall
+You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. To your south, a plinth behind a chain-link fence rises to about chest height, with some pipes atop it. It looks particularly climbable.
+NOTE north? elevator?
+west doherty.b.mall_side_corridor.mural
+east doherty.b.mall_side_corridor.chem_e
+south doherty.b.pipes.closets "You climb up onto the plinth, then step up further onto the ceiling of a closet."
+
+pipes.closets Doherty Pipes
+You're on top of the ceiling of some closets, surrounded by pipes and copious dust, which might contain asbestos. It's dark. Directly below you is a hole, through which you can see stairs. You can jump down to ground level to your north, or climb further west.
+north doherty.b.mall_side_corridor.pipes
+west doherty.b.pipes.mural "You climb west, coating yourself in itchy black dust."
+down doherty.b.226 "You drop down carefully."
+
+pipes.mural Doherty Pipes
+You're on top of some pipes and steel conduits, looking down into a corridor. You see a beautiful mural below. You can continue east or west, or drop down.
+down doherty.b.mall_side_corridor.mural
+east doherty.b.pipes.closets
+west doherty.b.pipes.tunnel
+
+pipes.tunnel Doherty Pipes
+You're on top of some pipes and steel conduits, above a door marked "Hard Hats Required". It would be quite a drop down to the ground. The pipes continue to your east, but have turned south and pass through a small hole in the wall. On the other side, you see a tunnel.
+down "It would not be safe to drop from this height."
+east doherty.b.pipes.mural
+south steam_tunnel.doherty_pipes
+
+226 Doherty B226
+You find yourself in a small room. There is a door to your west, and stairs descend into what appears to be a steam tunnel.
+west doherty.b.mall_side_corridor.pipes
+up "There is a hole in the ceiling, but you have no way of climbing up to it."
+down doherty.d_tunnel.east

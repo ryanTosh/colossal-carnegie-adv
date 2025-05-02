@@ -1,0 +1,33 @@
+b Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor B, the lowest floor. There is a door to your north.
+up doherty.warm_stairs.a
+north doherty.b.by_stairs
+
+a Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor A. There is a door to your north.
+up doherty.warm_stairs.1
+down doherty.warm_stairs.b
+north doherty.a.by_stairs
+
+1 Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor 1. There is a door to your north.
+up doherty.warm_stairs.2
+down doherty.warm_stairs.a
+north doherty.1
+
+2 Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor 2. There is a door to your north.
+up doherty.warm_stairs.3
+down doherty.warm_stairs.1
+north doherty.2
+
+3 Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor 3. There is a door to your north.
+up doherty.warm_stairs.4
+down doherty.warm_stairs.2
+north doherty.3
+
+4 Doherty Hall
+You're in Doherty Hall. You're in an uncomfortably warm stairwell with red floors. A sign indicates you're on floor 4, the highest floor. There is a door to your north.
+down doherty.warm_stairs.3
+north "The door is locked. Through the window you can see a maintenance area."

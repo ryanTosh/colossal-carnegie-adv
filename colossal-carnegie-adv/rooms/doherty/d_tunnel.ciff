@@ -1,0 +1,9 @@
+west Doherty Steam Tunnel
+You're at the base of a rusty ladder, in a disused steam tunnel which continues to the east, where you see stairs descending from the ceiling. Uninsulated pipes run along the walls, and water trickles along the floor. It's uncomfortably hot.
+up doherty.b.mall_side_corridor.steam_tunnels "You climb the ladder and use a red handle to open the trapdoor from the inside."
+east doherty.d_tunnel.east
+
+east Doherty Steam Tunnel
+You're at the base of a set of stairs descending from the ceiling, in a disused steam tunnel which continues to the west. Uninsulated pipes run along the walls, and water trickles along the floor. It's uncomfortably hot.
+up doherty.b.226
+west doherty.d_tunnel.west

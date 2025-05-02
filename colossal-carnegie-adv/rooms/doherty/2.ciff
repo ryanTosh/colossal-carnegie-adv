@@ -1,0 +1,19 @@
+stairs Doherty Hall
+You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a long corridor to your west, and a lecture hall to your south.
+up doherty.3.stairs
+down doherty.1.stairs
+west doherty.2.bridge
+south doherty.2.210
+
+bridge Doherty Hall
+You're inside Doherty Hall. Windows to your north overlook Gates and Purnell, and ones to your south overlook the mall and Baker. The corridor you're in runs east-west.
+east doherty.2.stairs
+west doherty.2.west
+
+west Doherty Hall
+You're inside Doherty Hall. A staircase is next to you, going both up and down. There's a pair of double doors to the west, a lecture hall to your south, and a long corridor to your east.
+west liminal.7
+south dh2315
+east doherty.2.bridge
+up doherty.3.west
+down doherty.1.west

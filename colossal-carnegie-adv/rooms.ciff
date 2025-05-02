@@ -50,7 +50,7 @@ west baker.1
 
 thefence The Fence
 You behold the Fence, which is painted with three mysterious letters: "KGB". Lawns sprawl out in all directions, except west, where Doherty Hall stands.
-west doherty.1
+west doherty.1.front
 north thecut.south
 south cfa_lawn
 east cfaparkinglot
