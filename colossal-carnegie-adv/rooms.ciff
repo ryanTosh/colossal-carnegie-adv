@@ -3,7 +3,7 @@ You are standing in front of an open field, facing west toward Hamerschlag Hall.
 west west_mall
 north doherty.1.west
 south baker.1
-east cfalawn
+east cfa_lawn
 item pamphlet
 itembrief pamphlet A pamphlet is lying on the ground.
 facing west
@@ -45,14 +45,14 @@ outsidehunt Outside Hunt Library
 In front of you, just to your south, stands Hunt Library, with its facade of glass and steel. A sidewalk to your east runs alongside the College of Fine Arts, and the CFA Lawn is to your north.
 south hunt.1
 east hunttopeace
-north cfalawn
+north cfa_lawn
 west baker.1
 
 thefence The Fence
 You behold the Fence, which is painted with three mysterious letters: "KGB". Lawns sprawl out in all directions, except west, where Doherty Hall stands.
 west doherty.1
 north thecut.south
-south cfalawn
+south cfa_lawn
 east cfaparkinglot
 
 thecut.south The Cut South
