@@ -75,6 +75,7 @@ b.mall_side_corridor.steam_tunnels Doherty Hall
 You're inside Doherty Hall. You're in a long, sloping corridor with white walls, running east-west. Wean Hall is just to your west. A door with a "Hard Hats Required" sign is to your south, and a rusty metal trapdoor occupies a corner of the corridor.
 south "The door is locked."
 west liminal.ramp
+east doherty.b.mall_side_corridor.mural
 down doherty.d_tunnel.west "You open the trapdoor and descend a rusty ladder."
 NOTE north? elevator?
 
