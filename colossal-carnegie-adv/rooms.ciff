@@ -59,8 +59,8 @@ thecut.south The Cut South
 Sidewalks criss-cross the lawn you're standing on. The Fence is to your south, and the Cut continues to the north.
 north thecut.north
 south thefence
-east tenniscourts
-west dohertyjungle "You make your way down a staircase, which descends into a dense forest."
+east tennis_courts
+west doherty_wilderness "You make your way down a staircase, which descends into a dense forest."
 
 thecut.north The Cut North
 You find yourself on a lawn to the north of the Fence, between it and Walking to the Sky. To your west is the Purnell Center, and to your east is a sidewalk outside the University Center.
