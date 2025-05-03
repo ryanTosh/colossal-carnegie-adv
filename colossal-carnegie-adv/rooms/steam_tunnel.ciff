@@ -1,10 +1,10 @@
-wean Steam Tunnel: West End
-You stand in a steam tunnel at the base of a narrow set of steps, which continue up to your east. A single door to your west has a painted warning indicating that it's alarmed.
+wean Steam Tunnel
+You stand in a steam tunnel at the bottom of a narrow set of steps. A single door to your west has a painted warning indicating that it's alarmed.
 west wean.4.703
 east steam_tunnel.hot_nut
 up steam_tunnel.hot_nut
 
-hot_nut Steam Tunnel: Hot Nut
+hot_nut Steam Tunnel
 You find yourself in the western end of a long steam tunnel, at the top of a narrow run of stairs. A pipe runs vertically just to the side, with an extremely hot nut sticking out.
 west steam_tunnel.wean
 down steam_tunnel.wean
@@ -41,8 +41,8 @@ west steam_tunnel.mall_trapdoor
 east steam_tunnel.three_way_intersection
 south steam_tunnel.under_cfa
 
-steam_tunnel.party_room Party Room
-You find yourself in a large, unlit room. A ladder goes down, and stalactites hang from the ceiling. You imagine this would be a cozy place to live, and it seems someone may have once had the same idea.
+party_room Party Room
+You find yourself in a large unlit room. A ladder goes down, and stalactites hang from the ceiling. You imagine this would be a cozy place to live, and it seems someone may have once had the same idea.
 down steam_tunnel.cfa_intersection
 
 under_cfa Steam Tunnel: CFA Branch

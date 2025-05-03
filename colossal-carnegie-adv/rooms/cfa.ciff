@@ -23,7 +23,7 @@ south cfa.ground.under_peace_garden_stairs
 ground.under_peace_garden_stairs Under CFA Peace Garden Stairs
 You're to the south of the CFA building, with a door to the ground floor to your north. To your south is a bulletin board covered in posters. Stairs to your east and west go up a few feet to the peace garden.
 north cfa.ground.south
-door south steam_tunnel.cfa_pos_corner
+door south steam_tunnel.gsia
 east peace_garden
 west peace_garden
 up peace_garden
