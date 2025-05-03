@@ -22,6 +22,5 @@ d Hamerschlag Hall: Fedbai D
 You're in a claustrophobically small vestibule with an ancient elevator. There is a door to your south, and a door to a stairwell to your east.
 south "The door is locked."
 east hamerschlag.north_stairs.d
-
 up hamerschlag.fedbai.b
-down hamerschlag.fedbai.d
+down hamerschlag.e.north

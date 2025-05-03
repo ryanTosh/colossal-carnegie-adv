@@ -9,7 +9,10 @@ interface RoomDir {
     isDoor: boolean;
     doorAliasOf?: Dir;
     isOpen?: boolean;
+    closeOnUse?: boolean;
     keyItem?: string | null;
+    sayOnSightIfOpen?: string;
+    sayOnSightIfClosed?: string;
     sayIfClosed?: string;
     sayOnOpen?: string;
     sayOnNoItem?: string;

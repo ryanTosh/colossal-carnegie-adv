@@ -204,7 +204,7 @@ export class Player {
 
                     if (roomDir.nouns.includes(noun) || noun == "") {
                         if (targetDir !== undefined) {
-                            return "Which " + noun + " do you want to open?";
+                            return (noun == "" ? "What" : "Which " + noun) + " do you want to open?";
                         }
 
                         targetDir = roomDir;
@@ -216,7 +216,7 @@ export class Player {
                         return targetDir.sayOnAlreadyOpen ?? "It's already open.";
                     }
 
-                    if (targetDir.keyItem !== undefined && !this.inv.includes(targetDir.keyItem!)) {
+                    if (targetDir.keyItem !== null && targetDir.keyItem !== undefined && !this.inv.includes(targetDir.keyItem!)) {
                         return targetDir.sayOnNoItem ?? "You don't have the right item to open it.";
                     }
 
@@ -405,6 +405,10 @@ export class Player {
                     return this.room.dirs[dir].sayIfClosed ?? "The door " + dir + " is closed.";
                 }
 
+                if (this.room.dirs[dir].isDoor && this.room.dirs[dir].closeOnUse === true) {
+                    this.room.dirs[dir].isOpen = false;
+                }
+
                 const gotoRoom = this.prog.rooms[this.room.dirs[dir].goto]!;
                 const say = ("say" in this.room.dirs[dir] ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
 
@@ -429,6 +433,20 @@ export class Player {
             } else {
                 return "\nA " + this.prog.items[item.itemId].short + " is lying on the ground.";
             }
+        }).join("") + Object.values(room.dirs).map((dir) => {
+            if (dir.isDoor) {
+                if (dir.isOpen) {
+                    if (dir.sayOnSightIfOpen !== undefined) {
+                        return dir.sayOnSightIfOpen && "\n" + dir.sayOnSightIfOpen;
+                    }
+                } else {
+                    if (dir.sayOnSightIfClosed !== undefined) {
+                        return dir.sayOnSightIfClosed && "\n" + dir.sayOnSightIfClosed;
+                    }
+                }
+            }
+
+            return "";
         }).join("");
     }
 }

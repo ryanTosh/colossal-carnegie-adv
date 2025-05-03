@@ -1,3 +1,20 @@
+north Hamerschlag Hall: Steam tunnel, old section
+This section of tunnel is much cooler in temperature than the rest. It's damp, and the walls appear roughly excavated. Drainage pipes stick out of the walls haphazardly. To your north the tunnel terminates, and through a PVC pipe you can see the gray brick foundation of Scott Hall. The rest of the tunnel, which is wider, is to your south.
+south hamerschlag.steam_tunnel.middle
+
+middle Hamerschlag Hall: Steam tunnel
+You're in the middle of an old steam tunnel. Rusty equipment of unknown purpose lines the walls. A ladder goes up to a small room. The tunnel runs north-south, and the section to your north appears narrower.
+north hamerschlag.steam_tunnel.north
+south hamerschlag.steam_tunnel.under_ladder
+up hamerschlag.f.steam_tunnel_room
+
 under_ladder Hamerschlag Hall: Steam tunnel
-You're in an old steam tunnel at the base of a rusty ladder.
-NOTE unfinished
+You're in an old steam tunnel at the base of a rusty ladder. The tunnel runs north-south. You see some old rusty equipment, including old conveyor belts. A loud hissing noise is audible from the south.
+north hamerschlag.steam_tunnel.middle
+south hamerschlag.steam_tunnel.south
+up hamerschlag.f.lab_under_construction "You climb the rusty ladder, wary of the risk of a broken rung. You push the trapdoor open and make a risky climb up onto a concrete ledge, barely pulling yourself out of the tunnel."
+NOTE puzzle with conveyor belt?
+
+south Hamerschlag Hall: Steam tunnel
+You're in the southernmost end of an ancient steam tunnel. You're surrounded by disused pipes, as well as a single pipe of extremely wide diameter, from which an unbearably loud hissing sound is emanating.
+north hamerschlag.steam_tunnel.under_ladder

@@ -139,7 +139,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                 }
                 case "doorsay":
                 {
-                    const parsed = propRow.match(/^\w+ (IfClosed|OnOpen|OnNoItem|OnWrongItem|OnAlreadyOpen|OnClose) (north|east|south|west|northeast|northwest|southeast|southwest|up|down) ("(?:[^"\n]|"")*")$/);
+                    const parsed = propRow.match(/^\w+ (OnSightIfOpen|OnSightIfClosed|IfClosed|OnOpen|OnNoItem|OnWrongItem|OnAlreadyOpen|OnClose) (north|east|south|west|northeast|northwest|southeast|southwest|up|down) ("(?:[^"\n]|"")*")$/);
 
                     if (parsed == null) {
                         throw "Invalid 'doorsay' prop format in room '" + id + "': " + propRow;
@@ -149,7 +149,23 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                         throw "No known door in dir '" + parsed[2] + "' in room '" + id + "'";
                     }
 
-                    dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].slice(1, -1).replace(/""/g, "\"");
+                    dirs[parsed[2] as Dir]![("say" + parsed[1]) as "sayOnSightIfOpen" | "sayOnSightIfClosed" | "sayIfClosed" | "sayOnOpen" | "sayOnNoItem" | "sayOnWrongItem" | "sayOnClose"] = parsed[3].slice(1, -1).replace(/""/g, "\"");
+
+                    break;
+                }
+                case "doorcloseonuse":
+                {
+                    const parsed = propRow.match(/^\w+ (north|east|south|west|northeast|northwest|southeast|southwest|up|down)$/);
+
+                    if (parsed == null) {
+                        throw "Invalid 'doorcloseonuse' prop format in room '" + id + "': " + propRow;
+                    }
+
+                    if (!(parsed[1] in dirs) || !dirs[parsed[1] as Dir]!.isDoor) {
+                        throw "No known door in dir '" + parsed[2] + "' in room '" + id + "'";
+                    }
+
+                    dirs[parsed[1] as Dir]!.closeOnUse = true;
 
                     break;
                 }

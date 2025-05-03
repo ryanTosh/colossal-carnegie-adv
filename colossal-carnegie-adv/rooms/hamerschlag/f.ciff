@@ -1,5 +1,5 @@
 north Hamerschlag Hall: Floor F north hallway
-You're in a small hallway with an ancient elevator. At the east end is a door to a stairwell. A pair of locked double doors sits to your north. You can go west.
+You're in a small hallway with an ancient elevator. At the east end is a door to a stairwell. A pair of locked double doors sit to your north. You can go west.
 north "The double doors are locked."
 east hamerschlag.fedbai.stairs.f
 up hamerschlag.e.north
@@ -35,12 +35,21 @@ west hamerschlag.f.south_corner
 south hamerschlag.scaife_side_stairs.f
 
 lab_under_construction Hamerschlag Hall: Floor F laboratory
-You're in a lab which is under construction. There are steel wall frames and ladders dividing up the space, and a silvery trapdoor in the ground seems to not quite be closed. A corridor is to your west.
+You're in a lab which is under construction. There are steel wall frames and ladders dividing up the space. A corridor is to your west.
 west hamerschlag.f.north_labs
-door down hamerschlag.steam_tunnel.under_trapdoor
+door down hamerschlag.steam_tunnel.under_ladder "You carefully step onto the ladder, which is made difficult by its offset position relative to the trapdoor. Carefully testing each rung, you slowly descend."
+doorsay OnOpen down "You lift the trapdoor open. Beneath it is a rusty ladder down to a concrete room of rusty pipes and equipment."
+doorcloseonuse down
+doorsay OnSightIfClosed down "A silvery trapdoor in the ground seems slightly ajar."
+doorsay OnSightIfOpen down "A silvery trapdoor in the ground is standing open."
 
 xray_lab Hamerschlag Hall: Floor F X-ray laboratory
 You're in an MSE lab with some sort of x-ray machine. There are exits to your south and west.
 south hamerschlag.f.south_hallway
 east hamerschlag.f.south_labs
 NOTE make x-ray machine do something
+
+steam_tunnel_room Hamerschlag Hall: Floor F machine room
+A small room with double doors to the south. One half of the room is filled with some large hydraulic equipment, and the other half is a pit with a ladder down to what appears to be a tunnel.
+south hamerschlag.f.north
+down hamerschlag.steam_tunnel.middle
