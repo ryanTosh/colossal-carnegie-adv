@@ -35,7 +35,7 @@ down doherty.d_tunnel.west "You open the trapdoor and descend a rusty ladder."
 NOTE north? elevator?
 
 pipes.closets Doherty Pipes
-You're on top of the ceiling of some closets, surrounded by pipes and copious dust, which might contain asbestos. It's dark. Directly below you is a hole, through which you can see stairs. You can jump down to ground level to your north, or climb further west.
+You're on top of the ceiling of some closets, surrounded by pipes and copious dust, which might contain asbestos. It's dark. Directly below you is a hole through which you can see stairs. You can jump down to ground level to your north, or climb further west.
 north doherty.b.mall_side_corridor.pipes
 west doherty.b.pipes.mural "You climb west, coating yourself in itchy black dust."
 down doherty.b.226 "You drop down carefully."
