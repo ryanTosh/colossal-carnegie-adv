@@ -1,0 +1,12 @@
+chem_e Doherty Hall
+You're in Doherty Hall. You're in a small concrete-walled area with a stairwell to your west. There is an elevator here. To your north the space widens, and you see many art projects constructed from cardboard.
+west doherty.chem_e_stairs.c
+north doherty.c.cardboard_area
+up doherty.b.chem_e
+
+cardboard_area Doherty Hall
+You're in Doherty Hall. The walls of this room are made of concrete and pipes run overhead. You're surrounded by cardboard, both in the form of collapsed boxes, and as intricate art projects. A set of doors go outside to the north, a hallway runs west, and you can go south to an emptier area. There is an elevator here with only a down button.
+north doherty_wilderness
+west doherty.c.above_forge
+south doherty.c.chem_e
+down doherty.d.paint_shop_door

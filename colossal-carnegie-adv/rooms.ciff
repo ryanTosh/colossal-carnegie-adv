@@ -180,7 +180,7 @@ doherty_wilderness Wilderness
 You stand in a small grove of unmaintained forest. A path meanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
 east thecutsouth "You climb a wooden staircase, and find yourself in an open space."
 west schlagdriveloadingdock
-south doherty.c.chem_e
+south doherty.c.cardboard_area
 
 nevilleellsworth Neville St & Ellsworth Ave
 You're at the intersection of Neville Street and Ellsworth Avenue. Ellsworth is to your east, and west campus is far downhill to your south, past Fifth Avenue.

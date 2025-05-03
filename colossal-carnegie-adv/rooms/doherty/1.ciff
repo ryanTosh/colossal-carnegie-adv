@@ -6,9 +6,11 @@ south doherty.warm_stairs.1
 north doherty.1.chem_e
 
 chem_e Doherty Hall
-You're in Doherty Hall. You're in a Chemical Engineering area with a stairwell to your west and a hallway to south. Light streams in through large windows to your east.
+You're in Doherty Hall. You're in a Chemical Engineering area with a stairwell to your west and a hallway to the south. There is an elevator here. Light streams in through large windows to your east.
 west doherty.chem_e_stairs.1
 south doherty.1.front
+up doherty.2.chem_e
+down doherty.a.chem_e
 
 stairs Doherty Hall
 You're inside Doherty Hall. A staircase is next to you, going both up and down. A door to the north seems to open into a larger space.

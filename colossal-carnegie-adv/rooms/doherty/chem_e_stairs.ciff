@@ -1,7 +1,7 @@
 c Doherty Hall
 You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor C, the lowest floor. There is a door to your east.
 up doherty.chem_e_stairs.b
-east doherty.c.cardboard_area
+east doherty.c.chem_e
 
 b Doherty Hall
 You're in Doherty Hall. You're in a stairwell with black stairs and windows. A sign indicates you're on floor B. There is a door to your east.
