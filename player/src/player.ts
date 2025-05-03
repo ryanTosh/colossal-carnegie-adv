@@ -212,6 +212,8 @@ export class Player {
                 }
 
                 if (targetDir !== undefined) {
+                    while (targetDir.doorAliasOf !== undefined) targetDir = this.room.dirs[targetDir.doorAliasOf]!;
+
                     if (targetDir.isOpen) {
                         return targetDir.sayOnAlreadyOpen ?? "It's already open.";
                     }
@@ -396,13 +398,17 @@ export class Player {
         return "I can't find any '" + noun + "'.";
     }
 
-    private tryMove(dir: Dir): string {
+    private tryMove(dir: Dir, originalDoorDir?: string): string {
         if (this.room.dirs[dir] !== undefined) {
             if (this.room.dirs[dir].goto === undefined) {
                 return this.room.dirs[dir].say ?? "You cannot go " + dir + ".";
             } else {
+                if (this.room.dirs[dir].doorAliasOf !== undefined) {
+                    return this.tryMove(this.room.dirs[dir].doorAliasOf, originalDoorDir ?? dir);
+                }
+
                 if (this.room.dirs[dir].isDoor && !this.room.dirs[dir].isOpen) {
-                    return this.room.dirs[dir].sayIfClosed ?? "The door " + dir + " is closed.";
+                    return this.room.dirs[dir].sayIfClosed ?? "The door " + (originalDoorDir ?? dir) + " is closed.";
                 }
 
                 if (this.room.dirs[dir].isDoor && this.room.dirs[dir].closeOnUse === true) {
