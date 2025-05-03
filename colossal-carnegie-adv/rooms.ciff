@@ -178,8 +178,8 @@ west cfaparkinglot
 
 doherty_wilderness Wilderness
 You stand in a small grove of unmaintained forest. A path meanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
-east thecutsouth "You climb a wooden staircase, and find yourself in an open space."
-west schlagdriveloadingdock
+east thecut.south "You climb a wooden staircase, and find yourself in an open space."
+west hamerschlag_drive.gates_loading_dock
 south doherty.c.cardboard_area
 
 nevilleellsworth Neville St & Ellsworth Ave
