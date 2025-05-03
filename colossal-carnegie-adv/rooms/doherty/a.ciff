@@ -16,7 +16,7 @@ up doherty.1.west
 down doherty.b.art_hall
 
 east Doherty Hall
-You're in Doherty Hall. You're at the east end of a long hallway, with a sold-out soda vending machine emitting large quantities of heat. The warm stairs are to your south, and a hallway runs north.
+You're in Doherty Hall. You're at the east end of a long hallway, with a sold-out soda vending machine emitting a large quantity of heat. The warm stairs are to your south, and a hallway runs north.
 south doherty.warm_stairs.a
 north doherty.a.chem_e
 west doherty.a.stairs
