@@ -34,6 +34,6 @@ up wean.stairs.d.9
 down wean.stairs.d.7
 
 9 Wean 9 Stairwell D
-A door with a large 9 is to your north. You can go down.
+Unusual doors sit to your north and west. The roof is visible through a small hole drilled in the east wall. You can go down.
 down wean.stairs.d.8
-NOTE change desc since no 9 is visible
+NOTE implement wean 9 and weird closet

@@ -30,16 +30,17 @@ east wean.5.north
 west wean.5.100
 
 300 Wean 5300 Corridor
-You're in an uninteresting corridor east of the lobby. A sign points to Doherty A to your east. A bulletin board to your south displays skibidi pride flags.
+You're in a corridor east of the lobby. A sign points to Doherty A to your east. A bulletin board to your south displays skibidi pride flags.
 west wean.5.north
 east wean.5.dhside
 north wean.stairs.a2.5
-item wean5bulletinboard
-item skibidimsmflag
-item skibidilesbianflag
-item skibiditransflag
-item skibidiagenderflag
-item estrogencookiesad
+item bulletin_board
+item skibidi_gay_flag
+item skibidi_lesbian_flag
+item skibidi_trans_flag
+item skibidi_agender_flag
+item estrogen_cookies_ad
+NOTE integrate bulletin board status into printout
 
 400 Wean 5400 Corridor
 You're in a corridor east of the lobby, which oversees Sorrels Library to the south. A sign points to Doherty A to your east.

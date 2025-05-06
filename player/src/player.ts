@@ -437,6 +437,10 @@ export class Player {
 
                 return briefing && "\n" + briefing;
             } else {
+                if (!(item.itemId in this.prog.items)) {
+                    throw new Error("No item with ID '" + item.itemId + "'");
+                }
+                
                 return "\nA " + this.prog.items[item.itemId].short + " is lying on the ground.";
             }
         }).join("") + Object.values(room.dirs).map((dir) => {
