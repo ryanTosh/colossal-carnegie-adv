@@ -1,0 +1,39 @@
+d ANSYS Stairs: Floor D
+You're at the bottom of a flight of stairs. A single door to your east has a card scanner showing red, but is unlocked.
+up ansys.stairs.c
+east ansys.d
+
+c ANSYS Stairs: Floor C
+You're in the middle of a flight of stairs. A door to your north goes to floor C, a door to your west goes outside, and there is a short, unmarked, unlocked door to your east.
+up ansys.stairs.b
+down ansys.stairs.d
+north ansys.c
+west scaife_quad
+east porter.a.18
+
+b ANSYS Stairs: Floor B
+You're in the middle of a flight of stairs. A door to your north goes to floor B, a door to your west goes outside, and there is a locked door to your east. On the other side you see a kitchenette.
+up ansys.stairs.a
+down ansys.stairs.c
+north ansys.b
+west porter.b.cee.patio
+east "The door is locked."
+
+a ANSYS Stairs: Floor A
+You're in the middle of a flight of stairs. A door to your north goes to floor A.
+up ansys.stairs.1
+down ansys.stairs.b
+north ansys.a
+
+1 ANSYS Stairs: Floor 1
+You're in the middle of a flight of stairs. A door to your north goes to floor 1.
+up ansys.stairs.2
+down ansys.stairs.a
+north ansys.1
+
+2 ANSYS Stairs: Floor 2
+You're at the top of a flight of stairs. A locked door to your north goes to floor 2, there is a pair of locked double doors to your west, and there is a short locked door to your east.
+down ansys.stairs.1
+north "The door is locked."
+west "The doors are locked."
+east "The door is locked."

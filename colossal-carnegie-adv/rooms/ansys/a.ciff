@@ -1,0 +1,5 @@
+@ ANSYS Hall: Floor A, The Belonging Center
+This is a nice quiet area with comfortable chairs and potted plants. To the east there's a ramp to Porter A, and a door to the south takes you to a stairwell. Another stairwell is through a large pair of double doors to your north.
+east porter.a
+south ansys.stairs.a
+north ansys.big_stairs.a

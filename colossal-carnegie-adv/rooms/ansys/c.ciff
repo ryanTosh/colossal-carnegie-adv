@@ -1,0 +1,11 @@
+@ ANSYS Hall: Floor C
+This is the ground floor of ANSYS Hall, with an exit through a pair of glass double doors to the west, through which the Scaife Quad is visible. TechSpark is to the north, and there is a door to a stairwell to the south. To the east there is a hallway running north.
+west scaife_quad
+north techspark
+south ansys.stairs.c
+east ansys.c.courtyard_hallway
+
+courtyard_hallway ANSYS Hall: Floor C, courtyard hallway
+This hallway runs north to a door into a small enclosed outdoor space. ANSYS C is to the west.
+north cursed_courtyard
+west ansys.c

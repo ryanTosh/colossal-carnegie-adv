@@ -1,0 +1,34 @@
+d ANSYS Hall: Floor D, Big Stairs
+You're at the bottom of a large flight of stairs. A single door to your west has a card scanner showing red.
+up ansys.big_stairs.c
+west "The door is locked."
+
+c ANSYS Hall: Floor C, Big Stairs
+You're in the middle of a flight of stairs. TechSpark is visible through a pair of glass doors to your west.
+up ansys.big_stairs.b
+down ansys.big_stairs.d
+west techspark
+
+b ANSYS Hall: Floor B, Big Stairs
+You're standing on a balcony by a large set of stairs going up and down. You can see TechSpark below you to the west, and an outside wall of Porter Hall to your east. A door leads outside to a walkway to your north, and floor B is through a large pair of double doors to the south.
+up ansys.big_stairs.a
+down ansys.big_stairs.c
+north scaife_walkway
+south ansys.b
+
+a ANSYS Hall: Floor A, Big Stairs
+You're in the middle of a large flight of stairs. A large pair of double doors to the south goes to floor A.
+up ansys.big_stairs.1
+down ansys.big_stairs.b
+south ansys.a
+
+1 ANSYS Hall: Floor 1, Big Stairs
+You're in the middle of a large flight of stairs. A large pair of double doors to the south goes to floor 1.
+up ansys.big_stairs.2
+down ansys.big_stairs.a
+south ansys.1
+
+2 ANSYS Hall: Floor 2, Big Stairs
+You're at the top of a large flight of stairs. A single door to your west goes to floor 2.
+down ansys.big_stairs.1
+west ansys.2.offices
