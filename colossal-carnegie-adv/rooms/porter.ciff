@@ -86,7 +86,7 @@ north porter.b.cubicles
 b.stairs.mid Porter B Stairs
 You're on the middle landing of a short stairwell, with a large office space to your south and an emergency exit door to your west.
 west underscaifewalkway "You pass through two doors, and walk down a few steps."
-north porter.b.cubicles
+south porter.b.cubicles
 up porter.b.stairs.high
 down porter.b.stairs.low
 

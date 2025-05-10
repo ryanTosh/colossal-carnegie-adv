@@ -25,7 +25,7 @@ doorkeyitem down crowbar
 doorsay OnOpen down "Using the crowbar, you lift one of the trapdoors just enough to slip your hands under it. With all your might, you lift it open."
 
 steam_tunnel.entry Baker-Porter Steam Tunnel
-You find yourself in a small, claustrophobic space, with an open trapdoor above your head and a rusty metal ladder leading up to it. You're surrounded on three sides by brick walls, but see a gap to your south in the many steam pipes.
+You find yourself in a small, claustrophobic space, with an open trapdoor above your head and a rusty metal ladder leading up to it. You're surrounded on three sides by brick walls, but see a gap to your south among the many steam pipes.
 up baker.1.trapdoors
 south baker.steam_tunnel.west "You carefully climb between the pipes, checking each to ensure they won't burn you."
 
