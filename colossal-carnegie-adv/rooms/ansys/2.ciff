@@ -6,7 +6,7 @@ west ansys.2.kitchenette
 offices ANSYS Hall: Floor 2, offices
 This is a large, inviting space filled with cubicles and doors to offices. A door to the east goes to a stairwell, and a narrow hallway runs south.
 east ansys.big_stairs.2
-south ansys.kitchenette
+south ansys.2.kitchenette
 
 kitchenette ANSYS Hall: Floor 2, kitchenette
 This is a small kitchenette. There is a conference room just to the west, and a pair of glass double doors opposite it to the east. A narrow hallway runs north, and a there is a door to a stairwell to the south.
