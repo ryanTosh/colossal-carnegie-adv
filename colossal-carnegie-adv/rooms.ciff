@@ -311,5 +311,5 @@ up scaife_walkway
 scaife_walkway Scaife Walkway
 You're on a bridge, which runs from the Scaife Quad to your west and the Mall to your east. There is a door into ANSYS Hall to your south.
 west scaife_quad
-east mall
+east west_mall
 south ansys.big_stairs.b
