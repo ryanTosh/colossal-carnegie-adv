@@ -218,6 +218,6 @@ north fifthneville
 
 nshbridge Newell-Simon Bridge
 You feel air whoosh past you as you look several stories to the loading dock below you. They need to fix the air vents. Newell-Simon Hall is to your north, and Wean Hall is to your south.
-north newellsimon
+north newell_simon.south
 south wean.4.north
 west wean.4.vents

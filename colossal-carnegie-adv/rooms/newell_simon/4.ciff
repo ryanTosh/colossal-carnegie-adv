@@ -1,0 +1,18 @@
+south Newell-Simon: Floor 4, South
+A bridge to Wean Hall is just to your south. The corridor continues north, and locked hallways sit to either side. A robotic arm is on display.
+north newell_simon.4.junction
+south nshbridge
+
+junction Newell-Simon: Floor 4
+To your south is a corridor going in the direction of the bridge to Wean Hall. A walkway to your east goes in the direction of the bridge to Gates. A stairwell is to your west, and another set of stairs go down to floor 3.
+south newell_simon.4.south
+east newell_simon.4.gates
+west newell_simon.boring_stairs.4
+down newell_simon.3.outside_hunan
+
+gates Newell-Simon: Floor 4, by Gates
+The bridge to Gates is to your east. You can go west, and a stairwell sits to your north. The third floor atrium is visible over a railing.
+east gates_bridge
+west newell_simon.4.junction
+north newell_simon.north_stairs.4
+down "It would be inadvisable to jump from this height. Try going west?"

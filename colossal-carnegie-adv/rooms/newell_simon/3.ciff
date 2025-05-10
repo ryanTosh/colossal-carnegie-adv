@@ -1,0 +1,16 @@
+outside_hunan Newell-Simon: Floor 3, outside Hunan
+You're in a large open space. Light floods in through large windows to the east, and Hunan is to your south. You can go west.
+south china.hunan.wilderness
+west newell_simon.3.lobby
+
+lobby Newell-Simon: Floor 3, lobby
+You're underneath a staircase which leads up to the 4th floor, east of a large open space with many tables. There's a stairwell to your west and an information desk to your north. The HCI Institute is to your south.
+up newell_simon.4.junction
+west newell_simon.boring_stairs.3
+north newell_simon.3.roboceptionist
+south "The designer of this game refuses to acknowledge the field of human-computer interaction. Keep typing commands lol"
+
+roboceptionist Newell-Simon: Floor 3, Roboceptionist
+Next to you is an information desk. A stupid blue face stares at you, beside a nameplate reading "Marion 'Tank' LeFleur". There's a keyboard. You can go south to a large atrium or north to the outside.
+south newell_simon.3.lobby
+north west_quad "You decide to touch grass."

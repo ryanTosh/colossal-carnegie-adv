@@ -1,0 +1,31 @@
+4 Newell-Simon: Stairs, Floor 4
+The door is to your east. You can go up or down.
+east newell_simon.4.junction
+down newell_simon.boring_stairs.3
+up newell_simon.boring_stairs.5
+
+3 Newell-Simon: Stairs, Floor 3
+The door is to your east. You can go up or down.
+east newell_simon.3.lobby
+down newell_simon.boring_stairs.2
+up newell_simon.boring_stairs.4
+
+2 Newell-Simon: Stairs, Floor 2
+There is a locked door to your east. You can go up or down.
+down newell_simon.boring_stairs.1
+up newell_simon.boring_stairs.3
+
+1 Newell-Simon: Stairs, Floor 4
+There is a locked door to your east. You can go up or down.
+down newell_simon.boring_stairs.a
+up newell_simon.boring_stairs.2
+
+a Newell-Simon: Stairs, Floor 4
+There is a locked door to your east. You can go up or down.
+down newell_simon.boring_stairs.b
+up newell_simon.boring_stairs.1
+
+b Newell-Simon: Stairs, Floor 4
+There is a locked door to your east, but it is propped open with a bucket. You can go up.
+south newell_simon.b.train_tracks
+up newell_simon.boring_stairs.a
