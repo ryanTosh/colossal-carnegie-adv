@@ -1,13 +1,14 @@
 import type { Dir, Room } from "../../ciff-types/room.d.ts";
 
 export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<string>): { [id: string]: Room } {
-    const nsString = namespace.map(n => n + ".").join("");
+    const nsString = namespace.filter(n => n != "@").join(".");
     const rooms: { [id: string]: Room } = {};
 
     for (const roomSrc of roomsSrc.replace(/\r/g, "").split("\n\n")) {
         const rows = roomSrc.split("\n");
 
-        const id = nsString + rows[0].split(" ")[0];
+        const sub_id = rows[0].split(" ")[0];
+        const id = nsString + (sub_id == "@" ? "" : "." + sub_id);
         const short = rows[0].split(" ").slice(1).join(" ");
         const printout = rows[1];
 
@@ -82,7 +83,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                     }
 
                     dirs[parsed[1] as Dir] = {
-                        goto: parsed[2] ?? null,
+                        goto: parsed[2],
                         say: parsed[3] ? parsed[3].slice(1, -1).replace(/""/g, "\"") : undefined,
 
                         nouns: ["door", parsed[1]],
@@ -110,10 +111,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
                     }
 
                     dirs[parsed[1] as Dir] = {
-                        goto: parsed[2] ?? null,
-                        say: parsed[3] ? parsed[3].slice(1, -1).replace(/""/g, "\"") : undefined,
-
-                        nouns: ["door", parsed[1]],
+                        nouns: [],
 
                         isDoor: true,
                         doorAliasOf: words[2] as Dir
