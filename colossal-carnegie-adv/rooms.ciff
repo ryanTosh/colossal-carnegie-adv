@@ -300,7 +300,6 @@ west techspark "You manage to get through the door, only after making a consider
 north "The doors are locked."
 up "The door is locked."
 east scott.4_south.south
-up scaife_walkway "You climb a pillar."
 
 scaife_quad Scaife Quad
 You find yourself in a large quad north of Scaife Hall. You can walk under Scaife Hall to your south, into ANSYS Hall to your east, into Hamerschlag Hall to your north, or up a flight of stairs to the Scaife walkway.
