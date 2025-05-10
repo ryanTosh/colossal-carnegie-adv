@@ -56,8 +56,8 @@ north porter.cee.lab.b.patio
 cee.lab.b.patio Porter Hall Civil & Environmental Engineering Patio
 You're on a patio, with doors to your south leading into the Civil & Environmental Engineering wing of Porter Hall. To your north, stairs lead down to the Scaife Quad.
 south porter.cee.lab.b.exit
-down scaifequad
-north scaifequad
+down scaife_quad
+north scaife_quad
 
 b.hallway Porter B Hallway
 You're in a stretch of hallway on floor B of Porter Hall. A small kitchen is to your west, office cubicles to your east, and a pair of double doors to your south.
@@ -67,7 +67,7 @@ south porter.cee.lab.b
 
 b.cubicles Porter B Office Space
 You find yourself amid dozens of cubicles and glass-walled offices. An emergency exit door is to your west, a staircase is to your north, a glass door is to your east, and a crossroads of several hallways is to your south. As you walk, you notice a small trapdoor set in the carpeted floor.
-west underscaifewalkway "You pass through two doors, and walk down a few steps."
+west cursed_courtyard "You pass through two doors, and walk down a few steps."
 north porter.b.stairs.mid
 east porter.b
 south porter.b.crossroad
@@ -84,8 +84,7 @@ east porter.b.lounge
 north porter.b.cubicles
 
 b.stairs.mid Porter B Stairs
-You're on the middle landing of a short stairwell, with a large office space to your south and an emergency exit door to your west.
-west underscaifewalkway "You pass through two doors, and walk down a few steps."
+You're on the middle landing of a short stairwell, with a large office space to your south.
 south porter.b.cubicles
 up porter.b.stairs.high
 down porter.b.stairs.low

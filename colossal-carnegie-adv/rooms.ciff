@@ -292,3 +292,25 @@ north cfa.ground.under_peace_garden_stairs
 west outside_hunt
 east hall_of_arts.1.peace_garden_entrance
 south frew_east
+
+cursed_courtyard Cursed Courtyard
+This is a small enclosed outdoor space with a concrete floor, under the Scaife walkway. There is an alarmed door to ANSYS C to the south, an alarmed double door to TechSpark to the west, a locked double door into Hamerschlag Hall to the north, and a locked door to Porter Hall up a small flight of stairs. The only door you can actually use is a double door into Scott Hall to the east.
+south ansys.c.courtyard_hallway "You manage to get through the door, only after making a considerable racket."
+west techspark "You manage to get through the door, only after making a considerable racket."
+north "The doors are locked."
+up "The door is locked."
+east scott.4_south.south
+up scaife_walkway "You climb a pillar."
+
+scaife_quad Scaife Quad
+You find yourself in a large quad north of Scaife Hall. You can walk under Scaife Hall to your south, into ANSYS Hall to your east, into Hamerschlag Hall to your north, or up a flight of stairs to the Scaife walkway.
+south under_scaife
+east ansys.c
+north hamerschlag.c.lobby
+up scaife_walkway
+
+scaife_walkway Scaife Walkway
+You're on a bridge, which runs from the Scaife Quad to your west and the Mall to your east. There is a door into ANSYS Hall to your south.
+west scaife_quad
+east mall
+south ansys.big_stairs.b
