@@ -24,7 +24,7 @@ export class Player {
         const words = input.replace(/\s+/g, " ").trim().split(" ");
 
         if (words.length == 0 || words[0] == "") {
-            return "Huh??";
+            return "Huh?";
         }
 
         const tryMoveInput = this.tryRunMoveInput(words);
