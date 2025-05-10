@@ -58,7 +58,7 @@ west steam_tunnel.under_cfa "The tunnel turns to your right, running north."
 
 three_way_intersection Steam Tunnel: Three Way Intersection
 You find yourself at a three way intersection. One branch runs west, one runs north, and one runs east with a slight deviation to the south. Nearby, a ladder goes up some distance to a trapdoor.
-up in_front_of_posner "You climb the ladder and unlatch a trapdoor from the inside. Upon climbing out, you find yourself in front of the Posner Center."
+up outside_posner "You climb the ladder and unlatch a trapdoor from the inside."
 west steam_tunnel.cfa_intersection
 north steam_tunnel.mm_branch
 east steam_tunnel.skibo_branch

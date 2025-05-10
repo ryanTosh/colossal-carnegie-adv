@@ -153,28 +153,43 @@ cfa_parking_lot CFA Parking Lot
 You're in a large flat space, with the CFA building to your south. You see greenery to the west, and a road continues off to the east.
 south cfa.ground.north
 west thefence
-east mmsttechst
+east outside_posner
 
-mmsttechst Margaret Morrison Street & Tech Street
-You're at the intersection of two streets. The CFA parking lot is to your west, Margaret Morrison Carnegie Hall is to your north, and Posner Hall is to the south. Further east is the intersection between Margaret Morrison and Skibo.
-west cfaparkinglot
-east outsidehighmark
-north mmrotunda
+outside_posner Posner Hill
+You find yourself in a small grassy area in front of the Posner Center and Posner Hall, which is to your south. The CFA parking lot is to your west, and Margaret Morrison St. runs east. A path to your north approaches a set of stairs.
 south posner.a
+west cfa_parking_lot
+east mmst_techst
+north east_of_tennis_courts
 
-outsidehighmark Margaret Morrison Street
+mmst_techst Margaret Morrison St. & Tech St.
+You're at the intersection of two streets. Margaret Morrison St. goes east, Tech St. branches off to the south, and a sidewalk in front of Posner Hall winds toward the CFA Parking Lot to your west. Margaret Morrison Carnegie Hall stands to your north.
+west outside_posner
+east mmst_highmark
+north mm_rotunda
+south techst
+
+techst Tech Street
+You stand on the sidewalk along a sloping street which runs north-south. This would be a good place to race a buggy. There is an entrance to the Hall of Arts to your west, and an entrance to the Highmark Center to your east.
+NOTE implement Hunt A buggy, if you ride it along the entire course, you should get a prize
+north mmst_techst
+south frew_techst
+west hall_of_arts.1.techst_entrance
+east highmark
+
+mmst_highmark Margaret Morrison Street
 You stand on the sidewalk along Margaret Morrison Street. To your north is the Donner Ditch, and to your south is the Highmark Center.
 north donnerditch
 south highmark
-west mmsttechst
-east mmstskibo
+west mmst_techst
+east mmst_skibo
 
-mmrotunda Outside Margaret Morrison Carnegie Hall
+mm_rotunda Outside Margaret Morrison Carnegie Hall
 You're inside a circle, made up by the walls of MMCH and a semicircle of white columns and zebra-striped arches. Above your head is a sexist quote. The door to the building is to your north.
 north mmch1
 south mmsttechst
 east outsidehighmark
-west cfaparkinglot
+west cfa_parking_lot
 
 doherty_wilderness Wilderness
 You stand in a small grove of unmaintained forest. A path meanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
@@ -227,7 +242,7 @@ You stand on Frew Street, which runs which runs east-west. Porter Hall is to you
 east frew_east
 west thechute
 north porter.a
-south flagstaff_hill
+south flagstaff
 
 flagstaff Flagstaff Hill
 This is a large hill sloping down to your west. The grass is soft. You see Pittsburgh in the distance. Porter Hall is to your north.
@@ -243,6 +258,13 @@ west frew_bridge
 north flagstaff
 south phipps
 
+thechute The Chute
+You stand on a curved section of Frew St. running south and east. To your north, you can stroll beneath Scaife Hall.
+south schenley
+west frew_bridge
+east frew
+north under_scaife
+
 schenley_wilds Schenley Park Wilderness
 A thin forest to the south of campus. Flagstaff Hill stretches out below you to the west, and a trail runs south to Schenley Drive. You could scramble down a hill to the north.
 west flagstaff
@@ -251,8 +273,8 @@ north frew_east
 east frew_techst
 down "Which way?"
 
-frew_east Frew St.
-You stand on Frew Street, which runs east-west. An intersection with Tech St. is to your east, and a sidewalk runs along the western face of Hunt Library to your north.
+frew_east Frew Street
+You stand on Frew St., which runs east-west. An intersection with Tech St. is to your east, and a sidewalk runs along the western face of Hunt Library to your north.
 east frew_techst
 west frew
 south schenley_wilds "You climb over a stone wall and scramble up a hill."
