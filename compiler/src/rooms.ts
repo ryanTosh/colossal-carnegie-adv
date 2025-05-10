@@ -8,7 +8,7 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
         const rows = roomSrc.split("\n");
 
         const sub_id = rows[0].split(" ")[0];
-        const id = nsString + (sub_id == "@" ? "" : "." + sub_id);
+        const id = nsString + (sub_id == "@" ? "" : (nsString ? "." : "") + sub_id);
         const short = rows[0].split(" ").slice(1).join(" ");
         const printout = rows[1];
 
