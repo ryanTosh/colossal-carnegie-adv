@@ -238,7 +238,7 @@ south wean.4.north
 west wean.4.vents
 
 frew Frew Street
-You stand on Frew Street, which runs which runs east-west. Porter Hall is to your north and Flagstaff Hill is to your south.
+You stand on Frew St., which runs which runs east-west. Porter Hall is to your north and Flagstaff Hill is to your south.
 east frew_east
 west thechute
 north porter.a
@@ -281,7 +281,7 @@ south schenley_wilds "You climb over a stone wall and scramble up a hill."
 north outside_hunt
 
 frew_techst Frew St. & Tech St.
-You stand at an intersection of two narrow streets. Frew St. runs to your west, Tech St. runs to your north, and a short bit of road connects to Schenley Dr. to your south. To the east, a brick road driveway ascends at a steep angle.
+You stand at an intersection of two narrow streets. Frew St. runs to your west, Tech St. runs to your north, and a short bit of road to your south connects to Schenley Drive. To the east, a brick road driveway ascends at a steep angle.
 west frew_east
 north techst
 south schenley

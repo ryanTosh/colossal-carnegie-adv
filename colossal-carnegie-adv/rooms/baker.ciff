@@ -17,6 +17,7 @@ north baker.1
 1.trapdoors Baker Hall Corridor
 You're midway through the sloping main hall of Baker. Porter Hall is to your west. You notice heavy iron trapdoors in the floor.
 north mall
+south frew
 east baker.1
 west porter.1
 door down baker.steam_tunnel.entry "You carefully climb down a rickety metal ladder, bracing yourself against a thick steam pipe with aging insulation."
