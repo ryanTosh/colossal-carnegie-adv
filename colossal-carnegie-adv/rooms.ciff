@@ -39,12 +39,12 @@ You're in the middle of a field, with sparse trees around its edges. You see the
 west mall
 east cfa.1.lobby
 north thefence
-south outsidehunt
+south outside_hunt
 
-outsidehunt Outside Hunt Library
+outside_hunt Outside Hunt Library
 In front of you, just to your south, stands Hunt Library, with its facade of glass and steel. A sidewalk to your east runs alongside the College of Fine Arts, and the CFA Lawn is to your north.
 south hunt.1
-east hunttopeace
+east peace_garden
 north cfa_lawn
 west baker.1
 
@@ -53,7 +53,7 @@ You behold the Fence, which is painted with three mysterious letters: "KGB". Law
 west doherty.1.front
 north thecut.south
 south cfa_lawn
-east cfaparkinglot
+east cfa_parking_lot
 
 thecut.south The Cut South
 Sidewalks criss-cross the lawn you're standing on. The Fence is to your south, and the Cut continues to the north.
@@ -160,7 +160,7 @@ You're at the intersection of two streets. The CFA parking lot is to your west, 
 west cfaparkinglot
 east outsidehighmark
 north mmrotunda
-south posner
+south posner.a.lobby
 
 outsidehighmark Margaret Morrison Street
 You stand on the sidewalk along Margaret Morrison Street. To your north is the Donner Ditch, and to your south is the Highmark Center.
@@ -221,3 +221,53 @@ You feel air whoosh past you as you look several stories to the loading dock bel
 north newell_simon.south
 south wean.4.north
 west wean.4.vents
+
+frew Frew St.
+You stand on Frew Street, which runs which runs east-west. Porter Hall is to your north and Flagstaff Hill is to your south.
+east frew_east
+west thechute
+north porter.a
+south flagstaff_hill
+
+flagstaff Flagstaff Hill
+This is a large hill sloping down to your west. The grass is soft. You see Pittsburgh in the distance. Porter Hall is to your north.
+north frew
+west thechute
+south schenley
+east schenley_wilds
+
+schenley Schenley Drive
+You stand on Schenley Drive, a curvy road running east-west. In the center of the road is a monument to Edward Manning Bigelow. Flagstaff Hill is north and Phipps Conservatory is south.
+east frew_techst
+west frew_bridge
+north flagstaff
+south phipps
+
+schenley_wilds Schenley Park Wilderness
+A thin forest to the south of campus. Flagstaff Hill stretches out below you to the west, and a trail runs south to Schenley Drive. You could scramble down a hill to the north.
+west flagstaff
+south schenley
+north frew_east
+east frew_techst
+down "Which way?"
+
+frew_east Frew St.
+You stand on Frew Street, which runs east-west. An intersection with Tech St. is to your east, and a sidewalk runs along the western face of Hunt Library to your north.
+east frew_techst
+west frew
+south schenley_wilds "You climb over a stone wall and scramble up a hill."
+north outside_hunt
+
+frew_techst Frew St. & Tech St.
+You stand at an intersection of two narrow streets. Frew St. runs to your west, Tech St. runs to your north, and a short bit of road connects to Schenley Dr. to your south. To the east, a brick road driveway ascends at a steep angle.
+west frew_east
+north techst
+south schenley
+east frew_brick_driveway
+
+peace_garden Peace Garden
+This is a calm garden area south of the College of Fine Arts building, with one side of Hunt Library to the west and an entrance to the Hall of Arts to the east. Frew Street sits to the south.
+north cfa.ground.under_peace_garden_stairs
+west outside_hunt
+east hall_of_arts.1.peace_garden_entrance
+south frew_east

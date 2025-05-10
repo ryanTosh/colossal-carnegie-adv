@@ -1,0 +1,23 @@
+lobby Posner Hall: Floor A
+Doors to your north go outside. A set of stairs goes up to the first floor of Posner Hall. A narrow corridor runs south. The Exchange is to your east.
+north mmsttechst
+up posner.1.lobby
+south posner.a.corridor_north
+east posner.a.the_exchange
+
+corridor_north Posner Hall: Floor A, Corridor
+This is a narrow corridor running to your north. It zigs to your east. To the south is a dirty white door into a mechanical room, and stairs go down to the front of a lecture hall.
+north posner.a.lobby
+east posner.a.corridor_middle
+south "The door is locked."
+down posner.a.lecture_hall
+
+corridor_middle Posner Hall: Floor A, Corridor
+You're in a corridor running to your south. It zigs to your west. You're directly beneath a large map which dates to the nineties.
+south posner.a.corridor_south
+west posner.a.corridor_north`
+
+corridor_south Posner Hall: Floor A, Corridor
+You're at the corner of corridors running north and west. There is a door to the outside to your east, and a propped door to a baler room to your south.
+north posner.a.corridor_middle
+west hall_of_arts.a
