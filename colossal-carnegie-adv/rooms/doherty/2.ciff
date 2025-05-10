@@ -19,39 +19,39 @@ east doherty.2.bridge
 up doherty.3.west
 down doherty.1.west
 
-doherty.2.210 Doherty Hall
+210 Doherty Hall
 You're inside Doherty Hall. You find yourself in a large, tiered lecture hall with exits to the north.
 north doherty.2.stairs
 south doherty.2.210.top
 up doherty.2.210.top
 
-doherty.2.210.top Doherty Hall
+210.top Doherty Hall
 You're inside Doherty Hall. You're in one of the higher rows of seating in a large lecture hall, and stairs descend down to your north and south.
 north doherty.2.210
 south doherty.2.210.secret_door
 
-doherty.2.210.secret_door Doherty Hall
+210.secret_door Doherty Hall
 You're inside Doherty Hall. You're at the base of a small set of stairs, beneath the seats of a large lecture hall. There is a door to your west, and the stairs go back up to your north.
 north doherty.2.210.top
 west "The door is locked."
 
-doherty.2.315 Doherty Hall
+315 Doherty Hall
 You're inside Doherty Hall. You find yourself in a large, tiered lecture hall with exits to the north.
 north doherty.2.stairs
 south doherty.2.315.top
 up doherty.2.315.top
 
-doherty.2.315.top Doherty Hall
+315.top Doherty Hall
 You're inside Doherty Hall. You're in one of the higher rows of seating in a large lecture hall, and stairs descend down to your north and south.
 north doherty.2.315
 south doherty.2.315.secret_door
 
-doherty.2.315.secret_door Doherty Hall
+315.secret_door Doherty Hall
 You're inside Doherty Hall. You're at the base of a small set of stairs, beneath the seats of a large lecture hall. There is a door to your west, and the stairs go back up to your north.
 north doherty.2.315.top
 west doherty.2.315.secret_room
 
-doherty.2.315.secret_room Doherty Hall
+315.secret_room Doherty Hall
 You're inside Doherty Hall. You're in a small secret room filled with HVAC equipment and old chairs. There is a door to your east.
 east doherty.2.315.secret_door
 NOTE add a secret here!
