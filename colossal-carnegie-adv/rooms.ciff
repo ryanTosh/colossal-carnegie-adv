@@ -131,14 +131,14 @@ stever_basement Stever Basement
 You're in a cluttered basement, with pipes running along the ceiling. There are many doors on the wall to the east.
 west steverelevator
 east kage
-south steveralley
+south stever_alley
 north "Your path is blocked by boxes of clutter."
 NOTE up: use elevator?
 
 kage Kage
 You find yourself in the Kage, a concrete-walled storage room full of wood and rusty tools. You notice a grate on the wall to the south.
 item crowbar
-west steverbasement
+west stever_basement
 south "You cannot find a way to open the grate." NOTE screwdriver?
 NOTE south ciacage
 NOTE helpful note when trying to open grate with screwdriver
@@ -172,6 +172,7 @@ south techst
 techst Tech Street
 You stand on the sidewalk along a sloping street which runs north-south. This would be a good place to race a buggy. There is an entrance to the Hall of Arts to your west, and an entrance to the Highmark Center to your east.
 NOTE implement Hunt A buggy, if you ride it along the entire course, you should get a prize
+NOTE if you give Farnam peanut butter, he should initiate The Hunt
 north mmst_techst
 south frew_techst
 west hall_of_arts.1.techst_entrance
@@ -185,11 +186,9 @@ west mmst_techst
 east mmst_skibo
 
 mm_rotunda Outside Margaret Morrison Carnegie Hall
-You're inside a circle, made up by the walls of MMCH and a semicircle of white columns and zebra-striped arches. Above your head is a sexist quote. The door to the building is to your north.
-north mmch1
-south mmsttechst
-east outsidehighmark
-west cfa_parking_lot
+You're inside an oval, comprised of the walls of Margaret Morrison and a semicircle of white columns and zebra-striped arches. Above your head is a sexist quote. The door to the building is to your north.
+north mmch.1
+south mmst_techst
 
 doherty_wilderness Wilderness
 You stand in a small grove of unmaintained forest. A path meanders through the trees. A door to Doherty Hall is to the south, and a hill blocks your path to the north.
