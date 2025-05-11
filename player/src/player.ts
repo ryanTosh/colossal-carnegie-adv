@@ -21,6 +21,10 @@ export class Player {
     }
 
     public runUserInput(input: string): string {
+        if (input[0] == "~") {
+            return this.runCommand(input.slice(1));
+        }
+
         const words = input.replace(/\s+/g, " ").trim().split(" ");
 
         if (words.length == 0 || words[0] == "") {
@@ -234,6 +238,52 @@ export class Player {
                 return "I don't know how to '" + words[0] + "'.";
             }
         }
+    }
+
+    private runCommand(command: string): string {
+        const words = command.match(/\S+|"([^"]|"")+"/g) || [];
+
+        switch (words[0]) {
+            case "goto":
+            {
+                this.room = this.prog.rooms[words[1]];
+
+                return this.roomPrintout(this.room);
+            }
+            case "pickup":
+            {
+                this.inv.push(words[1]);
+
+                return "Picked up " + this.prog.items[words[1]].short;
+            }
+            case "room":
+            {
+                return JSON.stringify(this.room, null, 4);
+            }
+            case "inv":
+            {
+                return JSON.stringify(this.inv);
+            }
+            case "item":
+            {
+                return JSON.stringify(this.prog.items[words[1]], null, 4);
+            }
+            case "drop":
+            {
+                if (!this.inv.includes(words[1])) {
+                    return "Could not find " + words[1];
+                }
+
+                this.inv.splice(this.inv.indexOf(words[1]), 1);
+                return "Dropped " + words[1];
+            }
+            case "comefrom":
+            {
+                return Object.entries(this.prog.rooms).flatMap(([roomId, room]) => Object.entries(room.dirs).filter(([__dirname, roomDir]) => typeof roomDir.goto == "string" && this.prog.rooms[roomDir.goto] == this.room).map(([dir, _]) => roomId + " " + dir)).join("\n");
+            }
+        }
+
+        return "undefined";
     }
 
     private tryRunMoveInput(words: string[]): string | null {

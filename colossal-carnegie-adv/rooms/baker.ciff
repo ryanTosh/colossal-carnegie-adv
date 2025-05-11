@@ -21,8 +21,10 @@ south frew
 east baker.1
 west porter.1
 door down baker.steam_tunnel.entry "You carefully climb down a rickety metal ladder, bracing yourself against a thick steam pipe with aging insulation."
+dirnouns down trapdoor, trapdoors, iron trapdoor, iron trapdoors, heavy iron trapdoor, heavy iron trapdoors, heavy trapdoor, heavy trapdoors
 doorkeyitem down crowbar
 doorsay OnOpen down "Using the crowbar, you lift one of the trapdoors just enough to slip your hands under it. With all your might, you lift it open."
+doorsay OnSightIfOpen down "One of the trapdoors is standing open."
 
 steam_tunnel.entry Baker-Porter Steam Tunnel
 You find yourself in a small, claustrophobic space, with an open trapdoor above your head and a rusty metal ladder leading up to it. You're surrounded on three sides by brick walls, but see a gap to your south among the many steam pipes.
