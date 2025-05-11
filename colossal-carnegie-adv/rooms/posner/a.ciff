@@ -1,7 +1,7 @@
 @ Posner Hall: Floor A
 Doors to your north go outside. A set of stairs goes up to the first floor of Posner Hall. A narrow corridor runs south. The Exchange is to your east.
-north mmsttechst
-up posner.1.lobby
+north outside_posner
+up posner.1
 south posner.a.corridor_north
 east posner.a.the_exchange
 
