@@ -1,7 +1,7 @@
 north Hamerschlag Hall: Floor F north hallway
 You're in a small hallway with an ancient elevator. At the east end is a door to a stairwell. A pair of locked double doors sit to your north. You can go west.
 north "The double doors are locked."
-east hamerschlag.fedbai.stairs.f
+east hamerschlag.north_stairs.f
 up hamerschlag.e.north
 west hamerschlag.f.north_corner
 

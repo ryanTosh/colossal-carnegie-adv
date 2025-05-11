@@ -2,7 +2,7 @@ north Hamerschlag Hall: Floor E
 You find yourself in a cluttered area overlooking floor F. You're near an ancient elevator, and a door to your east leads to a dim stairwell. To your south, you can step up onto the steel roof of the labs below you, on top of which is a network of pipes and HVAC machinery.
 up hamerschlag.fedbai.d
 down hamerschlag.f.north
-east hamerschlag.fedbai.stairs.e
+east hamerschlag.north_stairs.e
 south hamerschlag.e.metal_roof
 
 metal_roof Hamerschlag Hall: Floor E steel roof
