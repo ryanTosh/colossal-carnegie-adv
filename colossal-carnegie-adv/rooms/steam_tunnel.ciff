@@ -46,15 +46,17 @@ You find yourself in a large unlit room. A ladder goes down, and stalactites han
 down steam_tunnel.cfa_intersection
 
 under_cfa Steam Tunnel: CFA Branch
-You're in a modernized section of steam tunnel running north-south. A ladder sits to the side of some steam pipes with clean white insulation, under a poorly fitted trapdoor.
+You're in a modernized section of steam tunnel running to the north. A ladder sits to the side of some steam pipes with clean white insulation, under a poorly fitted trapdoor. Another branch at the far south end of the tunnel runs east.
 up cfa.ground.trapdoor
 north steam_tunnel.cfa_intersection
 south steam_tunnel.gsia "The tunnel turns to your left, running east."
+east steam_tunnel.gsia
 
 gsia Steam Tunnel: Posner Branch
-You're in a modernized section of steam tunnel running east-west.
+You're in a narrow but modernized section of steam tunnel running east. On the far west side, it turns to the north.
 east posner.mechanical_room_south
 west steam_tunnel.under_cfa "The tunnel turns to your right, running north."
+north steam_tunnel.under_cfa
 
 three_way_intersection Steam Tunnel: Three Way Intersection
 You find yourself at a three way intersection. One branch runs west, one runs north, and one runs east with a slight deviation to the south. Nearby, a ladder goes up some distance to a trapdoor.

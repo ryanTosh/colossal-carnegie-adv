@@ -9,7 +9,7 @@ down wean.3.north
 
 south Wean 4 Lobby South
 Hallways go in various directions, including one particularly ominous corridor to your south. Sorrels Library is to your east.
-south wean.4.murderhallway
+south wean.4.murder_hallway
 north wean.4.north
 east wean.4.sorrels
 west scottfromwean4lobby "You try the door to the 4100 corridor, and find it to be locked. You walk down a few steps to your south, and find yourself in Scott Hall, with corridors to your south and west."
@@ -47,10 +47,10 @@ north wean.4.300
 south wean.4.400
 east liminal.ramp
 
-murderhallway Murder Hallway (Wean 4600 Corridor)
+murder_hallway Murder Hallway (Wean 4600 Corridor)
 You're in a corridor south of the lobby, deep under the mall. You get a foreboding feeling from the concrete-brick walls. A sign points further south toward an "area of refuge", a push-door to a staircase is to your west, and a fork splits off to the east.
-south wean.4.murderhallwayterminus
-east wean.4.murderhallway700
+south wean.4.murder_hallway_terminus
+east wean.4.murder_hallway_700
 west wean.stairs.c1.4
 north wean.4.south
 
@@ -59,10 +59,16 @@ You're further down in a corridor south of the lobby, deep under the mall. A pus
 north wean.4.murderhallway
 west wean.stairs.c2.4
 
-murderhallway700 Murder Hallway (Wean 4700 Corridor)
+murder_hallway_700 Murder Hallway (Wean 4700 Corridor)
 You're in a loop just off of the main murder hallway. The corridor runs north-south.
-south wean.4.murderhallwayterminus
-north wean.4.murderhallway
+south wean.4.murder_hallway_terminus
+north wean.4.murder_hallway
 west wean.4.murderhallway
 east "You push against an office door, but it's securely locked."
 NOTE implement 4703
+
+703 Wean 4703
+You're in a conference room which seems to have come straight out of the 80's. It has stately chairs, a wall clock, and a whiteboard. There is a closed door to your west, and an open door into a hot, noisy steam tunnel to your east.
+east steam_tunnel.wean
+west wean.murder_hallway_700
+NOTE make 4703 door stay open

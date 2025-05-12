@@ -281,6 +281,10 @@ export class Player {
             {
                 return Object.entries(this.prog.rooms).flatMap(([roomId, room]) => Object.entries(room.dirs).filter(([__dirname, roomDir]) => typeof roomDir.goto == "string" && this.prog.rooms[roomDir.goto] == this.room).map(([dir, _]) => roomId + " " + dir)).join("\n");
             }
+            case "finditem":
+            {
+                return Object.entries(this.prog.rooms).filter(([_, room]) => room.items.some((item) => item.itemId == words[1])).map(([roomId, _]) => roomId).join("\n");
+            }
         }
 
         return "undefined";

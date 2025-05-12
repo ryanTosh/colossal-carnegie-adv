@@ -1,3 +1,9 @@
+5 Newell-Simon: Stairs, Floor 5
+There are doors to your north and south. You can go down.
+north "The door is locked."
+south "The door is locked."
+down newell_simon.boring_stairs.4
+
 4 Newell-Simon: Stairs, Floor 4
 The door is to your east. You can go up or down.
 east newell_simon.4.junction

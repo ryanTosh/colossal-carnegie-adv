@@ -313,3 +313,10 @@ You're on a bridge, which runs from the Scaife Quad to your west and the Mall to
 west scaife_quad
 east west_mall
 south ansys.big_stairs.b
+
+under_scaife Under Scaife
+This is a covered space under the east wing of Scaife Hall, with many small tables and bike racks. You can enter Scaife to the west, go north to the Scaife Quad, or south to Frew Street.
+west scaife.1.redhawk
+north scaife_quad
+south thechute
+east scaife.loading_dock
