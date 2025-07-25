@@ -6,14 +6,12 @@ export class Player {
 
     private inv: string[];
     private room: Room;
-    private facing: Dir | undefined;
 
     constructor(prog: Prog) {
         this.prog = prog;
 
         this.inv = [];
         this.room = this.prog.rooms[this.prog.startingRoom]!;
-        this.facing = this.room.facing as (Dir | undefined);
     }
 
     public initialPrintout(): string {
@@ -384,45 +382,6 @@ export class Player {
                 
                 return this.tryMove("down");
             }
-            case "forward":
-            case "fwd":
-            {
-                if (words.length > 1) {
-                    return "I don't know how to do that. Did you want to say 'forward'?";
-                }
-
-                if (this.facing === undefined) {
-                    return "Which direction do you want to go?";
-                }
-
-                return this.tryMove(this.facing);
-            }
-            case "backward":
-            case "back":
-            case "reverse":
-            case "bw":
-            {
-                if (words.length > 1) {
-                    return "I don't know how to do that. Did you want to say 'backward'?";
-                }
-
-                if (this.facing === undefined) {
-                    return "Which direction do you want to go?";
-                }
-
-                return this.tryMove({
-                    "north": "south",
-                    "east": "west",
-                    "south": "north",
-                    "west": "east",
-                    "northeast": "southwest",
-                    "northwest": "southeast",
-                    "southeast": "northwest",
-                    "southwest": "northeast",
-                    "up": "down",
-                    "down": "up"
-                }[this.facing] as Dir);
-            }
             default:
             {
                 return null;
@@ -473,7 +432,6 @@ export class Player {
                 const say = ("say" in this.room.dirs[dir] ? this.room.dirs[dir].say + "\n\n" : "") + this.roomPrintout(gotoRoom);
 
                 this.room = gotoRoom;
-                this.facing = this.room.facing as (Dir | undefined);
 
                 return say;
             }

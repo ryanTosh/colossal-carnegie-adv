@@ -46,7 +46,6 @@ south wean.7.400
 east liminal.7
 
 insideturtle Inside the Turtle Head
-You find yourself in a wood-panelled lecture hall of great size. To your west is an emergency exit door, and the double doors back to Wean 7 are behind you to your norh.
+You find yourself in a wood-panelled lecture hall of great size. To your west is an emergency exit door, and the double doors back to Wean 7 are at the back of the lecture hall to your norh.
 north wean.7.south
 west outsidelaprima "Outside the door, stairs take you down to the mall."
-facing south

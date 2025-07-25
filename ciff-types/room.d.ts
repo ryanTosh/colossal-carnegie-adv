@@ -36,7 +36,6 @@ export interface Room {
     printout: string;
 
     dirs: { [dir in Dir]?: RoomDir };
-    facing?: string;
 
     items: RoomItem[];
     itemBriefings: { [itemId: string]: ItemBriefings };

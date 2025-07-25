@@ -17,7 +17,6 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
         }
 
         const dirs: Room['dirs'] = {};
-        let facing: Dir | undefined = undefined;
 
         const items: Room['items'] = [];
         const itemBriefings: Room['itemBriefings'] = {};
@@ -177,20 +176,6 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
 
                     break;
                 }
-                case "facing":
-                {
-                    if (words.length != 2) {
-                        throw "Invalid '" + words[0] + "' prop format in room '" + id + "': " + propRow;
-                    }
-
-                    if (!["north", "east", "south", "west"].includes(words[1] as Dir)) {
-                        throw "Invalid direction '" + words[1] + "' in facing prop in room '" + id + "'";
-                    }
-
-                    facing = words[1] as Dir;
-
-                    break;
-                }
                 case "item":
                 {
                     if (words.length != 2) {
@@ -260,7 +245,6 @@ export function parseRooms(roomsSrc: string, namespace: string[], usedIds: Set<s
             printout,
 
             dirs,
-            facing,
 
             items,
             itemBriefings

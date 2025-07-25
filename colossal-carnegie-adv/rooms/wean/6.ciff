@@ -47,14 +47,13 @@ south wean.6.400
 east liminal.6
 
 balcony Wean 6 Balcony
-You're standing in front of a parapet overlooking La Prima. On the other side, copies of a magazine are affixed to the concrete, hanging above the coffee shop. Behind you, hallways go in various directions.
+You're standing in front of a parapet overlooking La Prima to your south. On the other side, copies of a magazine are affixed to the concrete, hanging above the coffee shop. To your north, hallways go in various directions.
 north wean.6.north
 east wean.6.400
 west wean.6.100
 up wean.6.parapet
 down "Surely you don't want La Prima so badly as to justify falling 20 feet for it."
 south "Surely you don't want La Prima so badly as to justify falling 20 feet for it."
-facing south
 
 parapet Balancing above La Prima
 You're standing on a parapet about 8 inches wide, balancing above La Prima to your south, and a safe hop down to Wean 6 to your north.

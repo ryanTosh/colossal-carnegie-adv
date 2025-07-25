@@ -103,18 +103,16 @@ north porter.b.crossroad
 south "The door to your south is locked."
 
 steam_tunnel.upper Baker-Porter Steam Tunnel
-You're in a long tunnel, surrounded by pipes and wires. You're at the top of a narrow set of stairs, which run down to your west. Directly ahead of you, floating above the stairs, is a door embedded in the wall.
+You're in a long tunnel, surrounded by pipes and wires. You're at the top of a narrow set of stairs, which run down to your west. Directly west of you, floating above the stairs, is a door embedded in the wall.
 east baker.steam_tunnel.west
 west porter.steam_tunnel.lower
 down porter.steam_tunnel.lower
-facing west
 
 steam_tunnel.lower Baker-Porter Steam Tunnel
-You're in a short stretch of tunnel at the base of a set of stairs, which continue up to your east. Directly ahead to your west is an unusually short door.
+You're in a short stretch of tunnel at the base of a set of stairs, which continue up to your east. Directly to your west is an unusually short door.
 east porter.steam_tunnel.upper
 up porter.steam_tunnel.upper
 west porter.b
-facing west
 south porter.steam_tunnel.sidetunnel "You climb through the pipes, making your way into another section of tunnel."
 
 steam_tunnel.sidetunnel Baker-Porter Steam Tunnel: Side Tunnel
